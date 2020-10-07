@@ -1071,6 +1071,8 @@ INPUT c:/texlive/2020/texmf-dist/fonts/vf/adobe/palatino/pplri8t.vf
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/palatino/pplri8r.tfm
 INPUT c:/texlive/2020/texmf-dist/fonts/vf/adobe/palatino/pplb8t.vf
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/palatino/pplb8r.tfm
+INPUT c:/texlive/2020/texmf-dist/fonts/vf/adobe/palatino/pplrc8t.vf
+INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm
 INPUT c:/Users/Luke/Documents/Github/flinders-thesis/main.toc
 INPUT c:/Users/Luke/Documents/Github/flinders-thesis/main.toc
 INPUT c:/Users/Luke/Documents/Github/flinders-thesis/main.toc

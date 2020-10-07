@@ -8,28 +8,78 @@
 %	SECTION 1
 %----------------------------------------------------------------------------------------
 
-\section{Main Section 1}
+\section{Hardware}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies lacinia euismod. Nam tempus risus in dolor rhoncus in interdum enim tincidunt. Donec vel nunc neque. In condimentum ullamcorper quam non consequat. Fusce sagittis tempor feugiat. Fusce magna erat, molestie eu convallis ut, tempus sed arcu. Quisque molestie, ante a tincidunt ullamcorper, sapien enim dignissim lacus, in semper nibh erat lobortis purus. Integer dapibus ligula ac risus convallis pellentesque.
-
-%-----------------------------------
-%	SUBSECTION 1
-%-----------------------------------
-\subsection{Subsection 1}
-
-Nunc posuere quam at lectus tristique eu ultrices augue venenatis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam erat volutpat. Vivamus sodales tortor eget quam adipiscing in vulputate ante ullamcorper. Sed eros ante, lacinia et sollicitudin et, aliquam sit amet augue. In hac habitasse platea dictumst.
-
-%-----------------------------------
-%	SUBSECTION 2
-%-----------------------------------
-
-\subsection{Subsection 2}
-Morbi rutrum odio eget arcu adipiscing sodales. Aenean et purus a est pulvinar pellentesque. Cras in elit neque, quis varius elit. Phasellus fringilla, nibh eu tempus venenatis, dolor elit posuere quam, quis adipiscing urna leo nec orci. Sed nec nulla auctor odio aliquet consequat. Ut nec nulla in ante ullamcorper aliquam at sed dolor. Phasellus fermentum magna in augue gravida cursus. Cras sed pretium lorem. Pellentesque eget ornare odio. Proin accumsan, massa viverra cursus pharetra, ipsum nisi lobortis velit, a malesuada dolor lorem eu neque.
+The Digilent Nexys DDR4 development board is available as an alternative to the Trenz Electronics TE0725 board housed within the MEGAphone device when said device is not available, given that the MEGAphone is based on the same architecture. 
+Physical prototypes of the MEGAphone chassis are printed using the Ultimaker 2+ 3D printer.
 
 %----------------------------------------------------------------------------------------
 %	SECTION 2
 %----------------------------------------------------------------------------------------
 
-\section{Main Section 2}
+\section{Software}
 
-Sed ullamcorper quam eu nisl interdum at interdum enim egestas. Aliquam placerat justo sed lectus lobortis ut porta nisl porttitor. Vestibulum mi dolor, lacinia molestie gravida at, tempus vitae ligula. Donec eget quam sapien, in viverra eros. Donec pellentesque justo a massa fringilla non vestibulum metus vestibulum. Vestibulum in orci quis felis tempor lacinia. Vivamus ornare ultrices facilisis. Ut hendrerit volutpat vulputate. Morbi condimentum venenatis augue, id porta ipsum vulputate in. Curabitur luctus tempus justo. Vestibulum risus lectus, adipiscing nec condimentum quis, condimentum nec nisl. Aliquam dictum sagittis velit sed iaculis. Morbi tristique augue sit amet nulla pulvinar id facilisis ligula mollis. Nam elit libero, tincidunt ut aliquam at, molestie in quam. Aenean rhoncus vehicula hendrerit.
+The following sections list the software that was used to assist the development of this project.
+
+%-----------------------------------
+%	SUBSECTION 1
+%-----------------------------------
+
+\subsection{LibreCAD}
+
+LibreCAD is a free open source 2D design software that was used to sketch the initial concepts for the main project deliverable. 
+This software was chosen due to its accessible nature and good reviews.
+
+%-----------------------------------
+%	SUBSECTION 2
+%-----------------------------------
+
+\subsection{Fusion 360}
+
+The computer-aided design software chosen for the MEGAphone chassis project is Autodesk Fusion 360 as it is very capable as well as efficient in regard to resource consumption. 
+Autodesk Inventor was originally considered as the definitive CAD program, however due to the concern of user sovereignty, Fusion 360 was chosen as it is more accessible to individuals as it does not require potentially expensive licensing for recreational use. 
+Fusion 360 was also chosen to create and present an animation of the device during the final project seminar.
+
+%-----------------------------------
+%	SUBSECTION 3
+%-----------------------------------
+
+\subsection{KiCAD}
+
+KiCAD is an open source eCAD software used in the PCB designing process. 
+This software was  chosen over alternatives with potentially expensive licensing costs such as Altium Designer. 
+The intention of the MEGAphone project is to be accessible to users, which includes limiting the use of expensive software.
+
+%-----------------------------------
+%	SUBSECTION 4
+%-----------------------------------
+
+\subsection{Xilinx Vivado}
+
+To avoid emulation, the MEGAphone is FPGA based, written almost completely in VHDL (Virtual Hardware Description Language), including the virtual accessible keyboard for Jellybean switch input.
+
+%----------------------------------------------------------------------------------------
+%	SECTION 3
+%----------------------------------------------------------------------------------------
+
+\section{Manufacturing and Sourcing}
+
+    -   Chassis design manufactured using the Ultimaker 2+ 3D printer.
+
+-   Printed circuit boards are sourced from PCBway.
+
+-   Components are sourced from Digi-Key and Ablenet.
+
+%----------------------------------------------------------------------------------------
+%	SECTION 4
+%----------------------------------------------------------------------------------------
+
+\section{Contributions}
+
+This section lists contributors to this project as well as a brief outline of their contributions:
+
+-   Dr. David Hobbs; Academic supervisor for the project, provides feedback on iterations of the MEGAphone chassis project
+
+-   Dr. Paul Gardner-Stephen; Academic co-supervisor, provides software feedback, also responsible for the MEGA65 platform, research assistant for coding the accessible keyboard sub-system %(view section X)
+
+-   The author is responsible for designing the MEGAphone device chassis, slave PCBs and adapter for various accessibility functions
