@@ -114,7 +114,7 @@ The first stage of design after the initial concept sketches intended to use rub
 The Jellybean switch bought exclusively for this project interfaces with the device using a 3.5mm Audio Jack connector. 
 Given that it is a single digital input device, hardware-implemented software accessibility capable of easily communicating with this device was relatively simple to implement. 
 The second revision PCB during commencement of this project did not feature a working 3.5mm Jack connector, therefore, based on this knowledge, the 9-pin DSUB port of the device was hijacked as a single digital input under pin 7 for the Jellybean switch. 
-The PCB ‘adapter’ created for this purpose is discussed in \section{4.3}.
+The PCB ‘adapter’ created for this purpose is discussed in \section{4.3}. %fix this
 This uses the same pin as the fire button on a retro Commodore64 Joystick controller, hence, integration into the MEGA65 operating system would be straightforward.
 
 %-----------------------------------
@@ -126,7 +126,7 @@ This uses the same pin as the fire button on a retro Commodore64 Joystick contro
 
 One concept that would improve the ‘quality of life’ of this product was the addition of recessed buttons. 
 There are potential situations where the device might be accidentally dropped and unintended button presses may be recorded. 
-Recessed buttons reduce the likeliness of this situation
+Recessed buttons reduce the likeliness of this situation.
 
 %-----------------------------------
 %	SUBSECTION 6
@@ -141,14 +141,15 @@ also add in that 0.15mm print resolution was not suitable as the project was ver
 %-----------------------------------
 \subsection{Solar Panels}
 
-choice of solar panels, discuss potential options and why a specific one was chosen, do a table comparison of available panels and again explain the power output and cost etc.
+% choice of solar panels, discuss potential options and why a specific one was chosen, do a table comparison of available panels and again explain the power output and cost etc.
 
 %-----------------------------------
 %	SUBSECTION 8
 %-----------------------------------
 \subsection{Device Stand}
 
-thoughts behind the device stands, how they were conceptualised and why it was approached in such and such way; having two stands on either side adds to stability of the device as opposed to the original idea of having one stand in the middle, which also leaves space for solar panel in the middle
+% thoughts behind the device stands, how they were conceptualised and why it was approached in such and such way; having two stands on either side adds to stability of the device as opposed to the original idea of having one stand in the middle, which also leaves space for solar panel in the middle
+Originally the approach was to have a single stand oriented in the middle of the device where users could extend it out as they need.
 
 %-----------------------------------
 %	SUBSECTION 9
@@ -156,13 +157,24 @@ thoughts behind the device stands, how they were conceptualised and why it was a
 \subsection{Device Strap / Key-chain}
 
 % talk about process of designing this feature, how original design changed in favour of larger slot/strap for easier carry
+The thought behind the key-chain feature of the device was to be able to clip it to things, and while this feature did see an appearance in an early prototype, it was later adapted into a 'housing' for an arm strap, to allow for easier carrying.
+An extra notch was added to lock into the top part of the case and re-enforce the strength. The original prototype did not have this and as the length of the strap was extended, this was a consideration for supporting the weight of the device.
 
 %-----------------------------------
 %	SUBSECTION 10
 %-----------------------------------
 \subsection{Easy Access Keys}
 
-Nunc posuere quam at lectus tristique eu ultrices augue venenatis.
+The easy access keys were designed around the 'Nav Keys' developed by Storm. 
+They feature an array of easily distingishable keys which were inspired for this adaptation. 
+It was first approached as an extension of the device as this would free up a lot of non-existent space.
+However, it was ideal for the array of buttons to be integrated into the device as this ensures that the full extent of accessibility is available from the moment the device is picked up.
+Due to the height requirement of the MEGAphone PCB, there was very little space to attach a slave PCB to allow button functionality, hence why there is an elevation in the button housing.
+Additionally, there needed to be enough depth so that the PCB could be screwed into place comfortably.
+
+An issue that came up in the first prototype print is that the keys did not have enough clearance to actuate without resistance.
+This was fixed in the update by extending the width of the button cutouts by approximately 0.25mm. % check this
+
 % FIXED AB AND DIRECTIONAL BUTTON SIZE CLEARANCE, ALSO EZ KEY CLEARANCE
 % FIXED ALIGNMENT OF THROUGH HOLE
 
@@ -171,16 +183,25 @@ Nunc posuere quam at lectus tristique eu ultrices augue venenatis.
 %-----------------------------------
 \subsection{Ventilation}
 
-device only uses about 1-2W of power, FPGA using 0.2W
-Not necessary in final design but add images of version with vents
+% device only uses about 1-2W of power, FPGA using 0.2W
+% Not necessary in final design but add images of version with vents
 
 %-----------------------------------
 %	SUBSECTION 12
 %-----------------------------------
 \subsection{Potentiometers}
 
-Slide pot better than thumb wheel pot, explain about physical effort etc.
+% Slide pot better than thumb wheel pot, explain about physical effort etc.
 
+%-----------------------------------
+%	SUBSECTION 13
+%-----------------------------------
+\subsection{Port Access}
+
+Port access was intentionally designed to have no case material on the top and bottom of the device as this would interfere with the plugging in of various peripherals.
+
+An issue that was faced in the original prototype was in regard to the orientation of the port cutouts in that they were placed on the display side of the PCB.
+This was rectified by extending out the bottom chassis component with the port cutout on that side so that it would match up with the true orientation of the ports. %expand on this later with images
 
 %----------------------------------------------------------------------------------------
 %	SECTION 4
