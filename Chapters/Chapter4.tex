@@ -115,7 +115,7 @@ The orientation of switches was completely intentional; for easier access for th
 The Jellybean switch bought exclusively for this project interfaces with the device using a 3.5mm Audio Jack connector. 
 Given that it is a single digital input device, hardware-implemented software accessibility capable of easily communicating with this device was relatively simple to implement. 
 The second revision PCB during commencement of this project did not feature a working 3.5mm Jack connector, therefore, based on this knowledge, the 9-pin DSUB port of the device was hijacked as a single digital input under pin 7 for the Jellybean switch. 
-The PCB ‘adapter’ created for this purpose is discussed in \section{4.3}. %fix this
+The PCB ‘adapter’ created for this purpose is discussed in section 4.3. %fix this
 This uses the same pin as the fire button on a retro Commodore64 Joystick controller, hence, integration into the MEGA65 operating system would be straightforward.
 
 %-----------------------------------
@@ -209,6 +209,7 @@ This was rectified by extending out the bottom chassis component with the port c
 %----------------------------------------------------------------------------------------
 
 \section{PCB Design}
+This section discusses the process in designing the supporting PCBs for this project.
 
 % explain workaround for previous button layout, using slave boards with tactile switches as well as choice behind contact pads instead of connectors to save space
 
@@ -217,22 +218,42 @@ This was rectified by extending out the bottom chassis component with the port c
 %-----------------------------------
 \subsection{Rocker Switch PCB}
 
-Nunc posuere quam at lectus tristique eu ultrices augue venenatis.
+The PCB designed to organise the routing of power to the array of rocker switches originally had the intention of interfacing with the main PCB through a connector of some sort.
+Space has been limited however, therefore leading to an alternate solution in that there were 'mounting' pads to serve as a soldering point for the wires that would be routed to the main PCB.
+An issue with the footprint that was observed after sourcing these parts, was that there was not enough clearance for the pins to 'slot' through.
+The approach was to file down the pins on the rocker switches individually so that they would fit, which was not an issue in regards to current as the whole device runs on about 1-2W.
+Filing down the PCB through-hole cutout would have been worse as there was potential for solder to not flow evenly due to damaging the solder mask. %double check this
+
+During the case design process, having mounting points to hold the circuit board in place was considered.
+This was later removed as the switches mount very securely in their cutouts, and the clearance between the PCB and the main MEGAphone PCB is very minimal.
+This would allow adjustment if needed before soldering as well as making the repair process easier if users need to replace or modify certain parts.
+
 
 %-----------------------------------
 %	SUBSECTION 2
 %-----------------------------------
 \subsection{Easy Keys and Power}
 
-Nunc posuere quam at lectus tristique eu ultrices augue venenatis.
+The purpose behind the easy keys is to give users a platform in which to interact with the MEGAphone device while being as clear and easy to use as possible.
+Multi-coloured, multi-shaped keys are employed make things as unambiguous as possible which include, left and right (forward and backward), up and down, and a 'fire' or enter key.
+This is inspired by the Storm Nav-pad, where a version has been acheived to a budget, for the purpose of prototyping.
+
+An important aspect of this device is to provide easy access to the power switch as turning the display on an off on this device is frequent due to not having automatic display toggle features.
+This is intergrated into the device in the same manner as the easy keys, in that they work by momentarily pressing a tactile switch.
+This interface faced an issue where the openings for the button cutouts were virtually the same size leading to problems with clearance. 
+To fix this issue, the openings were extended by about half a millimetre on all sides to allow for smooth button pressing while still sitting securely in place.
 
 %-----------------------------------
 %	SUBSECTION 3
 %-----------------------------------
 \subsection{Audio Jack Adapter}
 
-Nunc posuere quam at lectus tristique eu ultrices augue venenatis.
-
+The audio jack adapter was designed to be a substitute for the original audio jack, which was unoperational at the time.
+This PCB hijacks the fire pin of the 9-pin DSUB connector in order to 'imitate' a joystick fire button, coupled with hardware implemented features in the FPGA, the MEGAphone should treat any input as a regular device.
+An issue that was faced was in regard to the overall size and shape of the PCB.
+This was not thought about correctly at the time of manufacturing as the PCB was too bulky on either side and due to the central placement of the audio jack input, interfacing with this adapter was less than convienient.
+To fix this, a nibbler was used to clip away at the edges to cut the board down to size, followed by a rough 80 grit sanding to smooth the edges somewhat.
+Given that fibreglass particles are not good for health when inhaled, this was undertaken responsibly to ensure that these risks were avoided.
 
 %----------------------------------------------------------------------------------------
 %	SECTION 5
