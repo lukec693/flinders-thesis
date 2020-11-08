@@ -97,7 +97,10 @@ This was approached by beginning with a front view of the sketch where users wou
 %-----------------------------------
 \subsection{Hand Grips}
 
-The first stage of design after the initial concept sketches intended to use rubber grips on both sides of the device, however this concept was removed in favour of a ridges that resemble the size and shape of human adult fingers to more intuitively direct the user to hold the device in the correct fashion. 
+The first stage of design after the initial concept sketches intended to use rubber grips on both sides of the device featuring a ridged pattern.
+However, this concept was removed in favour of a ridges that resemble the size and shape of human adult fingers to more intuitively direct the user to hold the device in the correct fashion.
+Another aspect that was considered since the early stages, while less obvious in the final product due to the curved nature, was the introduction of rounded corners as this would minimise hazards to the user.
+This was also the case with other edges of the device, in that they were filleted at 1.5mm to remove the sharpness of the device.
 
 % This was after receiving feedback from my supervisor following an initial design (show design, before and after).
 
@@ -106,9 +109,11 @@ The first stage of design after the initial concept sketches intended to use rub
 %-----------------------------------
 \subsection{Rocker Switches}
 
-A major issue that was identified from the start with the second revision PCB was that placement of switches was not very easy to access.
-Larger rocker switches were chosen to be placed on the front surface above the screen as this is in full visability of the user during use. 
+A major issue that was identified from the start with the second revision PCB was that placement and size of switches made it difficult to access.
+Larger rocker switches were chosen to be placed on the front surface above the screen as this is in full visability of the user during use.
 The orientation of switches was completely intentional; for easier access for those with limited motor function or even without fingers, having the switches flip vertically would ensure that users are far less likely to flip wrong switch.
+An earlier design incorporated the use of standoffs in the design in which to mount the PCB for the switches which was additionally included in the PCB design (view section 4.4). %fix this
+This was however later removed as when soldered to the switch contacts, the PCB would hold in place without issue and adding those supports would just add weight and increase complexity.
 
 %-----------------------------------
 %	SUBSECTION 4
@@ -118,7 +123,7 @@ The orientation of switches was completely intentional; for easier access for th
 The Jellybean switch bought exclusively for this project interfaces with the device using a 3.5mm Audio Jack connector. 
 Given that it is a single digital input device, hardware-implemented software accessibility capable of easily communicating with this device was relatively simple to implement. 
 The second revision PCB during commencement of this project did not feature a working 3.5mm Jack connector, therefore, based on this knowledge, the 9-pin DSUB port of the device was hijacked as a single digital input under pin 7 for the Jellybean switch. 
-The PCB ‘adapter’ created for this purpose is discussed in section 4.3. %fix this
+The PCB ‘adapter’ created for this purpose is discussed in section 4.4. %fix this
 This uses the same pin as the fire button on a retro Commodore64 Joystick controller, hence, integration into the MEGA65 operating system would be straightforward.
 
 %-----------------------------------
