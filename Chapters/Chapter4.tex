@@ -147,7 +147,9 @@ On the first prototype print, while allignment on the main MEGAphone PCB was cor
 
 There was a significant issue that was overlooked with the first 3D printed prototype in that the thought behind orientation of components was flipped.
 Electronic components (including connectors) needed more space underneath in order to fit comfortably and the design up until that point had not properly accounted for it.
-The biggest issue was that the device ports were not thought of correctly
+The biggest issue was that the device ports were not thought of correctly.
+The orientation of these ports is very important as this dictates how much volume each of the two main case components takes.
+To rectify this issue, 
 
 % so explain the process of rectifying this issue, map out the impacts and how they are resolved
 % also add in that 0.15mm print resolution was used, not perfect as the project was very precise on top case in some parts, such as buttons, hence this should be done at higher resolution which means longer print time or silicone injection mould as a likely stronger, neater alternative
@@ -155,17 +157,20 @@ The biggest issue was that the device ports were not thought of correctly
 %-----------------------------------
 %	SUBSECTION 7
 %-----------------------------------
-\subsection{Solar Panels}
-
-% choice of solar panels, discuss potential options and why a specific one was chosen, do a table comparison of available panels and again explain the power output and cost etc.
-
-%-----------------------------------
-%	SUBSECTION 8
-%-----------------------------------
 \subsection{Device Stand}
 
 % thoughts behind the device stands, how they were conceptualised and why it was approached in such and such way; having two stands on either side adds to stability of the device as opposed to the original idea of having one stand in the middle, which also leaves space for solar panel in the middle
 Originally the approach was to have a single stand oriented in the middle of the device where users could extend it out as they need.
+However, having two stands on either end of the device has multiple advantages in that doing so increases the stability of the device, as well as gives ample space in the centre to place one or multiple solar panels depending on the available space (discussed in section 3.8).
+The mechanism in which to extend and 'lock' the stand in place had the potential to be approached from a number of different angles.
+One such angle that was a part of the final prototype was to have a sliding..
+
+%-----------------------------------
+%	SUBSECTION 8
+%-----------------------------------
+\subsection{Solar Panels}
+
+% choice of solar panels, discuss potential options and why a specific one was chosen, do a table comparison of available panels and again explain the power output and cost etc.
 
 %-----------------------------------
 %	SUBSECTION 9
@@ -174,14 +179,15 @@ Originally the approach was to have a single stand oriented in the middle of the
 
 % talk about process of designing this feature, how original design changed in favour of larger slot/strap for easier carry
 The thought behind the key-chain feature of the device was to be able to clip it to things, and while this feature did see an appearance in an early prototype, it was later adapted into a 'housing' for an arm strap, to allow for easier carrying.
-An extra notch was added to lock into the top part of the case and re-enforce the strength. The original prototype did not have this and as the length of the strap was extended, this was a consideration for supporting the weight of the device.
+An extra notch was added to lock into the top part of the case and re-enforce the strength. 
+The original prototype did not have this and as the length of the strap was extended, this was a consideration for supporting the weight of the device.
 
 %-----------------------------------
 %	SUBSECTION 10
 %-----------------------------------
 \subsection{Easy Access Keys}
 
-The easy access keys were designed around the 'Nav Keys' developed by Storm. 
+The easy access keys were designed around the 'Nav Keys' developed by Storm Interface. %double check
 They feature an array of easily distingishable keys which were inspired for this adaptation. 
 It was first approached as an extension of the device as this would free up a lot of non-existent space.
 However, it was ideal for the array of buttons to be integrated into the device as this ensures that the full extent of accessibility is available from the moment the device is picked up.
@@ -201,6 +207,9 @@ This was fixed in the update by extending the width of the button cutouts by app
 
 % device only uses about 1-2W of power, FPGA using 0.2W
 % Not necessary in final design but add images of version with vents
+Thermal management is a concept that came up later in the process as the MEGAphone device is a low power device by mobile device standards.
+In its entirety, the device uses approximately 1-2W of power with the heart of the device, the FPGA, using about 0.2W of power.
+This yields very little thermal output with the more notable power drawing components being the 110db speaker [source] and full colour 480p display [source].
 
 %-----------------------------------
 %	SUBSECTION 12
@@ -208,6 +217,10 @@ This was fixed in the update by extending the width of the button cutouts by app
 \subsection{Potentiometers}
 
 % Slide pot better than thumb wheel pot, explain about physical effort etc.
+The potentiometer feature used to control aspects such as speaker volume was a feature that was omitted from the final design due to another more important requirement being the implimentation of EZ keys.
+This is a feature that can be implemented by other means such as through the EZ keys themselves and therefore a prototype without this would not be a major issue.
+A possible solution for this would be to employ an array of variable resistors as this would be the easiest in terms of the amount of effort that users have to extert.
+Alternatively, any potentiometer that is too small or requires a twisting motion would be more difficult for some users, such as elderly users with weak grip strength.
 
 %-----------------------------------
 %	SUBSECTION 13
