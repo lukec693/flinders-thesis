@@ -5,7 +5,7 @@
 \label{Chapter4} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
 
 %----------------------------------------------------------------------------------------
-%	SECTION 1
+%	SECTION 1   % TARGET 6500 WORDS IN THIS CHAPTER
 %----------------------------------------------------------------------------------------
 
 \section{Overview}
@@ -36,12 +36,12 @@ Design ‘One’ as named was the first concept to be sketched using LibreCAD so
 In hindsight, most of this design’s features are quite mundane in that while they account for all major ports and include a device stand to prop it up, in terms of the ergonomics, there are very few stand-out features. 
 One thing that can be noted is that the case is compact with curved profile on either side where the user’s hands are expected to rest.
 
-% \begin{figure}[hbt!]
-% \centering
-% \includegraphics[width=10cm,height=10cm,keepaspectratio]{Figures/design1_sketch.png}
-% \caption{This is a sketch of the first concept design drawn to scale of the PCB}
-% \label{fig:Design_1}
-% \end{figure}
+\begin{figure}[hbt!]
+\centering
+\includegraphics[width=10cm,height=10cm,keepaspectratio]{Figures/design1_sketch.png}
+\caption{This is a sketch of the first concept design drawn to scale of the PCB}
+\label{fig:Design_1}
+\end{figure}
 
 %-----------------------------------
 %	SUBSECTION 2
@@ -52,12 +52,12 @@ The second design was intended to mimic a video game controller in order to conf
 UD and the MEGAphone project have two common traits in that they intend for the device to be simple, to use and to defend against security threats under the mantra ‘security through simplicity’ REF. 
 This concept inhabits this trait arguably to the highest degree.
 
-% \begin{figure}[hbt!]
-% \centering
-% \includegraphics[width=10cm,height=10cm,keepaspectratio]{Figures/design2_sketch.png}
-% \caption{This is a sketch of the second concept design drawn to scale of the PCB}
-% \label{fig:Design_2}
-% \end{figure}
+\begin{figure}[hbt!]
+\centering
+\includegraphics[width=10cm,height=10cm,keepaspectratio]{Figures/design2_sketch.png}
+\caption{This is a sketch of the second concept design drawn to scale of the PCB}
+\label{fig:Design_2}
+\end{figure}
 
 %-----------------------------------
 %	SUBSECTION 3
@@ -68,12 +68,12 @@ There were a few factors that made this design the final candidate in which to b
 This approach uses handgrips to subconciously hint to the user the correct orientation to hold the device.
 The use of a stand to prop the device up for extended periods of time was a useful addition as it reduces the amount of effort from the user, therefore reducing fatigue.
 
-% \begin{figure}[hbt!]
-% \centering
-% \includegraphics[width=10cm,height=10cm,keepaspectratio]{Figures/design3_sketch.png}
-% \caption{This is a sketch of the third concept design drawn to scale of the PCB}
-% \label{fig:Design_3}
-% \end{figure}
+\begin{figure}[hbt!]
+\centering
+\includegraphics[width=10cm,height=10cm,keepaspectratio]{Figures/design3_sketch.png}
+\caption{This is a sketch of the third concept design drawn to scale of the PCB}
+\label{fig:Design_3}
+\end{figure}
 
 %----------------------------------------------------------------------------------------
 %	SECTION 3
@@ -121,10 +121,17 @@ This was however later removed as when soldered to the switch contacts, the PCB 
 \subsection{Jellybean Switch}
 
 The Jellybean switch bought exclusively for this project interfaces with the device using a 3.5mm Audio Jack connector. 
-Given that it is a single digital input device, hardware-implemented software accessibility capable of easily communicating with this device was relatively simple to implement. 
+Given that it is a single digital input device, hardware-implemented accessibility capable of easily communicating with this device was relatively simple to implement. 
 The second revision PCB during commencement of this project did not feature a working 3.5mm Jack connector, therefore, based on this knowledge, the 9-pin DSUB port of the device was hijacked as a single digital input under pin 7 for the Jellybean switch. 
 The PCB ‘adapter’ created for this purpose is discussed in section 4.4. %fix this
 This uses the same pin as the fire button on a retro Commodore64 Joystick controller, hence, integration into the MEGA65 operating system would be straightforward.
+
+\begin{figure}[hbt!]
+\centering
+\includegraphics[width=10cm,height=10cm,keepaspectratio]{Figures/jellybean.jpg}
+\caption{This is a physical example of how the Jellybean switch interfaces with the device during development}
+\label{fig:Jellybean}
+\end{figure}
 
 %-----------------------------------
 %	SUBSECTION 5
@@ -232,6 +239,19 @@ Port access was intentionally designed to have no case material on the top and b
 An issue that was faced in the original prototype was in regard to the orientation of the port cutouts in that they were placed on the display side of the PCB.
 This was rectified by extending out the bottom chassis component with the port cutout on that side so that it would match up with the true orientation of the ports. %expand on this later with images
 
+%-----------------------------------
+%	SUBSECTION 14
+%-----------------------------------
+\subsection{Threaded Inserts}
+
+An important aspect of this deliverable is to have a method of securing all parts in place as well as being easily accessible to users who which to repair or modify certain aspects.
+This means using parts that are not obsecure such as a 'pentagon star' screw[REF], where users would typically not have the suitible screwdriver for that job.
+Naturally, this would all be fastened using 'phillips head' screws as these are widely considered the most common screw head type aside from 'flat head' screws.
+
+These constraints were already set out for the MEGAphone PCB in that there are holes in certain parts of the case for this exact purpose.
+However, an issue that had to be addressed was the placement of certain components on the PCB and their vicinity to these 'mounting' points.
+In particular, one of the MEMs mics, some resistors and transistors were placed closer to this mounting point than what would've been ideal and for this reason, certain parts of the mounting supports were trimmed around these obstacles.
+
 %----------------------------------------------------------------------------------------
 %	SECTION 4
 %----------------------------------------------------------------------------------------
@@ -247,15 +267,20 @@ This section discusses the process in designing the supporting PCBs for this pro
 \subsection{Rocker Switch PCB}
 
 The PCB designed to organise the routing of power to the array of rocker switches originally had the intention of interfacing with the main PCB through a connector of some sort.
-Space has been limited however, therefore leading to an alternate solution in that there were 'mounting' pads to serve as a soldering point for the wires that would be routed to the main PCB.
+With space being a limited factor, an alternate solution was carried out.
+The introduction of 'mounting' pads to serve as a soldering point for the wires would allow them to be comfortably routed to the main PCB.
+
 An issue with the footprint that was observed after sourcing these parts, was that there was not enough clearance for the pins to 'slot' through.
-The approach was to file down the pins on the rocker switches individually so that they would fit, which was not an issue in regards to current as the whole device runs on about 1-2W.
-Filing down the PCB through-hole cutout would have been worse as there was potential for solder to not flow evenly due to damaging the solder mask. %double check this
+The approach was to file down the pins on the rocker switches individually so that they would fit, which was not an issue in regards to current as the whole device runs on about 1-2W, with a rocker switch[REF] able to handle approximately 2kW of alternating current.
+Filing down the PCB through-hole cutout would have made for a far worse alternative as there was potential for solder to not flow evenly due to damaging the solder mask. %double check this
 
-During the case design process, having mounting points to hold the circuit board in place was considered.
-This was later removed as the switches mount very securely in their cutouts, and the clearance between the PCB and the main MEGAphone PCB is very minimal.
-This would allow adjustment if needed before soldering as well as making the repair process easier if users need to replace or modify certain parts.
+During the case design process, having mounting points to hold the circuit board in place was implemented.
+This was later removed as the switches mount very securely in their cutouts coming from a top-down orientation and so pressing in or flicking these switches would not put any stress on the PCB, unlike the EZ keys in section 4.2.
+Doing so allows for adjustment if needed before soldering as well as less parts making the repair process easier if users need to replace or modify certain parts.
 
+Clearance between the PCB and the main MEGAphone PCB was additionally very minimal and so the introduction of a bulky connector would make containment of this device far more difficult.
+An alternative to this that would have proven effective and arguably neater in a final version would have been to employ the use of a low profile 'ribbon' style connector with separate wires that are thick enough to handle decent current as well as be indepenently wired to different areas of the MEGAphone PCB.
+The reason why this was not chosen is because this deliverable is a proof of concept where the intention is for the MEGAphone PCB to be redesigned so that these rocker switches can be incorporated into the main design, therefore purchasing these connectors for this purpose would be ultimately wasteful.
 
 %-----------------------------------
 %	SUBSECTION 2
@@ -297,7 +322,8 @@ Given that fibreglass particles are not good for health when inhaled, this was u
 %-----------------------------------
 \subsection{Original Design}
 
-The layout of the second revision MEGAphone PCB served as the major constraint of this project, as the case design had to be designed around it without any significant redesign due to the complexity of the device. Certain reworks to better adapt the design to an accessible interface included removing the existing switches in favour of larger rocker switches hosted on an external PCB (VIEW).
+The layout of the second revision MEGAphone PCB served as the major constraint of this project, as the case design had to be designed around it without any significant redesign due to the complexity of the device. 
+Certain reworks to better adapt the design to an accessible interface included removing the existing switches in favour of larger rocker switches hosted on an external PCB (view figure).
 
 %-----------------------------------
 %	SUBSECTION 2
@@ -305,12 +331,13 @@ The layout of the second revision MEGAphone PCB served as the major constraint o
 \subsection{Proposed Design}
 
 A possible solution to the existing PCB which does inhabit the Universal Design principles is proposed in FIGURE. 
-The underlying idea with this redesign was to integrate the design all onto one PCB. Doing so would reduce the amount of wires required and given that those in the current solution are soldered to make space, it makes the design overall ‘simpler’.
+The underlying idea with this redesign was to integrate the design all onto one PCB. 
+Doing so would reduce the amount of wires required and given that those in the current solution are soldered to make space, it makes the design overall ‘simpler’.
 
 In order to make the device more intuitive, placement of the 9-pin DSUB port should be moved to the ‘top’ of the device in the same orientation as the VGA port, so that users know from a glance that this is where all device ports are expected to be.
 The accessible button interface also utilises an external PCB which hosts the tactile switches that were opted to form the base of the accessible button function. 
-Other options were considered, such as silicone rubber pads, as used for the directional button and ‘A’, ‘B’ buttons. However, due to the nature of the
-
+Other options were considered, such as silicone rubber pads, as used for the directional button and ‘A’, ‘B’ buttons. 
+However, primarily due to the size, larger buttons would be recommended as this would make button presses easier for all users, disregarding the EZ keys in this scenario.
 
 %----------------------------------------------------------------------------------------
 %	SECTION 6
