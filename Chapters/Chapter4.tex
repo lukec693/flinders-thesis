@@ -5,7 +5,7 @@
 \label{Chapter4} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
 
 %----------------------------------------------------------------------------------------
-%	SECTION 1   % TARGET 6000 WORDS IN THIS CHAPTER
+%	SECTION 1   % TARGET 6500 WORDS IN THIS CHAPTER
 %----------------------------------------------------------------------------------------
 
 \section{Overview}
@@ -111,9 +111,10 @@ This was also the case with other edges of the device, in that they were fillete
 
 A major issue that was identified from the start with the second revision PCB was that placement and size of switches made it difficult to access.
 Larger rocker switches were chosen to be placed on the front surface above the screen as this is in full visability of the user during use.
+These switches relate to the security draw of the MEGAphone device, with insecure modules including, WIFI, bluetooth, two 4G modems, MEMS mics, LoRa radios and the FPGA serving as the central processing unit of the device.
 The orientation of switches was completely intentional; for easier access for those with limited motor function or even without fingers, having the switches flip vertically would ensure that users are far less likely to flip wrong switch.
 An earlier design incorporated the use of standoffs in the design in which to mount the PCB for the switches which was additionally included in the PCB design (view section 4.4). %fix this
-This was however later removed as when soldered to the switch contacts, the PCB would hold in place without issue and adding those supports would just add weight and increase complexity.
+This was however later removed due to not being necessary as when soldered to the switch contacts, the PCB would hold in place without issue and adding those supports would just add weight and increase complexity.
 
 %-----------------------------------
 %	SUBSECTION 4
@@ -172,6 +173,8 @@ However, having two stands on either end of the device has multiple advantages i
 The mechanism in which to extend and 'lock' the stand in place had the potential to be approached from a number of different angles.
 One such angle that was a part of the final prototype was to have a sliding..
 
+%%add trigonometric function to determine angle of stand 'foot'
+
 %-----------------------------------
 %	SUBSECTION 8
 %-----------------------------------
@@ -194,7 +197,7 @@ The original prototype did not have this and as the length of the strap was exte
 %-----------------------------------
 \subsection{Easy Access Keys}
 
-The easy access keys were designed around the 'Nav Keys' developed by Storm Interface[REF]. %double check
+The easy access keys were inspired by the 'Nav Keys' developed by Storm Interface[REF].
 They feature an array of easily distingishable keys which were inspired for this adaptation. 
 It was first approached as an extension of the device as this would free up a lot of non-existent space.
 However, it was ideal for the array of buttons to be integrated into the device as this ensures that the full extent of accessibility is available from the moment the device is picked up.
@@ -344,30 +347,10 @@ However, primarily due to the size, larger buttons would be recommended as this 
 %----------------------------------------------------------------------------------------
 
 \section{Software}
-
 % talk about keyboard accessibility, term ‘android accessibility encapsulation’ discuss this.
 % Also mention program is working in parallel to the software ‘mimicking’ the c64 system so this is not a C program running on MEGA65 but rather VDHL, a hardware description language
 
-%-----------------------------------
-%	SUBSECTION 1
-%-----------------------------------
-\subsection{Accessible Keyboard}
 
-Nunc posuere quam at lectus tristique eu ultrices augue venenatis.
-
-%-----------------------------------
-%	SUBSECTION 2
-%-----------------------------------
-\subsection{PART2}
-
-Nunc posuere quam at lectus tristique eu ultrices augue venenatis.
-
-%-----------------------------------
-%	SUBSECTION 3
-%-----------------------------------
-\subsection{PART3}
-
-Nunc posuere quam at lectus tristique eu ultrices augue venenatis.
 
 %----------------------------------------------------------------------------------------
 %	SECTION 7
