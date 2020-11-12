@@ -1119,6 +1119,12 @@ INPUT c:/Users/Luke/Documents/GitHub/flinders-thesis/Chapters/Chapter2.tex
 INPUT c:/Users/Luke/Documents/GitHub/flinders-thesis/Chapters/Chapter2.tex
 INPUT c:/Users/Luke/Documents/GitHub/flinders-thesis/Chapters/Chapter2.tex
 INPUT c:/Users/Luke/Documents/GitHub/flinders-thesis/Chapters/Chapter2.tex
+INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/palatino/pplr8t.tfm
+INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/palatino/pplrc8t.tfm
+INPUT c:/texlive/2020/texmf-dist/fonts/vf/adobe/palatino/pplrc8t.vf
+INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm
+INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm
+INPUT c:/texlive/2020/texmf-dist/fonts/vf/adobe/palatino/pplr8t.vf
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/palatino/pplb8t.tfm
 INPUT c:/texlive/2020/texmf-dist/fonts/vf/adobe/palatino/pplb8t.vf
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/palatino/pplb8r.tfm
@@ -1155,8 +1161,6 @@ INPUT c:/Users/Luke/Documents/GitHub/flinders-thesis/Figures/design1_sketch.png
 INPUT c:/Users/Luke/Documents/GitHub/flinders-thesis/Figures/design1_sketch.png
 INPUT c:/Users/Luke/Documents/GitHub/flinders-thesis/Figures/design1_sketch.png
 INPUT c:/Users/Luke/Documents/GitHub/flinders-thesis/Figures/design1_sketch.png
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/palatino/pplr8t.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/palatino/pplrc8t.tfm
 INPUT c:/Users/Luke/Documents/GitHub/flinders-thesis/Figures/design2_sketch.png
 INPUT c:/Users/Luke/Documents/GitHub/flinders-thesis/Figures/design2_sketch.png
 INPUT c:/Users/Luke/Documents/GitHub/flinders-thesis/Figures/design2_sketch.png
@@ -1167,10 +1171,6 @@ INPUT c:/Users/Luke/Documents/GitHub/flinders-thesis/Figures/design3_sketch.png
 INPUT c:/Users/Luke/Documents/GitHub/flinders-thesis/Figures/design3_sketch.png
 INPUT c:/Users/Luke/Documents/GitHub/flinders-thesis/Figures/design3_sketch.png
 INPUT c:/Users/Luke/Documents/GitHub/flinders-thesis/Figures/design3_sketch.png
-INPUT c:/texlive/2020/texmf-dist/fonts/vf/adobe/palatino/pplrc8t.vf
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/vf/adobe/palatino/pplr8t.vf
 INPUT c:/Users/Luke/Documents/GitHub/flinders-thesis/Figures/jellybean.jpg
 INPUT c:/Users/Luke/Documents/GitHub/flinders-thesis/Figures/jellybean.jpg
 INPUT c:/Users/Luke/Documents/GitHub/flinders-thesis/Figures/jellybean.jpg
