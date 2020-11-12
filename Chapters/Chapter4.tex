@@ -91,14 +91,13 @@ The following section covers the development of all aspects of the accessible ME
 The first stage of design after the initial concepts was the CAD sketching stage.
 This was approached by beginning with a front view of the sketch where users would typically interact with the device, however just the outline was extruded outwards in order to create a tangible object in which to mold and add features later on in the process.
 
-
 %-----------------------------------
 %	SUBSECTION 2
 %-----------------------------------
 \subsection{Hand Grips}
 
 The first stage of design after the initial concept sketches intended to use rubber grips on both sides of the device featuring a ridged pattern.
-However, this concept was removed in favour of a ridges that resemble the size and shape of human adult fingers to more intuitively direct the user to hold the device in the correct fashion.
+However, this concept was removed in favour of a ridges that resemble the size and shape of human adult fingers to more intuitively direct the user to hold the device in the correct fashion as per design principle three.
 Another aspect that was considered since the early stages, while less obvious in the final product due to the curved nature, was the introduction of rounded corners as this would minimise hazards to the user.
 This was also the case with other edges of the device, in that they were filleted at 1.5mm to remove the sharpness of the device.
 
@@ -112,7 +111,11 @@ This was also the case with other edges of the device, in that they were fillete
 A major issue that was identified from the start with the second revision PCB was that placement and size of switches made it difficult to access.
 Larger rocker switches were chosen to be placed on the front surface above the screen as this is in full visability of the user during use.
 These switches relate to the security draw of the MEGAphone device, with insecure modules including, WIFI, bluetooth, two 4G modems, MEMS mics, LoRa radios and the FPGA serving as the central processing unit of the device.
+
 The orientation of switches was completely intentional; for easier access for those with limited motor function or even without fingers, having the switches flip vertically would ensure that users are far less likely to flip wrong switch.
+As well as this, the placement of these switches, above the display and away from other buttons on the device ensures that they do not interfere with the operation of the device.
+Design principle one and three are satisfied by these rocker switches as they make the security features of this device easily available and the ON/OFF state of wireless modules is made abundantly clear (also supported by LED lights).
+
 An earlier design incorporated the use of standoffs in the design in which to mount the PCB for the switches which was additionally included in the PCB design (view section 4.4). %fix this
 This was however later removed due to not being necessary as when soldered to the switch contacts, the PCB would hold in place without issue and adding those supports would just add weight and increase complexity.
 
@@ -140,13 +143,12 @@ This uses the same pin as the fire button on a retro Commodore64 Joystick contro
 \subsection{Recessed Buttons}
 
 % talk about recessing the buttons so that if the device is dropped, minimal/no accidental button presses are registered
-
 One concept that improves the ‘quality of life’ of this product was the addition of recessed buttons.
 There are potential situations where the device might be accidentally dropped and unintended button presses may be recorded where the addition of recessed buttons avoids or at least significantly reduces the risk of this situation.
+This feature also supports design principle five in that it minimises risks of unintended actions such as accidental button presses, which in this case would be if the user drops the device.
 
-This feature is designed around another existing constraint in that the PCB uses buttons that were repurposed from a Gameboy Advance. %%check this!
+This feature is designed around another existing constraint in that the PCB uses buttons that were repurposed from spare Gameboy Advance parts. %%check this!
 On the first prototype print, while allignment on the main MEGAphone PCB was correct, there was an issue regarding the clearance of the button cutout as well as the positioning of slots to hold the buttons in the correct orientation.
-
 
 %-----------------------------------
 %	SUBSECTION 6
@@ -155,7 +157,7 @@ On the first prototype print, while allignment on the main MEGAphone PCB was cor
 
 There was a significant issue that was overlooked with the first 3D printed prototype in that the thought behind orientation of components was flipped.
 Electronic components (including connectors) needed more space underneath in order to fit comfortably and the design up until that point had not properly accounted for it.
-The biggest issue was that the device ports were not thought of correctly.
+The biggest issue was that the device ports were initally not thought of in the correct orientation.
 The orientation of these ports is very important as this dictates how much volume each of the two main case components takes.
 To rectify this issue, 
 
@@ -181,6 +183,7 @@ One such angle that was a part of the final prototype was to have a sliding..
 \subsection{Solar Panels}
 
 % choice of solar panels, discuss potential options and why a specific one was chosen, do a table comparison of available panels and again explain the power output and cost etc.
+//
 
 %-----------------------------------
 %	SUBSECTION 9
@@ -197,15 +200,19 @@ The original prototype did not have this and as the length of the strap was exte
 %-----------------------------------
 \subsection{Easy Access Keys}
 
-The easy access keys were inspired by the 'Nav Keys' developed by Storm Interface[REF].
-They feature an array of easily distingishable keys which were inspired for this adaptation. 
-It was first approached as an extension of the device as this would free up a lot of non-existent space.
-However, it was ideal for the array of buttons to be integrated into the device as this ensures that the full extent of accessibility is available from the moment the device is picked up.
-Due to the height requirement of the MEGAphone PCB, there was very little space to attach a slave PCB to allow button functionality, hence why there is an elevation in the button housing.
-Additionally, there needed to be enough depth so that the PCB could be screwed into place comfortably.
+The easy access keys or 'EZ Keys' were inspired by the 'Nav Keys' developed by Storm Interface [source] which feature an array of easily distingishable keys which were inspired for this adaptation.
+These keys benefit from being easily perceptible, due to each button having a unique colour and shape, which envelops the forth design principle.
 
-An issue that came up in the first prototype print is that the keys did not have enough clearance to actuate without resistance.
-This was fixed in the update by extending the width of the button cutouts by approximately 0.25mm. % check this
+The EZ Keys were first approached as an extension of the device as this would free up a lot of the limited space available.
+This would mean making a separate housing and having the device plug into the 9pin DSUB port similarly to how the Jellybean switch (see section 3.4) would interface with the device.
+It was ideal for the array of buttons to be integrated into the device as this ensures that the full extent of accessibility is available from the moment the device is picked up.
+
+Due to the height requirement of the MEGAphone PCB, there was very little space to attach a slave PCB to allow button functionality, hence one of the reasons why there is an elevation in the button housing.
+The second reason for there being an elevation in the EZ key setup is due to the desire to make it more perceptible (design principle four) to users as the position of the power button nearby meant that it would be important to ensure that users do not accidentally press the wrong button (design principle five).
+Additionally, there needed to be enough depth so that the PCB could be screwed into place comfortably, elevated slightly above the main MEGAphone PCB as there would be an overlap due to the size and shape of both PCBs.
+
+An issue that came up in the first prototype print is that the keys did not have enough clearance to actuate without resistance, also in common with the A, B and directional buttons.
+This was fixed in an update by extending the width of the button cutouts by approximately 0.3mm as this would also theoretically align with the 0.15mm print resolution. % check this
 
 % FIXED AB AND DIRECTIONAL BUTTON SIZE CLEARANCE, ALSO EZ KEY CLEARANCE
 % FIXED ALIGNMENT OF THROUGH HOLE
@@ -227,19 +234,21 @@ This yields very little thermal output with the more notable power drawing compo
 \subsection{Potentiometers}
 
 % Slide pot better than thumb wheel pot, explain about physical effort etc.
+%% LIKELY GOING IN CHAPTER 5
 The potentiometer feature used to control aspects such as speaker volume was a feature that was omitted from the final design due to another more important requirement being the implimentation of EZ keys.
 This is a feature that can be implemented by other means such as through the EZ keys themselves and therefore a prototype without this would not be a major issue.
-A possible solution for this would be to employ an array of variable resistors as this would be the easiest in terms of the amount of effort that users have to extert.
-Alternatively, any potentiometer that is too small or requires a twisting motion would be more difficult for some users, such as elderly users with weak grip strength.
+The best solution for this would be to employ an array of sliding potentiometers to control any desired functions such as volume control, as pertaining to design principle six, would be the easiest in terms of the amount of effort that users have to extert.
+Any potentiometer that is too small or requires a twisting motion would be more difficult for some users, such as elderly users with a weaker grip strength.
 
 %-----------------------------------
 %	SUBSECTION 13
 %-----------------------------------
 \subsection{Port Access}
 
-Port access was intentionally designed to have no case material on the top and bottom of the device as this would interfere with the plugging in of various peripherals.
+Port access was intentionally designed to have no case material on the top and bottom of the device minimise interference with the plugging in of various peripherals, supporting design principle seven.
+These ports are all labelled, explaining in one word the purpose of each port to make it abundantly clear to the user.
 
-An issue that was faced in the original prototype was in regard to the orientation of the port cutouts in that they were placed on the display side of the PCB.
+An issue that was faced in the original prototype was in regard to the orientation of the port cutouts that were placed on the display side of the PCB.
 This was rectified by extending out the bottom chassis component with the port cutout on that side so that it would match up with the true orientation of the ports. %expand on this later with images
 
 %-----------------------------------
@@ -254,6 +263,11 @@ Naturally, this would all be fastened using 'phillips head' screws as these are 
 These constraints were already set out for the MEGAphone PCB in that there are holes in certain parts of the case for this exact purpose.
 However, an issue that had to be addressed was the placement of certain components on the PCB and their vicinity to these 'mounting' points.
 In particular, one of the MEMs mics, some resistors and transistors were placed closer to this mounting point than what would've been ideal and for this reason, certain parts of the mounting supports were trimmed around these obstacles.
+
+The choice to use threaded inserts for this project was due to its reliability, in that the threads must be consistent due to strict manufacturing standards.
+The alternative that would acheive the same outcome would have been to 3D print solid standoffs and use self-tapping screws in order to securely fasten the device.
+This option is however more unreliable as it requires user guided input, a reasonably soft material to be effective and most importantly would require a 100 percent 3D infill, almost doubling the overall print time.
+A third option that was diregarded would have been to 3D print the threads, which at a 0.15mm print profile, would have left much room for error considering that this project requires considerably small M3 screws to remain compliant with the constraints of the MEGAphone PCB.
 
 %----------------------------------------------------------------------------------------
 %	SECTION 4
@@ -292,10 +306,12 @@ The reason why this was not chosen is because this deliverable is a proof of con
 
 The purpose behind the easy keys is to give users a platform in which to interact with the MEGAphone device while being as clear and easy to use as possible.
 Multi-coloured, multi-shaped keys are employed make things as unambiguous as possible which include, left and right (forward and backward), up and down, and a 'fire' or enter key.
-This is inspired by the Storm Nav-pad, where a version has been acheived to a budget, for the purpose of prototyping.
+This, as discussed in section 3.10, is inspired by the Storm Nav-pad[source], where a version has been acheived to a budget, for the purpose of prototype development.
 
 An important aspect of this device is to provide easy access to the power switch as turning the display on an off on this device is frequent due to not having automatic display toggle features.
 This is intergrated into the device in the same manner as the easy keys, in that they work by momentarily pressing a tactile switch.
+These tactile switches are wired directly to the GPIO expander linked to the FPGA on the MEGAphone PCB with the idea being that this new external PCB serves as an extension of the main board.
+
 This interface faced an issue where the openings for the button cutouts were virtually the same size leading to problems with clearance. 
 To fix this issue, the openings were extended by about half a millimetre on all sides to allow for smooth button pressing while still sitting securely in place.
 
@@ -306,7 +322,8 @@ To fix this issue, the openings were extended by about half a millimetre on all 
 
 The audio jack adapter was designed to be a substitute for the original audio jack, which was unoperational at the time.
 This PCB hijacks the fire pin of the 9-pin DSUB connector in order to 'imitate' a joystick fire button, coupled with hardware implemented features in the FPGA, the MEGAphone should treat any input as a regular device.
-An issue that was faced was in regard to the overall size and shape of the PCB.
+
+An issue that was faced during the course of development regarded the overall size and shape of the PCB.
 This was not thought about correctly at the time of manufacturing as the PCB was too bulky on either side and due to the central placement of the audio jack input, interfacing with this adapter was less than convienient.
 To fix this, a nibbler was used to clip away at the edges to cut the board down to size, followed by a rough 80 grit sanding to smooth the edges somewhat.
 Given that fibreglass particles are not good for health when inhaled, this was undertaken responsibly to ensure that these risks were avoided.
@@ -315,7 +332,7 @@ Given that fibreglass particles are not good for health when inhaled, this was u
 %	SECTION 5
 %----------------------------------------------------------------------------------------
 
-\section{PCB Layout}
+\section{PCB Layout}  %% THIS WILL PROBABLY BE CHAPTER 5
 
 % analyse the changes in the final design, what limitations the existing PCB layout has and propose a better layout that satisfies the UD principles, talk about what is ideal and what is the best that can be done with current layout. 
 % Ideal layout includes ports at top of device along with rocker switches replacing current rev2 switches on the main PCB
@@ -346,10 +363,13 @@ However, primarily due to the size, larger buttons would be recommended as this 
 %	SECTION 6
 %----------------------------------------------------------------------------------------
 
-\section{Software}
+\section{Software Accessibility}
 % talk about keyboard accessibility, term ‘android accessibility encapsulation’ discuss this.
 % Also mention program is working in parallel to the software ‘mimicking’ the c64 system so this is not a C program running on MEGA65 but rather VDHL, a hardware description language
-
+Keyboard 'software' accessibility goes hand-in-hand with the Jellybean switch input (view section 3.4) as this is primarily what will be used to control this feature, aside from the potential to implement this on an EZ key button.
+This is all hardware-implemented in the FPGA, with the intention of being completely transparent to the MEGA65 operating system.
+This means that the operating system should not 'see' the Jellybean switch and therefore treat it as if it were any peripheral, such as a Commodore64 joycon.
+Due to the Jellybean switch being a simple digital input device, this made implementing this feature relatively straightforward.
 
 
 %----------------------------------------------------------------------------------------
@@ -357,5 +377,4 @@ However, primarily due to the size, larger buttons would be recommended as this 
 %----------------------------------------------------------------------------------------
 
 \section{Summary}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+//
