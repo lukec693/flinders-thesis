@@ -184,7 +184,7 @@ One such angle that was a part of the final prototype was to have a sliding..
 
 % choice of solar panels, discuss potential options and why a specific one was chosen, do a table comparison of available panels and again explain the power output and cost etc.
 Giving users more ways to charge their device plays heavily into the digital sovereignty aspect of this project.
-A number of solar panels were analysed based on cost, size and energy output for a designated area of 125mm by 140mm, collated in figure X.
+A number of solar panels from two suppliers (Digikey, Mouser) were analysed based on cost, size and energy output for a designated area set out on the MEGAphone case at 125mm by 140mm, collated in figure X.
 
 \begin{center}
     \begin{tabular}{ |c|c| } 
@@ -240,7 +240,7 @@ This was fixed in an update by extending the width of the button cutouts by appr
 %-----------------------------------
 %	SUBSECTION 11
 %-----------------------------------
-\subsection{Ventilation}
+\subsection{Ventilation} %PROBABLY CHAPTER 5
 
 % device only uses about 1-2W of power, FPGA using 0.2W
 % Not necessary in final design but add images of version with vents
@@ -295,7 +295,6 @@ A third option that was diregarded would have been to 3D print the threads, whic
 
 \section{PCB Design}
 This section discusses the process in designing the supporting PCBs for this project.
-
 % explain workaround for previous button layout, using slave boards with tactile switches as well as choice behind contact pads instead of connectors to save space
 
 %-----------------------------------
@@ -340,13 +339,16 @@ To fix this issue, the openings were extended by about half a millimetre on all 
 %-----------------------------------
 \subsection{Audio Jack Adapter}
 
-The audio jack adapter was designed to be a substitute for the original audio jack, which was unoperational at the time.
-This PCB hijacks the fire pin of the 9-pin DSUB connector in order to 'imitate' a joystick fire button, coupled with hardware implemented features in the FPGA, the MEGAphone should treat any input as a regular device.
+The audio jack adapter was designed to be a substitute for the original audio jack setup fully integrated on the MEGAphone PCB, which was unoperational at the time.
+This PCB hijacks the fire pin of the 9-pin DSUB connector in order to 'imitate' a joystick fire button. 
+Coupled with hardware implemented features in the FPGA, the MEGA65 OS should treat this input as a regular peripheral such as a joycon.
 
 An issue that was faced during the course of development regarded the overall size and shape of the PCB.
-This was not thought about correctly at the time of manufacturing as the PCB was too bulky on either side and due to the central placement of the audio jack input, interfacing with this adapter was less than convienient.
+This was not thought about correctly at the time of manufacturing as the PCB was too bulky on either side.
+Additionally, due to the central placement of the audio jack input and the bulky Jellybean switch jack output, interfacing with this adapter was less than convienient.
 To fix this, a nibbler was used to clip away at the edges to cut the board down to size, followed by a rough 80 grit sanding to smooth the edges somewhat.
 Given that fibreglass particles are not good for health when inhaled, this was undertaken responsibly to ensure that these risks were avoided.
+
 
 %----------------------------------------------------------------------------------------
 %	SECTION 5
@@ -386,11 +388,22 @@ However, primarily due to the size, larger buttons would be recommended as this 
 \section{Software Accessibility}
 % talk about keyboard accessibility, term ‘android accessibility encapsulation’ discuss this.
 % Also mention program is working in parallel to the software ‘mimicking’ the c64 system so this is not a C program running on MEGA65 but rather VDHL, a hardware description language
-Keyboard 'software' accessibility goes hand-in-hand with the Jellybean switch input (view section 3.4) as this is primarily what will be used to control this feature, aside from the potential to implement this on an EZ key button.
+Keyboard 'software' accessibility goes hand-in-hand with the Jellybean switch input (view section 3.4) as this is primarily what is used to control this feature, aside from the potential to implement this on an EZ key button by hijacking the same pin.
 This is all hardware-implemented in the FPGA, with the intention of being completely transparent to the MEGA65 operating system.
-This means that the operating system should not 'see' the Jellybean switch and therefore treat it as if it were any peripheral, such as a Commodore64 joycon.
+This means that the accessible keyboard runs in parallel to the operating system and therefore should not 'see' the Jellybean switch, but instead treat it as if it were any peripheral, such as a Commodore64 joycon[source].
 Due to the Jellybean switch being a simple digital input device, this made implementing this feature relatively straightforward.
 
+%-----------------------------------
+%	SUBSECTION 1
+%-----------------------------------
+\subsection{Accessible Keyboard Framework}
+//
+
+%-----------------------------------
+%	SUBSECTION 2
+%-----------------------------------
+\subsection{Accessible Interface}
+//
 
 %----------------------------------------------------------------------------------------
 %	SECTION 7

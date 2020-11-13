@@ -10,9 +10,9 @@
 
 \section{Hardware}
 
-The Digilent Nexys DDR4 development board was available as an alternative to the Trenz Electronics TE0725 board housed within the MEGAphone device when said device was not available, given that the MEGAphone is based on the same architecture. 
-Physical prototypes of the MEGAphone chassis are printed using the Ultimaker 2+ and Ultimaker S5 3D printers. 
-Soldering kits and a soldering oven was provided by Flinders University for a new build of the MEGAphone device, used to present this prototype.
+The Digilent Nexys DDR4 development board was available as an alternative to the Trenz Electronics TE0725 board housed within the MEGAphone PCB when said device is not available, given that the MEGAphone is based on the same architecture, with much of the same functionality.
+Physical prototypes of the MEGAphone chassis are printed using the Ultimaker 2+ and Ultimaker S5 3D printers using PLA plastic at 0.15mm print resolution, with support.
+Soldering kits and a soldering oven was provided by Flinders University for a new build of the MEGAphone device, used to present the case prototype.
 
 %----------------------------------------------------------------------------------------
 %	SECTION 2
@@ -20,7 +20,7 @@ Soldering kits and a soldering oven was provided by Flinders University for a ne
 
 \section{Software}
 
-The following sections list the software that was used to assist the development of this project.
+The following sections list the software that was used to assist the development of this project along with justifications as to why they were chosen.
 
 %-----------------------------------
 %	SUBSECTION 1
@@ -29,7 +29,7 @@ The following sections list the software that was used to assist the development
 \subsection{LibreCAD}
 
 LibreCAD is a free open source 2D design software that was used to sketch the initial concepts for the main project deliverable. 
-This software was chosen due to its accessible nature, a fork from the free QCAD community version.
+This softwar, based on a fork from the free QCAD community version, was chosen due to its accessible nature and useable interface.
 
 %-----------------------------------
 %	SUBSECTION 2
@@ -40,7 +40,8 @@ This software was chosen due to its accessible nature, a fork from the free QCAD
 The computer-aided design software chosen for the MEGAphone chassis project is Autodesk Fusion 360 as it is very capable as well as efficient in regard to resource consumption. 
 Autodesk Inventor was originally considered as the definitive CAD program, however due to the concern of user sovereignty, Autodesk Fusion 360 was chosen as it is more accessible to individuals as it does not require potentially expensive licensing for recreational use. 
 This is useful for users who might want to modify the device to fit a unique purpose and follows the intention of the MEGAphone project as accessible to users.
-Fusion 360 was also chosen to create and present an animation of the device during the final project seminar as this all runs natively, hence doesn't require any exporting of files.
+FreeCAD, a potential alternative would have arguably suited the sovereignty aspect far better, however due to not having a design history timeline at the time of selection, this option was diregarded.
+Fusion 360 also benefitted from the ability to create and present an animation of the device during the final project seminar which all ran natively in the software, hence no requirement to import resources.
 
 %-----------------------------------
 %	SUBSECTION 3
@@ -48,9 +49,9 @@ Fusion 360 was also chosen to create and present an animation of the device duri
 
 \subsection{KiCAD}
 
-KiCAD is an open source eCAD software used in the printed circuit board (PCB) designing process.
-This software was chosen over alternatives with once again, potentially expensive licensing costs for the end user such as Altium Designer.
-
+KiCAD is an open source eCAD software used in the printed circuit board (PCB) planning and designing process.
+This software was chosen over alternatives with potentially expensive licensing costs for the end user such as Altium Designer or Autodesk Eagle.
+KiCAD is a powerful software in its own right, and with extensive support from its community, it is competitive with Altium Designer, which is widely considered the industry standard.
 
 %-----------------------------------
 %	SUBSECTION 4
@@ -58,8 +59,10 @@ This software was chosen over alternatives with once again, potentially expensiv
 
 \subsection{Xilinx Vivado}
 
-To avoid emulation, the MEGAphone is FPGA based, written almost completely in VHDL (Virtual Hardware Description Language), including the virtual accessible keyboard system for jellybean switch input.
-The accessible software features will be completely transparent, on the same layer as the MEGA65 operating system (OS), meaning that it will not run as an application but rather a fully integrated part of the OS.
+To avoid the performance inefficiencies that come with processor emulation, the MEGAphone is entirely FPGA based, written in VHDL (Virtual Hardware Description Language), including the virtual accessible keyboard system for Jellybean switch input.
+The accessible software features will be completely transparent to the MEGA65 operating system (OS), meaning that it will treat the input as if it were any perhipheral without needing to know that the switch exists.
+Given that Xilinx develop the Artix-7 100T FPGA used in on the device, they are the sole proprietor and hence there are no alternatives to the Vivado software.
+This is however, not a problem as the software is free for anyone to use, as the FPGA is where the cost is covered.
 
 %----------------------------------------------------------------------------------------
 %	SECTION 3
@@ -67,13 +70,12 @@ The accessible software features will be completely transparent, on the same lay
 
 \section{Manufacturing and Sourcing}
 
-The following are a list of sourced parts for this project:
+The following are a list of sourced parts for this project (excluding locally sourced parts):
 
 \begin{itemize} 
-    \item Case manufactured with PLA plastics at 0.15mm resolution using the Ultimaker 2+ and Ultimaker S5 3D printers provided by Flinders University.
     \item Printed circuit boards are sourced from PCBway.
     \item Electronic components are sourced from Digi-Key.
-    \item Jellybean switches were sourced from Ablenet.
+    \item Jellybean switches are sourced from Ablenet.
     \end{itemize}
 
 %----------------------------------------------------------------------------------------
@@ -85,7 +87,8 @@ The following are a list of sourced parts for this project:
 This section lists contributors to this project as well as a brief outline of their contributions:
 
 \begin{itemize} 
-    \item Dr. David Hobbs; Academic supervisor for the project, provides feedback on iterations of the MEGAphone chassis project.
-    \item Dr. Paul Gardner-Stephen; Academic co-supervisor, provides general feedback, also responsible for the MEGA65 platform, research assistant for coding the accessible keyboard sub-system (view chapter 4.6)
-    \item The author is responsible for designing the MEGAphone device chassis, slave PCBs including EZ access keys, jellybean switch adapter and rocker switch array.
+    \item Dr. David Hobbs; Academic supervisor for the project, provides feedback and expertise on iterations of the MEGAphone chassis project.
+    \item Dr. Paul Gardner-Stephen; Academic co-supervisor, provides general feedback, also primarily responsible for the MEGA65 platform, research assistant for coding the accessible keyboard sub-system (view chapter 4.6)
+    \item Lucas Moss; developed a revised PCB for the MEGAphone device based on the first revision by Damien Kleiss, which provides the constraints for the author's project.
+    \item The author is responsible for designing the MEGAphone device chassis, accompanying PCBs including EZ access keys, Jellybean switch adapter and rocker switch array.
     \end{itemize}
