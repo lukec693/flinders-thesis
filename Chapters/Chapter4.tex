@@ -10,9 +10,8 @@
 
 \section{Overview}
 
-The first revision of the prototype case is presented in this chapter.
-Specifically, this section goes into detail about the process of designing as an iterative process where improvements and changes to the design are discussed and evaluated.
-
+The first revision of the case prototype, PCBs and hardware-implimented accessibility features are presented in this chapter.
+This section goes into detail about the design process, including how certain aspects align with the seven design principles, or support digital sovereignty as well as justifications as to why an approach was selected over potential alternatives.
 
 %----------------------------------------------------------------------------------------
 %	SECTION 2
@@ -81,7 +80,23 @@ The use of a stand to prop the device up for extended periods of time was a usef
 
 \section{First Revision}
 
-The following section covers the development of all aspects of the accessible MEGAphone chassis as well as the accompanying hardware such as buttons or hinges.
+There was a significant issue that was overlooked with the first 3D printed prototype in that the thought behind orientation of components was flipped.
+Electronic components (including connectors) needed more space underneath in order to fit comfortably and the design up until that point had not properly accounted for it.
+The biggest issue was that the device ports were initally not thought of in the correct orientation.
+The orientation of these ports is very important as this dictates how much volume each of the two main case components takes.
+To rectify this issue, %%FIX THIS
+
+% so explain the process of rectifying this issue, map out the impacts and how they are resolved
+% also add in that 0.15mm print resolution was used, not perfect as the project was very precise on top case in some parts, such as buttons, hence this should be done at higher resolution which means longer print time or silicone injection mould as a likely stronger, neater alternative
+
+
+%----------------------------------------------------------------------------------------
+%	SECTION 4
+%----------------------------------------------------------------------------------------
+
+\section{Design Features}
+
+The following section covers the development of all specific aspects of the accessible MEGAphone chassis as well as the accompanying hardware such as buttons or hinges.
 
 %-----------------------------------
 %	SUBSECTION 1
@@ -97,9 +112,10 @@ This was approached by beginning with a front view of the sketch where users wou
 \subsection{Hand Grips}
 
 The first stage of design after the initial concept sketches intended to use rubber grips on both sides of the device featuring a ridged pattern.
-However, this concept was removed in favour of a ridges that resemble the size and shape of human adult fingers to more intuitively direct the user to hold the device in the correct fashion as per design principle three.
+However, this concept was removed in favour of a ridges that resemble the size and shape of human adult fingers to more intuitively direct the user to hold the device in the correct fashion as the third design principle.
 Another aspect that was considered since the early stages, while less obvious in the final product due to the curved nature, was the introduction of rounded corners as this would minimise hazards to the user.
 This was also the case with other edges of the device, in that they were filleted at 1.5mm to remove the sharpness of the device.
+Doing adds to the softness from the device and makes it arguably safer for users.
 
 % This was after receiving feedback from my supervisor following an initial design (show design, before and after).
 
@@ -153,16 +169,20 @@ On the first prototype print, while allignment on the main MEGAphone PCB was cor
 %-----------------------------------
 %	SUBSECTION 6
 %-----------------------------------
-\subsection{3D-printed Prototype}
+\subsection{Battery}
 
-There was a significant issue that was overlooked with the first 3D printed prototype in that the thought behind orientation of components was flipped.
-Electronic components (including connectors) needed more space underneath in order to fit comfortably and the design up until that point had not properly accounted for it.
-The biggest issue was that the device ports were initally not thought of in the correct orientation.
-The orientation of these ports is very important as this dictates how much volume each of the two main case components takes.
-To rectify this issue, 
+Due to the addition of a new proposed 7.4V 5000mAH Lithium-Ion battery, considerations had to be made in regard to placement within the MEGAphone device chassis.
+There were two potential approaches to this issue in that the battery could either be placed internally within case along with the electronics, or 'externally' on the 'bottom' of the device with a separate cover that could be screwed on to hide the battery like what might be found on an RC Car controller for example.
 
-% so explain the process of rectifying this issue, map out the impacts and how they are resolved
-% also add in that 0.15mm print resolution was used, not perfect as the project was very precise on top case in some parts, such as buttons, hence this should be done at higher resolution which means longer print time or silicone injection mould as a likely stronger, neater alternative
+The approach that was chosen was to have the battery be housed within the case along with the PCBs with he second approach ultimately not being chosen for a number of factors.
+While the intention of the device is certainly not to be waterproof, there was some desire for the device to protect against light rain, which meant 'sealing' up electronic components at least to the best ability.
+There is also the concern that the 'bottom' of the device already makes the most of the available space by housing the device stand (view section 3.8) and the solar panel array and therefore the only plausible solution would be to remove the solar panels every time the user requires access to the battery.
+As the solar panels would most likely be stuck down, this would make removing the battery a more painful process.
+Having the battery be 'inside' the case ensures simplicity due to having less parts, more protection from the elements 
+
+The battery housing was labelled for clarity and placed assymetrically to the user's left side due to the location of the bulky FPGA board on one side of the MEGAphone PCB.
+This was a change that was addressed in a later stage of development, as the original intention was to place the battery be placed symmetrically on the device as this is best for weight distribution.
+In order to not contribute too significantly to the thickness of an already objectively thick device, this was deemed the only reasonable solution to that problem.
 
 %-----------------------------------
 %	SUBSECTION 7
@@ -171,9 +191,15 @@ To rectify this issue,
 
 % thoughts behind the device stands, how they were conceptualised and why it was approached in such and such way; having two stands on either side adds to stability of the device as opposed to the original idea of having one stand in the middle, which also leaves space for solar panel in the middle
 Originally the approach was to have a single stand oriented in the middle of the device where users could extend it out as they need.
-However, having two stands on either end of the device has multiple advantages in that doing so increases the stability of the device, as well as gives ample space in the centre to place one or multiple solar panels depending on the available space (discussed in section 3.8).
+However, having two stands on either end of the device has multiple advantages in that doing so increases the stability of the device, as well as giving ample space in the centre to place one or multiple solar panels depending on the available space (discussed in section 3.8).
 The mechanism in which to extend and 'lock' the stand in place had the potential to be approached from a number of different angles.
-One such angle that was a part of the final prototype was to have a sliding..
+The approach that ended up in the final prototype was to have a sliding mechanism that users could 'slot' in first, followed by a clearance fit in which the stand can rotate around a cylindrical 'mounting' point.  %%show pictures of all this!!
+At the opening of the stand where it is expected to assemble with the cylindrical base of the 'mounting' point, a location fit is used, meaning that the user must use mild force in order to get the stand to 'snap' into place.
+This ensures that the stand does not fall off the device unintentionally when in normal use.
+The aforementioned sliding mechanism slots into two notches which holds the stand in either a horizonal position, flush with the MEGAphone chassis, or an extended position at about 45 degrees so that the device can be propped up under an extended use case.
+
+An alternative that was considered that would have proven to be effective, was to have the cylindrical 'mounting' point in which to revolve the stand, be a part of the stand.
+This would mean that the %%FIX THIS
 
 %%add trigonometric function to determine angle of stand 'foot'
 
@@ -277,20 +303,29 @@ This was rectified by extending out the bottom chassis component with the port c
 \subsection{Threaded Inserts}
 
 An important aspect of this deliverable is to have a method of securing all parts in place as well as being easily accessible to users who which to repair or modify certain aspects.
-This means using parts that are not obsecure such as a 'pentagon star' screw[REF], where users would typically not have the suitible screwdriver for that job.
+This meant that using a 'pentagon star' screw[REF] would not have been a reasonable choice as it would make repair or modification more difficult, as users would typically not have the suitible screwdriver for that job.
 Naturally, this would all be fastened using 'phillips head' screws as these are widely considered the most common screw head type aside from 'flat head' screws.
 
 These constraints were already set out for the MEGAphone PCB in that there are holes in certain parts of the case for this exact purpose.
 However, an issue that had to be addressed was the placement of certain components on the PCB and their vicinity to these 'mounting' points.
 In particular, one of the MEMs mics, some resistors and transistors were placed closer to this mounting point than what would've been ideal and for this reason, certain parts of the mounting supports were trimmed around these obstacles.
 
-The choice to use threaded inserts for this project was due to its reliability, in that the threads must be consistent due to strict manufacturing standards.
 The alternative that would acheive the same outcome would have been to 3D print solid standoffs and use self-tapping screws in order to securely fasten the device.
 This option is however more unreliable as it requires user guided input, a reasonably soft material to be effective and most importantly would require a 100 percent 3D infill, almost doubling the overall print time.
+
 A third option that was diregarded would have been to 3D print the threads, which at a 0.15mm print profile, would have left much room for error considering that this project requires considerably small M3 screws to remain compliant with the constraints of the MEGAphone PCB.
 
+The choice to use threaded inserts for this project was due to its reliability, in that the threads must be consistent due to strict manufacturing standards.
+Another reason why they were a solid choice was due to the fact that they are readily available from any hardware store, making sourcing of this component very convienient.
+
+%-----------------------------------
+%	SUBSECTION 15
+%-----------------------------------
+\subsection{MEGAphone PCB}
+//
+
 %----------------------------------------------------------------------------------------
-%	SECTION 4
+%	SECTION 5
 %----------------------------------------------------------------------------------------
 
 \section{PCB Design}
@@ -323,16 +358,17 @@ The reason why this was not chosen is because this deliverable is a proof of con
 %-----------------------------------
 \subsection{Easy Keys and Power}
 
-The purpose behind the easy keys is to give users a platform in which to interact with the MEGAphone device while being as clear and easy to use as possible.
+The purpose behind the Easy Keys or 'EZ Keys' as otherwise referred to, was to give users a platform in which to interact with the MEGAphone device while being as clear and easy to use as possible.
 Multi-coloured, multi-shaped keys are employed make things as unambiguous as possible which include, left and right (forward and backward), up and down, and a 'fire' or enter key.
-This, as discussed in section 3.10, is inspired by the Storm Nav-pad[source], where a version has been acheived to a budget, for the purpose of prototype development.
+This, as discussed in section 3.10, is inspired by the Storm Nav-pad[source], where a version has been acheived to a budget, for the purpose of prototype development. %check typing of nav pad
 
 An important aspect of this device is to provide easy access to the power switch as turning the display on an off on this device is frequent due to not having automatic display toggle features.
 This is intergrated into the device in the same manner as the easy keys, in that they work by momentarily pressing a tactile switch.
 These tactile switches are wired directly to the GPIO expander linked to the FPGA on the MEGAphone PCB with the idea being that this new external PCB serves as an extension of the main board.
 
-This interface faced an issue where the openings for the button cutouts were virtually the same size leading to problems with clearance. 
-To fix this issue, the openings were extended by about half a millimetre on all sides to allow for smooth button pressing while still sitting securely in place.
+The placement of the pads used to wire the EZ Key PCB was deliberately chosen to be routed to the 'bottom' of the PCB as this would keep the profile of the PCB at a state that is less obtrusive to the rest of the device.
+Placing the pads on the 'top' side of the PCB, much like the rocker switches, would have interfered with the space of the LCD display, hence was not considered to be a sensible solution.
+
 
 %-----------------------------------
 %	SUBSECTION 3
@@ -348,38 +384,6 @@ This was not thought about correctly at the time of manufacturing as the PCB was
 Additionally, due to the central placement of the audio jack input and the bulky Jellybean switch jack output, interfacing with this adapter was less than convienient.
 To fix this, a nibbler was used to clip away at the edges to cut the board down to size, followed by a rough 80 grit sanding to smooth the edges somewhat.
 Given that fibreglass particles are not good for health when inhaled, this was undertaken responsibly to ensure that these risks were avoided.
-
-
-%----------------------------------------------------------------------------------------
-%	SECTION 5
-%----------------------------------------------------------------------------------------
-
-\section{PCB Layout}  %% THIS WILL PROBABLY BE CHAPTER 5
-
-% analyse the changes in the final design, what limitations the existing PCB layout has and propose a better layout that satisfies the UD principles, talk about what is ideal and what is the best that can be done with current layout. 
-% Ideal layout includes ports at top of device along with rocker switches replacing current rev2 switches on the main PCB
-
-%-----------------------------------
-%	SUBSECTION 1
-%-----------------------------------
-\subsection{Original Design}
-
-The layout of the second revision MEGAphone PCB served as the major constraint of this project, as the case design had to be designed around it without any significant redesign due to the complexity of the device. 
-Certain reworks to better adapt the design to an accessible interface included removing the existing switches in favour of larger rocker switches hosted on an external PCB (view figure).
-
-%-----------------------------------
-%	SUBSECTION 2
-%-----------------------------------
-\subsection{Proposed Design}
-
-A possible solution to the existing PCB which does inhabit the Universal Design principles is proposed in FIGURE. 
-The underlying idea with this redesign was to integrate the design all onto one PCB. 
-Doing so would reduce the amount of wires required and given that those in the current solution are soldered to make space, it makes the design overall ‘simpler’.
-
-In order to make the device more intuitive, placement of the 9-pin DSUB port should be moved to the ‘top’ of the device in the same orientation as the VGA port, so that users know from a glance that this is where all device ports are expected to be.
-The accessible button interface also utilises an external PCB which hosts the tactile switches that were opted to form the base of the accessible button function. 
-Other options were considered, such as silicone rubber pads, as used for the directional button and ‘A’, ‘B’ buttons. 
-However, primarily due to the size, larger buttons would be recommended as this would make button presses easier for all users, disregarding the EZ keys in this scenario.
 
 %----------------------------------------------------------------------------------------
 %	SECTION 6
@@ -409,5 +413,5 @@ Due to the Jellybean switch being a simple digital input device, this made imple
 %	SECTION 7
 %----------------------------------------------------------------------------------------
 
-\section{Summary}
+\section{Summary}  %% TALK ABOUT THE DESIGN IN VARIOUS STAGES, PERHAPS IN A SECTION BEFORE FINISHING TO SHOW THE BIGGER PICTURE
 //

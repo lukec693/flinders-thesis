@@ -9,38 +9,58 @@
 %----------------------------------------------------------------------------------------
 
 \section{MEGAphone Chassis/Case First Revision}
-//
+The MEGAphone accessible chassis project was fully realised on the 8th of November, 2020. 
+In this chapter, the development of the project and how various aspects benefit the usability of the MEGAphone device as a whole, will be analysed.
+Additionally, a discussion on the potential future work of the project will estabilish how to best approach a succeeding revision of the chassis and the MEGAphone PCB.
 
 % %-----------------------------------
 % %	SUBSECTION 1
 % %-----------------------------------
-% \subsection{Subsection 1}
 
-% Nunc posuere quam at lectus tristique eu ultrices augue venenatis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam erat volutpat. Vivamus sodales tortor eget quam adipiscing in vulputate ante ullamcorper. Sed eros ante, lacinia et sollicitudin et, aliquam sit amet augue. In hac habitasse platea dictumst.
+\subsection{Subsection 1}
+//
 
 % %-----------------------------------
 % %	SUBSECTION 2
 % %-----------------------------------
 
-% \subsection{Subsection 2}
-% Morbi rutrum odio eget arcu adipiscing sodales. Aenean et purus a est pulvinar pellentesque. Cras in elit neque, quis varius elit. Phasellus fringilla, nibh eu tempus venenatis, dolor elit posuere quam, quis adipiscing urna leo nec orci. Sed nec nulla auctor odio aliquet consequat. Ut nec nulla in ante ullamcorper aliquam at sed dolor. Phasellus fermentum magna in augue gravida cursus. Cras sed pretium lorem. Pellentesque eget ornare odio. Proin accumsan, massa viverra cursus pharetra, ipsum nisi lobortis velit, a malesuada dolor lorem eu neque.
+\subsection{Subsection 2}
+//
+
 
 %----------------------------------------------------------------------------------------
 %	SECTION 2
 %----------------------------------------------------------------------------------------
 
-\section{MEGA65 Accessibility Software}
-//
+\section{Future Work}
+The following section addresses both the MEGAphone PCBs and the accessible chassis and discusses the recommendations in regard to the project moving forward.
+
+%-----------------------------------
+%	SUBSECTION 1
+%-----------------------------------
+\subsection{Original PCB Layout}
+% analyse the changes in the final design, what limitations the existing PCB layout has and propose a better layout that satisfies the UD principles, talk about what is ideal and what is the best that can be done with current layout. 
+% Ideal layout includes ports at top of device along with rocker switches replacing current rev2 switches on the main PCB
+
+The layout of the second revision MEGAphone PCB served as the major constraint of this project, as the case design had to be designed around it without any significant redesign due to the complexity of the device. 
+Certain reworks to better adapt the design to an accessible interface included removing the existing switches in favour of larger rocker switches hosted on an external PCB (view figure).
+
+%-----------------------------------
+%	SUBSECTION 2
+%-----------------------------------
+\subsection{Proposed PCB Layout}
+
+A possible solution to the existing PCB which does inhabit the Universal Design principles is proposed in FIGURE. 
+The underlying idea with this redesign was to integrate the design all onto one PCB. 
+Doing so would reduce the amount of wires required and given that those in the current solution are soldered to make space, it makes the design overall ‘simpler’.
+
+In order to make the device more intuitive, placement of the 9-pin DSUB port should be moved to the ‘top’ of the device in the same orientation as the VGA port, so that users know from a glance that this is where all device ports are expected to be.
+The accessible button interface also utilises an external PCB which hosts the tactile switches that were opted to form the base of the accessible button function. 
+Other options were considered, such as silicone rubber pads, as used for the directional button and ‘A’, ‘B’ buttons. 
+However, primarily due to the size, larger buttons would be recommended as this would make button presses easier for all users, disregarding the EZ keys in this scenario.
 
 %----------------------------------------------------------------------------------------
 %	SECTION 3
-%----------------------------------------------------------------------------------------
-
-\section{Future Research}
-//
-
-%----------------------------------------------------------------------------------------
-%	SECTION 4
 %----------------------------------------------------------------------------------------
 
 \section{Final Summary}
