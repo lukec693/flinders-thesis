@@ -11,7 +11,8 @@
 \section{Overview}
 
 The first revision of the case prototype, PCBs and hardware-implimented accessibility features are presented in this chapter.
-This section goes into detail about the design process, including how certain aspects align with the seven design principles, or support digital sovereignty as well as justifications as to why an approach was selected over potential alternatives.
+This chapter first covers the initial designs before moving onto the tangible 3D-printed prototypes with an analysis of the outcomes of these prototype.
+The chapter then goes into detail about the design process, including how certain aspects align with the seven design principles, or support digital sovereignty as well as justifications as to why a specific approach was selected over potential alternatives.
 
 %----------------------------------------------------------------------------------------
 %	SECTION 2
@@ -20,8 +21,10 @@ This section goes into detail about the design process, including how certain as
 \section{Initial Concepts}
 
 At the initial stage of planning, multiple approaches to the MEGAphone chassis were conceptualised before making a final selection. 
-Two of these designs incorporated ‘stands’ to prop the device up in order to minimise physical effort from the user, as well as all designs featuring a curved design to accommodate comfortable device holding for a large range of hand grip sizes. 
-Each of these designs are outlined in the following sub-sections.
+Two of these designs incorporated ‘stands’ to prop the device up in order to minimise physical effort from the user, as well as all designs featuring a curved or ridged design to accommodate comfortable device holding for a large range of hand grip sizes. 
+It is important to note that these initial designs do not account for the notable features of the final prototype, such as the EZ access keys or the large rocker switch array.
+Those features are discussed in detail in section 3 and section 4, as they appear later in the development process.
+Each of the initial designs are outlined in the following sub-sections.
 
 %-----------------------------------
 %	SUBSECTION 1
@@ -31,9 +34,12 @@ Each of these designs are outlined in the following sub-sections.
 % LIST PROS AND CONS OF EACH DESIGN
 % PERHAPS RANKING SYSTEM, EXPLAIN WHY DESIGN 3 WAS CHOSEN
 
-Design ‘One’ as named was the first concept to be sketched using LibreCAD software. 
+Design ‘One’ as named was the first concept to be sketched using LibreCAD software.
+The tapered design around the ports is intented to illustrate clearly to the user where all device ports are, in support of design principle four. 
+It is worth noting that ideally, all ports should be oriented the same way to further support that design principle, however, as discussed in chapter 1, these are the constraints set for the project.
+The addition of a device stand is intended to support design principle six, in that users can set their device down in a viewable orientation as opposed to potentially having to hold the device for extended periods of time.
 In hindsight, most of this design’s features are quite mundane in that while they account for all major ports and include a device stand to prop it up, in terms of the ergonomics, there are very few stand-out features. 
-One thing that can be noted is that the case is compact with curved profile on either side where the user’s hands are expected to rest.
+One thing that can be noted is that the case is compact with curved profile on either side where the user’s hands are expected to rest which is once again .
 
 \begin{figure}[hbt!]
 \centering
@@ -47,8 +53,7 @@ One thing that can be noted is that the case is compact with curved profile on e
 %-----------------------------------
 \subsection{Design Two}
 
-The second design was intended to mimic a video game controller in order to conform better to the hand as well as give users a more intuitive layout in regards to the orientation of the device when in use. 
-UD and the MEGAphone project have two common traits in that they intend for the device to be simple, to use and to defend against security threats under the mantra ‘security through simplicity’ REF. 
+Following design principle three, the second design was intended to mimic a video game controller in order to conform better to the hand and give users a more intuitive layout in regards to the orientation of the device when in use. 
 This concept inhabits this trait arguably to the highest degree.
 
 \begin{figure}[hbt!]
@@ -64,8 +69,9 @@ This concept inhabits this trait arguably to the highest degree.
 \subsection{Design Three}
 
 There were a few factors that made this design the final candidate in which to base the main deliverable of this project.
-This approach uses handgrips to subconciously hint to the user the correct orientation to hold the device.
-The use of a stand to prop the device up for extended periods of time was a useful addition as it reduces the amount of effort from the user, therefore reducing fatigue.
+This approach uses handgrips to subconciously hint to the user the correct orientation to hold the device, which like design two, supports design principle three.
+The use of a stand to prop the device up for extended periods of time reduces the amount of effort from the user, therefore reducing fatigue much like design one.
+For these reasons, this was the design in which the project is based.
 
 \begin{figure}[hbt!]
 \centering
@@ -79,8 +85,15 @@ The use of a stand to prop the device up for extended periods of time was a usef
 %----------------------------------------------------------------------------------------
 
 \section{First Revision}
+This section provides a broad view over the design process with a 'timeline' based approach, making note of the problems and solutions regarding 3D-printed prototypes.
+Detailed evaluations of specific design features are provided in section 4.
 
-There was a significant issue that was overlooked with the first 3D printed prototype in that the thought behind orientation of components was flipped.
+%-----------------------------------
+%	SUBSECTION 1
+%-----------------------------------
+\subsection{First 3D-print}
+
+There was a significant issue that was overlooked with the first 3D-printed prototype in that the thought behind orientation of components was flipped.
 Electronic components (including connectors) needed more space underneath in order to fit comfortably and the design up until that point had not properly accounted for it.
 The biggest issue was that the device ports were initally not thought of in the correct orientation.
 The orientation of these ports is very important as this dictates how much volume each of the two main case components takes.
@@ -89,6 +102,17 @@ To rectify this issue, %%FIX THIS
 % so explain the process of rectifying this issue, map out the impacts and how they are resolved
 % also add in that 0.15mm print resolution was used, not perfect as the project was very precise on top case in some parts, such as buttons, hence this should be done at higher resolution which means longer print time or silicone injection mould as a likely stronger, neater alternative
 
+%-----------------------------------
+%	SUBSECTION 2
+%-----------------------------------
+\subsection{Second 3D-print}
+//
+
+%-----------------------------------
+%	SUBSECTION 2
+%-----------------------------------
+\subsection{Final 3D-print}
+//
 
 %----------------------------------------------------------------------------------------
 %	SECTION 4
@@ -133,17 +157,20 @@ As well as this, the placement of these switches, above the display and away fro
 Design principle one and three are satisfied by these rocker switches as they make the security features of this device easily available and the ON/OFF state of wireless modules is made abundantly clear (also supported by LED lights).
 
 An earlier design incorporated the use of standoffs in the design in which to mount the PCB for the switches which was additionally included in the PCB design (view section 4.4). %fix this
-This was however later removed due to not being necessary as when soldered to the switch contacts, the PCB would hold in place without issue and adding those supports would just add weight and increase complexity.
+This was however later removed in support of design principle three in an effort to reduce undesired complexity.
+Additionally, it was considered completely unnecessary as when soldered to the switch contacts, the PCB would hold in place, securely and without issue.
+On top of this, the rocker switches are placed in from the outside of the device in a press fit and due to their flat extended base at the 'top', pushing down on the switches beyond a certain point is not possible.
 
 %-----------------------------------
 %	SUBSECTION 4
 %-----------------------------------
 \subsection{Jellybean Switch}
 
-The Jellybean switch bought exclusively for this project interfaces with the device using a 3.5mm Audio Jack connector. 
-Given that it is a single digital input device, hardware-implemented accessibility capable of easily communicating with this device was relatively simple to implement. 
+The Jellybean switch sourced for this project interfaces with the device using a 3.5mm Audio Jack connector, a standard feature with accessible switches.
+The benefit of implementing Jellybean switch accessibility is that it supports the second design principle as it accommodates users who may have great difficulty using the relatively small buttons or even the EZ access keys.
+Given that it is a single digital input device, hardware-implemented accessibility (view section 6) capable of easily communicating with this device was relatively simple to implement. 
 The second revision PCB during commencement of this project did not feature a working 3.5mm Jack connector, therefore, based on this knowledge, the 9-pin DSUB port of the device was hijacked as a single digital input under pin 7 for the Jellybean switch. 
-The PCB ‘adapter’ created for this purpose is discussed in section 4.4. %fix this
+The PCB ‘adapter’ created for this purpose is discussed in section 4.4.
 This uses the same pin as the fire button on a retro Commodore64 Joystick controller, hence, integration into the MEGA65 operating system would be straightforward.
 
 \begin{figure}[hbt!]
@@ -178,7 +205,7 @@ The approach that was chosen was to have the battery be housed within the case a
 While the intention of the device is certainly not to be waterproof, there was some desire for the device to protect against light rain, which meant 'sealing' up electronic components at least to the best ability.
 There is also the concern that the 'bottom' of the device already makes the most of the available space by housing the device stand (view section 3.8) and the solar panel array and therefore the only plausible solution would be to remove the solar panels every time the user requires access to the battery.
 As the solar panels would most likely be stuck down, this would make removing the battery a more painful process.
-Having the battery be 'inside' the case ensures simplicity due to having less parts, more protection from the elements 
+Having the battery be inside within the same compartment as the PCBs, ensures simplicity due to having less parts, provides more protection from the elements and as per design principle five, protects users against potential hazards under normal use.
 
 The battery housing was labelled for clarity and placed assymetrically to the user's left side due to the location of the bulky FPGA board on one side of the MEGAphone PCB.
 This was a change that was addressed in a later stage of development, as the original intention was to place the battery be placed symmetrically on the device as this is best for weight distribution.
@@ -193,6 +220,7 @@ In order to not contribute too significantly to the thickness of an already obje
 Originally the approach was to have a single stand oriented in the middle of the device where users could extend it out as they need.
 However, having two stands on either end of the device has multiple advantages in that doing so increases the stability of the device, as well as giving ample space in the centre to place one or multiple solar panels depending on the available space (discussed in section 3.8).
 The mechanism in which to extend and 'lock' the stand in place had the potential to be approached from a number of different angles.
+
 The approach that ended up in the final prototype was to have a sliding mechanism that users could 'slot' in first, followed by a clearance fit in which the stand can rotate around a cylindrical 'mounting' point.  %%show pictures of all this!!
 At the opening of the stand where it is expected to assemble with the cylindrical base of the 'mounting' point, a location fit is used, meaning that the user must use mild force in order to get the stand to 'snap' into place.
 This ensures that the stand does not fall off the device unintentionally when in normal use.
@@ -247,7 +275,7 @@ Another consideration was the addition of an extra notch, added to lock into the
 \subsection{Easy Access Keys}
 
 The easy access keys or 'EZ Keys' were inspired by the 'Nav Keys' developed by Storm Interface [source] which feature an array of easily distingishable keys which were inspired for this adaptation.
-These keys benefit from being easily perceptible, due to each button having a unique colour and shape, which envelops the forth design principle.
+These keys benefit from being easily perceptible which envelops the forth design principle, due to each button not only having a unique colour and shape but also a distinct tactile feel when a button is pressed.
 
 The EZ Keys were first approached as an extension of the device as this would free up a lot of the limited space available.
 This would mean making a separate housing and having the device plug into the 9pin DSUB port similarly to how the Jellybean switch (see section 3.4) would interface with the device.
