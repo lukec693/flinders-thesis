@@ -12,7 +12,7 @@
 
 The first revision of the case prototype, PCBs and hardware-implimented accessibility features are presented in this chapter.
 This chapter first covers the initial designs before moving onto the tangible 3D-printed prototypes with an analysis of the outcomes of these prototype.
-The chapter then goes into detail about the design process, including how certain aspects align with the seven design principles, or support digital sovereignty as well as justifications as to why a specific approach was selected over potential alternatives.
+The chapter then goes into detail about the design process, including how certain aspects align with the seven design principles, or support Digital Sovereignty as well as justifications as to why a specific approach was selected over potential alternatives.
 
 %----------------------------------------------------------------------------------------
 %	SECTION 2
@@ -167,7 +167,8 @@ On top of this, the rocker switches are placed in from the outside of the device
 \subsection{Jellybean Switch}
 
 The Jellybean switch sourced for this project interfaces with the device using a 3.5mm Audio Jack connector, a standard feature with accessible switches.
-The benefit of implementing Jellybean switch accessibility is that it supports the second design principle as it accommodates users who may have great difficulty using the relatively small buttons or even the EZ access keys.
+This is very much in the spirit of Microsoft's Xbox Adaptive Controller\cite{adaptive} in that it supports the same standardised connector with the intention of allowing a greater degree of adaptiblility or freedom for the users needs.
+Another benefit of implementing Jellybean switch accessibility is that it supports the second design principle as it accommodates users who may have great difficulty using the relatively small buttons (which are existing constraints linked to the PCB) or however less likely, the EZ access keys.
 Given that it is a single digital input device, hardware-implemented accessibility (view section 6) capable of easily communicating with this device was relatively simple to implement. 
 The second revision PCB during commencement of this project did not feature a working 3.5mm Jack connector, therefore, based on this knowledge, the 9-pin DSUB port of the device was hijacked as a single digital input under pin 7 for the Jellybean switch. 
 The PCB ‘adapter’ created for this purpose is discussed in section 4.4.
@@ -237,7 +238,8 @@ This would mean that the %%FIX THIS
 \subsection{Solar Panels}
 
 % choice of solar panels, discuss potential options and why a specific one was chosen, do a table comparison of available panels and again explain the power output and cost etc.
-Giving users more ways to charge their device plays heavily into the digital sovereignty aspect of this project.
+Giving users more ways to charge their device plays heavily into the Digital Sovereignty aspect of this project as this provides a platform in which to harvest energy to power the device without the need for an energy infrustructure.
+This is something that Gardner-Stephen, in one of his CCC talks, lists as one of the six freedoms to protect against the 'Digital Winter' which Gardner-Stephen refers to as the "situation where the freedoms to create and [innovate] digital systems will become impossible or highly limited" due to a number of reasons listed such as totalitarian governments or failure of critical infrustructure\cite{freedoms}.
 A number of solar panels from two suppliers (Digikey, Mouser) were analysed based on cost, size and energy output for a designated area set out on the MEGAphone case at 125mm by 140mm, collated in figure X.
 
 \begin{center}
@@ -266,7 +268,9 @@ A number of solar panels from two suppliers (Digikey, Mouser) were analysed base
 
 % talk about process of designing this feature, how original design changed in favour of larger slot/strap for easier carry
 The thought behind the key-chain feature of the device was to be able to clip it to something or alternatively fix items to it, and while this feature did see an appearance in an early prototype, it was later adapted into a 'housing' for an arm strap, to allow for easier carrying as this was considered to be more useful.
-The reasoning for this was that a key-chain feature would not have many practical applications in terms of hanging items off of it, and so the introduction of a much larger opening to integrate a carry strap would better benefit design principle six as it would distribute the weight of the device more evenly when carried.
+The reasoning for the original implementation of a key-chain feature was to give users the option to strap the device to their hand in cases where they might have a weak grip strength, minimising the risk of dropping the device and supporting the second design principle.
+Due to that feature not having many other practical applications in terms of hanging items off of it, the introduction of a much larger opening to integrate a carry strap would better benefit design principle six as it would distribute the weight of the device more evenly when carried.
+This would still however allow the option for a hand strap, therefore not eliminating that feature entirely.
 Another consideration was the addition of an extra notch, added to lock into the top part of the case and re-enforce the strength as the entire weight of the device would otherwise be supported by one end of the slot. %%revise, find better name for 'slot'
 
 %-----------------------------------
@@ -420,7 +424,8 @@ Given that fibreglass particles are not good for health when inhaled, this was u
 \section{Software Accessibility}
 % talk about keyboard accessibility, term ‘android accessibility encapsulation’ discuss this.
 % Also mention program is working in parallel to the software ‘mimicking’ the c64 system so this is not a C program running on MEGA65 but rather VDHL, a hardware description language
-Keyboard 'software' accessibility goes hand-in-hand with the Jellybean switch input (view section 3.4) as this is primarily what is used to control this feature, aside from the potential to implement this on an EZ key button by hijacking the same pin.
+Digital Sovereignty covers a broad context, where the overarching concept is about giving users control over their own data[source], where in this case, providing the MEGAphone device with accessible software features can be argued as achieving an extent of this project in that it places more control in the hands of the users.
+On a different note, the keyboard 'software' accessibility aspect of this goes hand-in-hand with the Jellybean switch input (view section 3.4) as this is primarily what is used to control this feature, aside from the potential to implement this on an EZ key button by hijacking the same pin.
 This is all hardware-implemented in the FPGA, with the intention of being completely transparent to the MEGA65 operating system.
 This means that the accessible keyboard runs in parallel to the operating system and therefore should not 'see' the Jellybean switch, but instead treat it as if it were any peripheral, such as a Commodore64 joycon[source].
 Due to the Jellybean switch being a simple digital input device, this made implementing this feature relatively straightforward.
