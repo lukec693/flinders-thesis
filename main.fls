@@ -913,6 +913,9 @@ INPUT c:/Users/Luke/Documents/GitHub/flinders-thesis/Chapters/Chapter5.aux
 INPUT c:/Users/Luke/Documents/GitHub/flinders-thesis/Appendices/AppendixA.aux
 INPUT c:/Users/Luke/Documents/GitHub/flinders-thesis/Appendices/AppendixA.aux
 INPUT c:/Users/Luke/Documents/GitHub/flinders-thesis/Appendices/AppendixA.aux
+INPUT c:/Users/Luke/Documents/GitHub/flinders-thesis/Appendices/AppendixB.aux
+INPUT c:/Users/Luke/Documents/GitHub/flinders-thesis/Appendices/AppendixB.aux
+INPUT c:/Users/Luke/Documents/GitHub/flinders-thesis/Appendices/AppendixB.aux
 OUTPUT c:/Users/Luke/Documents/GitHub/flinders-thesis/main.aux
 INPUT c:/texlive/2020/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
 INPUT c:/texlive/2020/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
@@ -1208,6 +1211,7 @@ INPUT c:/Users/Luke/Documents/GitHub/flinders-thesis/Appendices/AppendixA.tex
 INPUT c:/Users/Luke/Documents/GitHub/flinders-thesis/Appendices/AppendixA.tex
 INPUT c:/Users/Luke/Documents/GitHub/flinders-thesis/Appendices/AppendixA.tex
 INPUT c:/Users/Luke/Documents/GitHub/flinders-thesis/Appendices/AppendixA.tex
+OUTPUT c:/Users/Luke/Documents/GitHub/flinders-thesis/Appendices/AppendixB.aux
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/palatino/pplri8t.tfm
 INPUT c:/texlive/2020/texmf-dist/tex/latex/base/t1cmtt.fd
 INPUT c:/texlive/2020/texmf-dist/tex/latex/base/t1cmtt.fd
@@ -1235,6 +1239,9 @@ INPUT c:/Users/Luke/Documents/GitHub/flinders-thesis/Chapters/Chapter5.aux
 INPUT c:/Users/Luke/Documents/GitHub/flinders-thesis/Appendices/AppendixA.aux
 INPUT c:/Users/Luke/Documents/GitHub/flinders-thesis/Appendices/AppendixA.aux
 INPUT c:/Users/Luke/Documents/GitHub/flinders-thesis/Appendices/AppendixA.aux
+INPUT c:/Users/Luke/Documents/GitHub/flinders-thesis/Appendices/AppendixB.aux
+INPUT c:/Users/Luke/Documents/GitHub/flinders-thesis/Appendices/AppendixB.aux
+INPUT c:/Users/Luke/Documents/GitHub/flinders-thesis/Appendices/AppendixB.aux
 INPUT c:/Users/Luke/Documents/GitHub/flinders-thesis/main.out
 INPUT c:/Users/Luke/Documents/GitHub/flinders-thesis/main.out
 INPUT c:/Users/Luke/Documents/GitHub/flinders-thesis/main.run.xml
