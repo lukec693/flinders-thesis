@@ -8,7 +8,7 @@
 %	SECTION 1   % TARGET 1500 WORDS IN THIS CHAPTER
 %----------------------------------------------------------------------------------------
 
-\section{An Overview}\label{sec:firstsection}
+\section{An Overview}\label{sec:firstsection} %%motivation
 
 %% give some background on importance and relevance of universal design
 %% explain issue that needs to be addressed using this concept
@@ -17,7 +17,7 @@
 In today's day and age where humans are living longer than ever before, the very young, elderly and people with a disability is a demographic that is constantly growing as populations increase.
 In Australia, where this project is based, the current population of people with a disability represents an estimation of 1 in 6 people\cite{ausstats}, a group that is far more common than many may realise.
 This has indirectly led to the concept of Universal Design (UD), established at North Carolina State University by founder Ron Mace with the intention of providing accessible design to all people, regardless of age or disability\cite{ronald}.
-The term ‘Universal Design’ is a concept first coined by Ron Mace where “the design of products, environments, programmes and services to be usable by all people, to the greatest extent possible, without the need for adaptation or specialized design” \cite{nda}. 
+The term ‘Universal Design’ is a concept first coined by Ron Mace where “the design of products, environments, programmes and services to be usable by all people, to the greatest extent possible, without the need for adaptation or specialized design”\cite{nda}. 
 
 On a different yet related note, individuals are losing out on the right to repair their own electronic devices, as the everpresent concept of planned obsolescence continues to dominate the market due to the undeniable profitability of doing so\cite{obsolescence2}.
 %A number of factors such as increased complexity of computer systems and the desire of companies to protect their intellectual property, mean that true Digital Sovereignty is unrealistic. %%%CONTRADICTORY
@@ -39,6 +39,8 @@ Accessible design practices will play a central role in the design process as th
 As mentioned, this project does have existing constraints, in that it is adapted around an existing PCB, however this design will take every opportunity to uphold the aforementioned design philosophy and include a proposed redesign following these design practices.
 Additionally, this project will look into how UD can incorporate Digital Sovereignty, more specifically, the 'Right to Repair' movement, so that users can not only have an accessible interface, but one that can be easily repaired, modified and controlled by them.
 
+%% planned ob works against people with a disability, capability maintenance
+
 %\begin{figure}
 %\begin{centering}
 %\includegraphics[width=10cm,height=10cm,keepaspectratio]{Figures/dont-panic-e1534046233310.jpg}
@@ -50,7 +52,7 @@ Additionally, this project will look into how UD can incorporate Digital Soverei
 %----------------------------------------------------------------------------------------
 %	SECTION 2
 %----------------------------------------------------------------------------------------
-\section{Background on the MEGAphone}
+\section{Background on the MEGAphone} %% now talking about this, because previous section
 
 %% how was this project formed, and who works on it
 The ‘MEGAphone’ is a digitally sovereign mobile device created by Dr Paul Gardner-Stephen and the MEGA65 team in Germany with the intent to promote Digital Sovereignty\cite{mega65}.
@@ -67,7 +69,6 @@ This coupled with the addition of hardware power switches, gives users the piece
 %----------------------------------------------------------------------------------------
 %	SECTION 3
 %----------------------------------------------------------------------------------------
-
 \section{Project Objectives}
 
 The main objective of this project is to design a prototype case for the MEGAphone that follows the seven principles of Universal Design (UD), established at the Center for Universal Design, North Carolina State University \cite{sevenprinciples}. 
@@ -82,13 +83,12 @@ Multiple physical prototypes of this project will allow for not only a demonstra
 %----------------------------------------------------------------------------------------
 %	SECTION 4
 %----------------------------------------------------------------------------------------
-
 \section{Research Questions}
 
 This thesis aims to answer multiple research questions:
 
 \begin{itemize} 
-    \item What is the relationship between Digital Sovereignty and Universal Design?
+    \item What is the relationship between Digital Sovereignty and Universal Design? %% explain why
     \item Why is Universal Design important in the design of products today?
     \item Why is Digital Sovereignty important in the design of electronic products today?
     \item How can the seven design principles be used in the design of the MEGAphone case to support those with disabilities?
@@ -99,18 +99,34 @@ This thesis aims to answer multiple research questions:
 %----------------------------------------------------------------------------------------
 %	SECTION 5
 %----------------------------------------------------------------------------------------
-
 \section{Scope of Project}
 
 This project will look at the history and importance of UD and Digital Sovereignty (specifically the 'Right to Repair') in the design of products today as well as the relationship between those two concepts.
 The development of a unique computer-aided universally designed chassis prototype graded against the seven design principles\cite{sevenprinciples} will be presented, along with multiple PCB designs that support this chassis and hardware-implimented accessibility 'software' written in VHDL for the MEGA65 operating system.
 %% possible update, revise this at some point
+%% what is out of scope? software out of scope etc
+
+% %----------------------------------------------------------------------------------------
+% %	SECTION 6
+% %----------------------------------------------------------------------------------------
+\section{Contribution to the Field} %% past tense!
+
+The MEGAphone device is a platform that exists to provide people with true control over their data, and by extension their right to repair, modify and maintain their device.
+This project aims to support the MEGAphone project by developing an interface that enhances the accessibility of the device.
+It is the belief of the author that a unique project such as the MEGAphone, with the ability to give users a secure and truely open telephony platform, should be accessible to everyone regardless of their age or ability.
+This thesis will investigate exactly how that can be achieved in order to deliver a MEGAphone device chassis, supporting existing PCBs and hardware-implemented user interface that embodies the vision of UD and by extent, Digital Sovereignty. %%go through an abbreviate digital sov, also revise
+%%% MAYBE ADD THIS TO CONCLUDING CHAPTER AS WELL
+
+%% maybe numbered list, key contributions are...
+
+% only define abbr once
+
+%%table captions above, figure captions below
 
 %----------------------------------------------------------------------------------------
-%	SECTION 6
+%	SECTION 7
 %----------------------------------------------------------------------------------------
-
-\section{Layout of Thesis}
+\section{Structure of Thesis}
 
 Chapter 1 addresses the aims of the project, provides some context on the MEGAphone and lists the questions that this thesis aims to answer.
 Chapter 2 investigates how Universal Design can help to overcome many issues in product design that people with disabilities face without the need for specialized equipment. 
@@ -118,16 +134,4 @@ Additionally, the lack of Digital Sovereignty in electronics devices is addresse
 Chapter 3 focuses on the methods and tools used to plan, design and manufacture this project.
 Chapter 4 discusses the design process and the incremental changes made to the design toward a definitive prototype, supplemented by a discussion in regard to the outcome of the project. 
 Chapter 5 provides concluding remarks as well as a final evaluation of the case prototype, PCBs, hardware-implemented 'software' features and future work to be undertaken.
-
 %%% ADDRESS THIS SECTION AGAIN AT THE END OF WRITING!!
-
-% %----------------------------------------------------------------------------------------
-% %	SECTION 7
-% %----------------------------------------------------------------------------------------
-
-\section{Contribution to the Field}
-The MEGAphone device is a platform that exists to provide people with true control over their data, and by extension their right to repair, modify and maintain their device.
-This project aims to support the MEGAphone project by developing an interface that enhances the accessibility of the device.
-It is the belief of the the author that a unique project such as the MEGAphone, with the ability to give users a secure and truely open telephony platform, should be accessible to everyone regardless of their age or ability.
-This thesis will investigate exactly how that can be achieved in order to deliver a MEGAphone device chassis, supporting PCBs and hardware-implemented user interface that embodies the vision of UD and by extent, Digital Sovereignty. %%go through an abbreviate digital sov
-%%% MAYBE ADD THIS TO CONCLUDING CHAPTER INSTEAD
