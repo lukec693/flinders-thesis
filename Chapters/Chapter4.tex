@@ -127,20 +127,25 @@ The following section covers the development of all specific aspects of the acce
 %-----------------------------------
 \subsection{CAD Sketch}
 
-The first stage of design after the initial concepts was the CAD sketching stage.
-This was approached by beginning with a front view of the sketch where users would typically interact with the device, however just the outline was extruded outwards in order to create a tangible object in which to mold and add features later on in the process.
+The first stage of design after the initial concepts was the CAD sketching stage which was approached from a top-down perspective.
+Beginning with a front view of the sketch meant that the major outline that users will see when looking at the device in the orientation where the display and buttons is clearly visible. %maybe revise?
+This is where users would typically interact with the device.
+
+The outline was extruded outwards in order to create a tangible object in which to mold and add features later on in the process.
+Succeeding sketches were simply developed off of this sketch, such as the cutouts for buttons and the display or the hollowed out interior.
+The 'bottom' sketch, for the main accompanying CAD design was approached in the same fashion where the sketch was extruded outward.
+This once again would allow a tangible object in which to add relevant sketches, in the desired orientation.
 
 %-----------------------------------
 %	SUBSECTION 2
 %-----------------------------------
 \subsection{Hand Grips}
 
-The first stage of design after the initial concept sketches intended to use rubber grips on both sides of the device featuring a ridged pattern.
-However, this concept was removed in favour of a ridges that resemble the size and shape of human adult fingers to more intuitively direct the user to hold the device in the correct fashion as the third design principle.
+The first stage of design after the initial concept sketches was designed with the intention of possibly using rubber grips on both sides of the device, featuring a ridged pattern.
+However, this concept was removed in favour of 'ridges' that resemble the size and shape of human adult fingers to more intuitively direct the user to hold the device in the correct fashion as this supports the third design principle.
 Another aspect that was considered since the early stages, while less obvious in the final product due to the curved nature, was the introduction of rounded corners as this would minimise hazards to the user.
 This was also the case with other edges of the device, in that they were filleted at 1.5mm to remove the sharpness of the device.
-Doing adds to the softness from the device and makes it arguably safer for users.
-
+Doing adds to the softness from the device and makes it arguably safer for users which is in support of design principle five.
 % This was after receiving feedback from my supervisor following an initial design (show design, before and after).
 
 %-----------------------------------
@@ -199,7 +204,7 @@ On the first prototype print, while allignment on the main MEGAphone PCB was cor
 %-----------------------------------
 \subsection{Battery}
 
-Due to the addition of a new proposed 7.4V 5000mAH Lithium-Ion battery, considerations had to be made in regard to placement within the MEGAphone device chassis.
+Due to the addition of a new proposed 7.4V 5000mAH Lithium-Ion battery[ref], considerations had to be made in regard to placement within the MEGAphone device chassis.
 There were two potential approaches to this issue in that the battery could either be placed internally within case along with the electronics, or 'externally' on the 'bottom' of the device with a separate cover that could be screwed on to hide the battery like what might be found on an RC Car controller for example.
 
 The approach that was chosen was to have the battery be housed within the case along with the PCBs with he second approach ultimately not being chosen for a number of factors.
@@ -235,23 +240,34 @@ This would almost be a reverse of the actual prototype
 %-----------------------------------
 %	SUBSECTION 8
 %-----------------------------------
-\subsection{Solar Panels}
+\subsection{Solar Cells}
 
 % choice of solar panels, discuss potential options and why a specific one was chosen, do a table comparison of available panels and again explain the power output and cost etc.
 Giving users more ways to charge their device plays heavily into the Digital Sovereignty aspect of this project as this provides a platform in which to harvest energy to power the device without the need for an energy infrustructure.
-This is something that Gardner-Stephen, in one of his CCC talks, lists as one of the six freedoms to protect against the 'Digital Winter' which Gardner-Stephen refers to as the "situation where the freedoms to create and [innovate] digital systems will become impossible or highly limited" due to a number of reasons listed such as totalitarian governments or failure of critical infrustructure"\cite{freedoms}.
-A number of solar panels from two suppliers (Digikey, Mouser) were analysed based on cost, size and energy output for a designated area set out on the MEGAphone case at 125mm by 140mm, collated in figure X.
+This is something that Gardner-Stephen, in one of his CCC talks, lists as one of the six freedoms to protect against the 'Digital Winter' which Gardner-Stephen refers to as the "situation where the freedoms to create and [innovate] digital systems will become impossible or highly limited" due to a number of reasons listed such as totalitarian governments or failure of critical infrustructure\cite{freedoms}.
+A number of solar cells from two electronic suppliers, Digikey and Mouser were analysed based on cost, size and energy output for a designated area set out on the MEGAphone case at 125mm by 140mm, collated in figure X. %fix reference
+These panels are all monocrystalline, meaning 'single crystal silicone' as opposed to less efficient, yet more affordable polycrystalline 'multi' options.
+The panels will be wired in series in order to generate a compounding power output.
+%When a total potential wattage is calulated, it will be divided by the overall cost to determine the best 'power per dollar' option. %%double check maths on this
 
 \begin{center}
-    \begin{tabular}{ |c|c|c| } 
+    \begin{tabular}{ |c|c|c|c| }
     \hline
-    cell1 & cell2 & cell3 \\
+    Product No. & Power Output (mW) & Dimensions (mm) & Cost Per Panel (AUD) \\
     \hline
-    cell1 & cell2 & cell3 \\ 
+    SM301K09L & 595 & 58x58x2 & 14.33 \\
     \hline
-    cell1 & cell2 & cell3 \\ 
+    SM111K09L & 220 & 62x21x2 & 7.17 \\ 
     \hline
-    cell1 & cell2 & cell3 \\
+    SM101K12L & 263 & 45x32x2.1 & 7.08 \\
+    \hline
+    MIKROE-651 & 400 & 70x65x3.2 & 15.81 \\
+    \hline
+    cell1 & cell2 & cell3 & cell4 \\
+    \hline
+    cell1 & cell2 & cell3 & cell4 \\
+    \hline
+    cell1 & cell2 & cell3 & cell4 \\
     \hline
     \end{tabular}
 \end{center}
@@ -260,6 +276,8 @@ A number of solar panels from two suppliers (Digikey, Mouser) were analysed base
     \caption{An analysis of various solar arrays and their suitability to a designated space on the MEGAphone chassis}
     \label{fig:DesignPrinciples}
 \end{figure}
+
+%%FINISH ANALYSIS HERE
 
 %-----------------------------------
 %	SUBSECTION 9
@@ -434,6 +452,10 @@ On a different note, the keyboard 'software' accessibility aspect of this goes h
 This is all hardware-implemented in the FPGA, with the intention of being completely transparent to the MEGA65 operating system.
 This means that the accessible keyboard runs in parallel to the operating system and therefore should not 'see' the Jellybean switch, but instead treat it as if it were any peripheral, such as a Commodore64 joycon[source].
 Due to the Jellybean switch being a simple digital input device, this made implementing this feature relatively straightforward.
+
+The approach was to feature a horizontal and vertical scanning feature for the MEGA65 keyboard which would respond to button presses from the Jellybean input.
+Vertical scanning should loop indefinitely at a reasonable pace of one second per key until a button press is registered, in which case, vertical scanning should stop to allow horizontal scanning to begin.
+When a full loop is completed, the interface can assume an accidental press and return to a vertical scan. %%add to this and review code
 
 % %-----------------------------------
 % %	SUBSECTION 1
