@@ -83,8 +83,9 @@ For these reasons, this was the design in which the project is based.
 %	SECTION 3
 %----------------------------------------------------------------------------------------
 \section{First Revision}
+
 This section provides a broad view over the design process with a 'timeline' based approach, making note of the problems and solutions regarding 3D-printed prototypes.
-Detailed evaluations of specific design features are provided in section 4.
+Detailed evaluations of the specific design features of the MEGAphone housing are provided in section 4.
 
 %-----------------------------------
 %	SUBSECTION 1
@@ -93,10 +94,18 @@ Detailed evaluations of specific design features are provided in section 4.
 
 There was a significant issue that was overlooked with the first 3D-printed prototype in that the thought behind orientation of components was flipped.
 Electronic components (including connectors) needed more space underneath in order to fit comfortably and the design up until that point had not properly accounted for it.
-The biggest issue was that the device ports were initally not thought of in the correct orientation.
-The orientation of these ports is very important as this dictates how much volume each of the two main case components takes.
-To rectify this issue, %%FIX THIS
+The orientation of these ports is very important as this dictates how much volume each of the two main case components takes and this was something that was originally not thought of in the correct orientiation.
+To rectify this issue, changes were made to the depth of the 'top' and 'bottom' case designs so that the botton component would house most of the internal components, including those cutouts for the ports of the device.
 
+Another aspect that was later modified was the key-chain feature, as this was thought to be quite small.
+Considering extra avaliable space, this was expanded both horizontally and vertically as this was later adapted to become a 'housing' for a carry strap, that could potentially double as a key-chain, to strap to the user if desired.
+This is talked about in section 4.4.9 in further detail.
+
+The top half of the MEGAphone housing was not printed at this stage as there was still the concern of where to place the 'EZ access keys' to give users an easier interface than what capable with the Gameboy buttons.
+Instead, the plan was to wait until the next stage of the design was complete before going ahead with the next 3D print.
+
+It can also be observed that the 3D print that is the bottom half of the case, featured the battery housing symmetrical with the internals of the device.
+This was later changed to make space for the FPGA board, housing the processor for the MEGAphone device, as discussed in section 4.4.6.
 % so explain the process of rectifying this issue, map out the impacts and how they are resolved
 % also add in that 0.15mm print resolution was used, not perfect as the project was very precise on top case in some parts, such as buttons, hence this should be done at higher resolution which means longer print time or silicone injection mould as a likely stronger, neater alternative
 
@@ -104,13 +113,23 @@ To rectify this issue, %%FIX THIS
 %	SUBSECTION 2
 %-----------------------------------
 \subsection{Second 3D-print}
-//
+
+This section print was where the EZ access keys were implimented, which were considered a vital part of the MEGAphone UD chassis project as they provide one of the more notable appeals of accessibility.
+At this stage, another important consideration, the power key, is included and intentionally placed in a button housing that sits at a slightly higher elevation of 0.5mm, to discourage accidental button presses.
+
+These button housings were not ideal as they provided very little clearance for the buttons themselves.
+This was solved in the final print by increasing those openings by 0.3mm in order to allow slightly more space so that actuation was smooth but also ensured that the buttons remain in place.
 
 %-----------------------------------
 %	SUBSECTION 2
 %-----------------------------------
 \subsection{Final 3D-print}
-//
+
+This is the final 3D-printed deliverable of the project and is naturally the most refined revision of the project. 
+There are still aspects about the MEGAphone housing that are not perfect as is the case in any iterative design project and the result of this print encouraged changes that are talked about in detail in chapter 5.
+
+Other considerations to be made in regard to rectifying issues in the design, included giving more clearance to the device stand (discussed more in section 4.4.7) so that it could also actuate smoothly and more clearance to the mating fit on the device strap feature.
+The latter should have worked and was more likely made an issue due to innaccuracies of the 3D-printer, nonetheless, a consideration was made to increase the opening for this fit.
 
 %----------------------------------------------------------------------------------------
 %	SECTION 4
