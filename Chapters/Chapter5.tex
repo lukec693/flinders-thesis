@@ -9,7 +9,7 @@
 %----------------------------------------------------------------------------------------
 
 \section{Overview}
-This chapter provides concluding remarks on the deliverables of the previous chapter and provides a discussion on aspects where the project would benefit moving foward.
+This chapter provides concluding remarks on the deliverables of chapter 4 and provides a discussion on aspects where the project would benefit moving forward.
 
 %----------------------------------------------------------------------------------------
 %	SECTION 2
@@ -18,7 +18,7 @@ This chapter provides concluding remarks on the deliverables of the previous cha
 \section{MEGAphone Chassis/Case First Revision}
 The MEGAphone accessible chassis project was fully realised on the 8th of November, 2020. 
 In this chapter, the development of the project and how various aspects benefit the usability of the MEGAphone device as a whole, will be analysed. % maybe add to overview
-Additionally, a discussion on the potential future work of the project will estabilish how to best approach a succeeding revision of the chassis and the MEGAphone PCB followed by some concluding remarks. \newline
+Additionally, a discussion on the potential future work of the project will establish how to best approach a succeeding revision of the chassis and the MEGAphone PCB followed by some concluding remarks. \newline
 
 This thesis has answered the following research questions in the preceding chapters:
 \begin{enumerate}
@@ -66,22 +66,21 @@ This thesis has answered the following research questions in the preceding chapt
 %	SECTION 3
 %----------------------------------------------------------------------------------------
 \section{Future Work}
-The following section addresses both the MEGAphone PCBs and the accessible chassis with a discussion on the recommendations in regard to the project moving forward.
+The following section addresses both the MEGAphone PCBs and the accessible chassis with a discussion on the recommendations of the project moving forward.
 
 %-----------------------------------
 %	SUBSECTION 1
 %-----------------------------------
 \subsection{Original PCB Layout}
-% analyse the changes in the final design, what limitations the existing PCB layout has and propose a better layout that satisfies the UD principles, talk about what is ideal and what is the best that can be done with current layout. 
+% analyse the changes in the final design, what limitations the existing PCB layout has and propose a better layout that satisfies the UD principles, talk about what is ideal and what is the best that can be done with the current layout. 
 % Ideal layout includes ports at top of device along with rocker switches replacing current rev2 switches on the main PCB
-
 The layout of the second revision MEGAphone PCB served as the major constraint of this project, as the case design had to be designed around it without any significant redesign due to the complexity of the device. 
 Certain reworks to better adapt the design to an accessible interface included removing the existing switches in favour of larger rocker switches hosted on an external PCB (view figure).
 
 \begin{figure} [h]
 \begin{centering}
 \includegraphics[width=10cm,height=10cm,keepaspectratio]{Figures/pcb_original.png}
-\caption{This is the PCB layout as it was during the course of development of this project.}
+\caption{This is the PCB layout as it was during the development of this project.}
 \label{fig:ThisFig}
 \end{centering}
 \end{figure}
@@ -91,9 +90,9 @@ Certain reworks to better adapt the design to an accessible interface included r
 %-----------------------------------
 \subsection{Proposed PCB Layout}
 
-A possible solution to the existing PCB which does inhabit the Universal Design principles is proposed in FIGURE. 
-The underlying idea with this redesign was to integrate the design all onto one PCB. 
-Doing so would reduce the amount of wires required and given that those in the current solution are soldered to make space, it makes the design overall ‘simpler’.
+A possible solution to the existing PCB which does inhabit the Universal Design principles is proposed in figure X. 
+The underlying idea with this redesign was to integrate the design all onto one PCB as doing so would reduce the quantity of wires required and given that those in the current solution are soldered to make space, it makes the design overall ‘simpler’.
+The reason for the redesign not being undertaken in this project has been discussed previously as impractical due to an issue of cost and time.
 
 \begin{figure} [h]
 \begin{centering}
@@ -104,12 +103,15 @@ Doing so would reduce the amount of wires required and given that those in the c
 \end{figure}
 
 In order to make the device more intuitive, placement of the 9-pin DSUB port should be moved to the ‘top’ of the device in the same orientation as the VGA port, so that users know from a glance that this is where all device ports are expected to be.
-The accessible button interface also utilises an external PCB which hosts the tactile switches that were opted to form the base of the accessible button function. 
+The accessible button interface also utilises an external PCB which hosts the tactile switches that were opted to form the base of the accessible button function.
+
 Other options were considered, such as silicone rubber pads, as used for the directional button and ‘A’, ‘B’ buttons. 
 However, primarily due to the size, larger buttons would be recommended as this would make button presses easier for all users, disregarding the EZ keys in this scenario.
+It is acknowledged that larger buttons on the PCB would invalidate the current Gameboy buttons, which is why a complete redesign of those buttons would be recommended to further progress the accessibility of the device as a whole.
 
 It is also recommended that the device incorporates multiple 3.5mm jack inputs, separate from the audio function, in its design as this can give users the ability to plug in multiple switches much like the Jellybean presented in this project.
-Microsoft's accessible controller \cite{adaptive} is a prime example of the usefulness of this feature and for those who might not be able to interact with the EZ keys or Gameboy buttons but desire their own means of interaction with the device, multiple inputs allows for multiple unique functions.
+Microsoft's accessible controller \cite{adaptive} is a prime example of the usefulness of this feature and for those who might not be able to interact with the EZ keys or Gameboy buttons but desire their means of interaction with the device, multiple inputs allow for multiple unique functions.
+Placement of these inputs should be at the 'top' of the device with all other ports as can be seen in figure X, as this minimises complexity by ensuring that everything is in one place for the user.
 
 %----------------------------------------------------------------------------------------
 %	SECTION 4
