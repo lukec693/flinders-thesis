@@ -910,6 +910,9 @@ INPUT c:/Users/Luke/Documents/Github/flinders-thesis/Chapters/Chapter4.aux
 INPUT c:/Users/Luke/Documents/Github/flinders-thesis/Chapters/Chapter5.aux
 INPUT c:/Users/Luke/Documents/Github/flinders-thesis/Chapters/Chapter5.aux
 INPUT c:/Users/Luke/Documents/Github/flinders-thesis/Chapters/Chapter5.aux
+INPUT c:/Users/Luke/Documents/Github/flinders-thesis/Chapters/Chapter6.aux
+INPUT c:/Users/Luke/Documents/Github/flinders-thesis/Chapters/Chapter6.aux
+INPUT c:/Users/Luke/Documents/Github/flinders-thesis/Chapters/Chapter6.aux
 INPUT c:/Users/Luke/Documents/Github/flinders-thesis/Appendices/AppendixA.aux
 INPUT c:/Users/Luke/Documents/Github/flinders-thesis/Appendices/AppendixA.aux
 INPUT c:/Users/Luke/Documents/Github/flinders-thesis/Appendices/AppendixA.aux
@@ -1222,6 +1225,7 @@ INPUT c:/Users/Luke/Documents/Github/flinders-thesis/Figures/pcb_final.png
 INPUT c:/Users/Luke/Documents/Github/flinders-thesis/Figures/pcb_final.png
 INPUT c:/Users/Luke/Documents/Github/flinders-thesis/Figures/pcb_final.png
 INPUT c:/Users/Luke/Documents/Github/flinders-thesis/Figures/pcb_final.png
+OUTPUT c:/Users/Luke/Documents/Github/flinders-thesis/Chapters/Chapter6.aux
 INPUT c:/Users/Luke/Documents/Github/flinders-thesis/Appendices/AppendixA.tex
 INPUT c:/Users/Luke/Documents/Github/flinders-thesis/Appendices/AppendixA.tex
 INPUT c:/Users/Luke/Documents/Github/flinders-thesis/Appendices/AppendixA.tex
@@ -1274,6 +1278,9 @@ INPUT c:/Users/Luke/Documents/Github/flinders-thesis/Chapters/Chapter4.aux
 INPUT c:/Users/Luke/Documents/Github/flinders-thesis/Chapters/Chapter5.aux
 INPUT c:/Users/Luke/Documents/Github/flinders-thesis/Chapters/Chapter5.aux
 INPUT c:/Users/Luke/Documents/Github/flinders-thesis/Chapters/Chapter5.aux
+INPUT c:/Users/Luke/Documents/Github/flinders-thesis/Chapters/Chapter6.aux
+INPUT c:/Users/Luke/Documents/Github/flinders-thesis/Chapters/Chapter6.aux
+INPUT c:/Users/Luke/Documents/Github/flinders-thesis/Chapters/Chapter6.aux
 INPUT c:/Users/Luke/Documents/Github/flinders-thesis/Appendices/AppendixA.aux
 INPUT c:/Users/Luke/Documents/Github/flinders-thesis/Appendices/AppendixA.aux
 INPUT c:/Users/Luke/Documents/Github/flinders-thesis/Appendices/AppendixA.aux
