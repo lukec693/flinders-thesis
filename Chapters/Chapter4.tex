@@ -290,32 +290,31 @@ These panels are all monocrystalline, meaning 'single crystal silicone' as oppos
 The panels will be wired in series in order to generate a compounding power output.
 %When a total potential wattage is calculated, it will be divided by the overall cost to determine the best 'power per dollar' option. %%double check maths on this
 
-\begin{center}
-    \begin{tabular}{ |c|c|c|c| }
-    \hline
-    Product No. & Power Output (mW) & Dimensions (mm) & Cost Per Panel (AU\$) \\
-    \hline
-    SM301K09L & 595 & 58x58x2 & 14.33 \\
-    \hline
-    SM111K09L & 220 & 62x21x2 & 7.17 \\ 
-    \hline
-    SM101K12L & 263 & 45x32x2.1 & 7.08 \\
-    \hline
-    MIKROE-651 & 400 & 70x65x3.2 & 15.81 \\
-    \hline
-    cell1 & cell2 & cell3 & cell4 \\
-    \hline
-    cell1 & cell2 & cell3 & cell4 \\
-    \hline
-    cell1 & cell2 & cell3 & cell4 \\
-    \hline
-    \end{tabular}
-\end{center}
-
-\begin{figure}
-    \caption{An analysis of various solar arrays and their suitability to a designated space on the MEGAphone chassis}
-    \label{fig:DesignPrinciples}
-\end{figure}
+\begin{table}
+    \begin{center}
+        \begin{tabular}{ |c|c|c|c| }
+        \hline
+        Product No. & Power Output (mW) & Dimensions (mm) & Cost Per Panel (AU\$) \\
+        \hline
+        SM301K09L & 595 & 58x58x2 & 14.33 \\
+        \hline
+        SM111K09L & 220 & 62x21x2 & 7.17 \\ 
+        \hline
+        SM101K12L & 263 & 45x32x2.1 & 7.08 \\
+        \hline
+        MIKROE-651 & 400 & 70x65x3.2 & 15.81 \\
+        \hline
+        cell1 & cell2 & cell3 & cell4 \\
+        \hline
+        cell1 & cell2 & cell3 & cell4 \\
+        \hline
+        cell1 & cell2 & cell3 & cell4 \\
+        \hline
+        \end{tabular}
+    \end{center}
+    \caption{An analysis of various solar arrays and their suitability to a designated space on the MEGAphone chassis.}
+    \label{fig:SolarTable}
+\end{table}
 
 %%FINISH ANALYSIS HERE
 
@@ -451,6 +450,13 @@ An issue with the footprint that was observed after sourcing these parts, was th
 The approach was to file down the pins on the rocker switches individually so that they would fit, which was not an issue in regards to current as the whole device runs on about 1-2W, with a rocker switch[REF] able to handle approximately 2kW of alternating current.
 Filing down the PCB through-hole cutout would have made for a far worse alternative as there was potential for the solder to not flow evenly due to damaging the solder mask. %double check this
 
+\begin{figure} [h]
+    \centering
+    \includegraphics[width=10cm,height=10cm,keepaspectratio]{Figures/rockerswitchpcb.png}
+    \caption{This is rocker switch PCB used to interface the rocker switches with the MEGAphone PCB. The PCB above presents the tactile switches while the PCB below shows the pads used to interface with the main PCB.}
+    \label{fig:Rocker}
+\end{figure}
+
 During the case design process, having mounting points to hold the circuit board in place was implemented.
 This was later removed as the switches mount very securely in their cutouts coming from a top-down orientation and so pressing in or flicking these switches would not put any stress on the PCB, unlike the EZ keys in section 4.2.
 Doing so allows for adjustment of the PCB, if necessary, before soldering it as well as fewer parts making the repair process easier if users need to replace or modify certain parts.
@@ -467,6 +473,13 @@ The reason why this was not chosen is that this deliverable is a proof of concep
 The purpose behind the Easy Keys or 'EZ Keys' as otherwise referred to, was to give users a platform in which to interact with the MEGAphone device while being as clear and easy to use as possible.
 Multi-coloured, multi-shaped keys are employed make things as unambiguous as possible which include, left and right (forward and backward), up and down, and a 'fire' or enter key.
 This, as discussed in section 3.10, is inspired by the Storm Nav-pad[source], where a version has been achieved to a budget, for prototype development. %check typing of nav pad
+
+\begin{figure} [h]
+    \centering
+    \includegraphics[width=10cm,height=10cm,keepaspectratio]{Figures/easykeypcb.png}
+    \caption{The EZ access key PCB used to interface those keys and the power button with the MEGAphone PCB. The layout above shows the PCB with the footprint of the rocker switches, whereas the layout below shows how the switches sit in the MEGAphone case switch housing.}
+    \label{fig:EZkeys}
+\end{figure}
 
 An important aspect of this device is to provide easy access to the power switch as turning the display on an off on this device is frequent due to not having automatic display dimming features.
 This is integrated into the device in the same manner as the EZ Keys, in that they work by momentarily pressing a tactile switch.
