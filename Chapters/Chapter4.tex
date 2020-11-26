@@ -103,6 +103,13 @@ Another aspect that was later modified was the key-chain feature, as this was th
 Considering extra available space, this was expanded both horizontally and vertically as this was later adapted to become a 'housing' for a carry strap, that could potentially double as a key-chain, to strap to the user if desired.
 This is discussed in section 4.4.9 in further detail.
 
+\begin{figure} [h]
+    \centering
+    \includegraphics[width=10cm,height=10cm,keepaspectratio]{Figures/firstprint.jpg}
+    \caption{...}
+    \label{fig:First}
+\end{figure}
+
 The top half of the MEGAphone housing was not printed at this stage as there was still the concern of where to place the 'EZ access keys' to give users an easier interface than what capable with the Gameboy buttons.
 Instead, the plan was to wait until the next stage of the design was complete before going ahead with the next 3D print.
 
@@ -119,8 +126,24 @@ This was later changed to make space for the FPGA board, housing the processor f
 This section print was where the EZ access keys were implemented, which were considered a vital part of the MEGAphone UD chassis project as they provide one of the more notable appeals of accessibility.
 At this stage, another important consideration, the power key, is included and intentionally placed in a button housing that sits at a slightly higher elevation of 0.5mm, to discourage accidental button presses.
 
+\begin{figure} [h]
+    \centering
+    \includegraphics[width=10cm,height=10cm,keepaspectratio]{Figures/secondprint.jpg}
+    \caption{...}
+    \label{fig:Second}
+\end{figure}
+
+\begin{figure} [h]
+    \centering
+    \includegraphics[width=10cm,height=10cm,keepaspectratio]{Figures/secondtothirdprint.jpg}
+    \caption{...}
+    \label{fig:Secondtothird}
+\end{figure}
+
 These button housings were not ideal as they provided very little clearance for the buttons themselves.
 This was solved in the final print by increasing those openings by 0.3mm in order to allow slightly more space so that actuation was smooth but also ensured that the buttons remain in place.
+
+These prototypes were printed using the Ultimaker 2+, which set size constraints, meaning that the print had to be sliced into multiple parts.
 
 %-----------------------------------
 %	SUBSECTION 2
@@ -130,10 +153,27 @@ This was solved in the final print by increasing those openings by 0.3mm in orde
 This is the final 3D-printed deliverable of the project and is naturally the most refined revision of the project. 
 There are still aspects of the MEGAphone housing that are not perfect as is the case in any iterative design project and the result of this print encouraged changes that are talked about in detail in chapter 5.
 
+\begin{figure} [h]
+    \centering
+    \includegraphics[width=10cm,height=10cm,keepaspectratio]{Figures/topwatersupport.jpg}
+    \caption{...}
+    \label{fig:thirdtop}
+\end{figure}
+
 Other considerations made to rectify issues in the design, included giving more clearance to the device stand (discussed more in section 4.4.7) so that it could also actuate smoothly and more clearance to the mating fit on the device strap feature.
 The latter should have worked and was more likely made an issue due to the inaccuracy of the 3D-printer, nonetheless, considerations were made to increase the opening for this fit.
 
 Giving the battery an opening to easily pick up and set down the device was realised after this print in addition to a housing for a velcro strap to hold the battery in place as sticking it down is considered a riskier approach.
+
+\begin{figure} [h]
+    \centering
+    \includegraphics[width=10cm,height=10cm,keepaspectratio]{Figures/bottomwatersupport.jpg}
+    \caption{...}
+    \label{fig:thirdbottom}
+\end{figure}
+
+This final print used the Ultimaker S5, which allowed a large enough surface area that the entire print was possible without slicing any parts of the case.
+Additionally, these prints used water dissolvable supports which made getting to the final product much easier.
 
 %----------------------------------------------------------------------------------------
 %	SECTION 4
@@ -296,7 +336,7 @@ The panels will be wired in series in order to generate a compounding power outp
         \hline
         Product No. & Power Output (mW) & Dimensions (mm) & Cost Per Panel (AU\$) \\
         \hline
-        SM301K09L & 595 & 58x58x2 & 14.33 \\
+        SM301K09L & 595 & 58x58x2 & 14.33 \\ % cite these
         \hline
         SM111K09L & 220 & 62x21x2 & 7.17 \\ 
         \hline
