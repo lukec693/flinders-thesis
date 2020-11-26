@@ -226,7 +226,8 @@ Doing adds to the softness from the device and makes it arguably safer for users
     \label{fig:new_grips}
 \end{figure}
 
-A feature that can be noticed in figure \ref{fig:new_grips}, is that the 
+A feature that can be noticed in figure \ref{fig:new_grips}, is that the lowest ridge represents a more pronounced 'fillet'.
+This design choice was intended as a more defined thumb rest, hinting to the user once again that this is the orientation in which they should place their hands, further supporting design principle three.
 
 %-----------------------------------
 %	SUBSECTION 3
@@ -586,22 +587,119 @@ The approach was to feature a horizontal and vertical scanning feature for the M
 Vertical scanning should loop indefinitely at a reasonable pace of one second per key until a button press is registered, in which case, vertical scanning should stop to allow horizontal scanning to begin.
 When a full loop is completed, the interface can assume an accidental press and return to a vertical scan. %%add to this and review code
 
-% %-----------------------------------
-% %	SUBSECTION 1
-% %-----------------------------------
-
-% \subsection{Accessible Keyboard Framework}
-% //
-
-% %-----------------------------------
-% %	SUBSECTION 2
-% %-----------------------------------
-
-% \subsection{Accessible Interface}
-% //
-
 %----------------------------------------------------------------------------------------
 %	SECTION 7
+%----------------------------------------------------------------------------------------
+
+\section{CAD Models}
+This section will provide a visual design progression to better illustrate a broader view of the iterative process of this project.
+As COVID-19 affected the way that this project was approached, in that designs were not reviewed by a focus group, these versions are not so much seen as 'iterations' but rather significant points in the design process.
+This was the case as correspondence with industry professionals normally occurred on a weekly or fortnightly basis, meaning that changes often ended up being very incremental between these meetings.
+
+3D-printing of prototypes occurred at regular intervals, however, these CAD designs might not necessarily line up perfectly with previously presented prototypes.
+Much of the design process involved revision and critique of CAD models as a more economical approach, as not all 'stages' of the design warranted physical testing or examination.
+
+%-----------------------------------
+%	SUBSECTION 1
+%-----------------------------------
+\subsection{First Iteration}
+
+The first iteration was most reminiscent of the final sketch design in section 2.3, in that it shares the same ridged pattern (figure \ref{fig:iteration1_t_f}).
+Naturally, this was the intention, until the new approach to make it conform to the hand was chosen.
+
+\begin{figure} [h]
+    \centering
+    \includegraphics[width=10cm,height=10cm,keepaspectratio]{Figures/iteration1_top_front.png}
+    \caption{...}
+    \label{fig:iteration1_t_f}
+\end{figure}
+
+Underneath the top housing (figure \ref{fig:iteration1_t_b}), a seal can be seen that was intended to mate with the bottom housing.
+In the end, this was removed as it was considered unnecessary.
+If the intention in the future is to make the device more water resistent, this option could be employed with rubber seals, however, future iterations of this aspect was considered adequate as it serves its function of holding the two components in place.
+In addition, manufacturing a seal for this would not be considered in the scope of the project and the housing would nonetheless be screwed in to remain secure.
+
+\begin{figure} [h]
+    \centering
+    \includegraphics[width=10cm,height=10cm,keepaspectratio]{Figures/iteration1_top_back.png}
+    \caption{...}
+    \label{fig:iteration1_t_b}
+\end{figure}
+
+%-----------------------------------
+%	SUBSECTION 2
+%-----------------------------------
+\subsection{Second Iteration}
+
+One notable issue that was addressed in this iteration was the positioning of the openings for the device ports, as seen in figure \ref{fig:iteration2_t_f} and figure \ref{fig:iteration2_t_b}.
+As can be seen in the aforementioned figures, the new shape of the device now conforms to the hand,
+Other features include the addition of the rocker switch housing at the top of the device, which was later refined to make more space to better accommodate the rocker switch PCB.
+
+\begin{figure} [h]
+    \centering
+    \includegraphics[width=10cm,height=10cm,keepaspectratio]{Figures/iteration2_top_front.png}
+    \caption{...}
+    \label{fig:iteration2_t_f}
+\end{figure}
+
+Other rudimentary, yet key features that were implemented at this stage were the housings for the speaker, DPAD and A, B buttons.
+The original key-chain feature can be seen in the top left of figure \ref{fig:iteration2_t_b}, before being swapped for the larger device strap.
+
+\begin{figure} [h]
+    \centering
+    \includegraphics[width=10cm,height=10cm,keepaspectratio]{Figures/iteration2_top_back.png}
+    \caption{...}
+    \label{fig:iteration2_t_b}
+\end{figure}
+
+%-----------------------------------
+%	SUBSECTION 3
+%-----------------------------------
+\subsection{Third Iteration}
+
+The two most prominant aspects of this iteration were the addtion of the EZ access keys and the power and LED switches. 
+Originally the intention was to keep the LED ON/OFF switches, however, it was decided that the space could be more valuably used by reclaiming that space for a power only button, as this better supports the useability of the device.
+This supports design principle three as is puts more emphasis on the power button, a feature that is considerably more important than the LED button, as it provides users with the only way of turning the display of due to no auto-dimming capability.
+One last note is that this is the only iteration where mounting points up top for the rocker switches as it was deemed not necessary (view section 5.1).
+
+\begin{figure} [h]
+    \centering
+    \includegraphics[width=10cm,height=10cm,keepaspectratio]{Figures/iteration3_top_front.png}
+    \caption{...}
+    \label{fig:iteration3_t_f}
+\end{figure}
+
+\begin{figure} [h]
+    \centering
+    \includegraphics[width=10cm,height=10cm,keepaspectratio]{Figures/iteration3_top_back.png}
+    \caption{...}
+    \label{fig:iteration3_t_b}
+\end{figure}
+
+%-----------------------------------
+%	SUBSECTION 4
+%-----------------------------------
+\subsection{Forth Iteration}
+
+In this final iteration in line with the final 3D-print, it can be observed that a beige colour was chosen as this was intended to relate to the Commodore64 style, although the colour here can be considered much more 'bright' (view figure \ref{fig:iteration4_t_f} and figure \ref{fig:iteration4_t_b}).
+Other features include, updated mounts for M3 threaded inserts, guides for the orientation of the A, B buttons, a larger housing for the power button and bezels for the central 480p display.
+
+\begin{figure} [h]
+    \centering
+    \includegraphics[width=10cm,height=10cm,keepaspectratio]{Figures/iteration4_top_front.png}
+    \caption{...}
+    \label{fig:iteration4_t_f}
+\end{figure}
+
+\begin{figure} [h]
+    \centering
+    \includegraphics[width=10cm,height=10cm,keepaspectratio]{Figures/iteration4_top_back.png}
+    \caption{...}
+    \label{fig:iteration4_t_b}
+\end{figure}
+
+%----------------------------------------------------------------------------------------
+%	SECTION 8
 %----------------------------------------------------------------------------------------
 
 \section{Summary}  %% TALK ABOUT THE DESIGN IN VARIOUS STAGES, PERHAPS IN A SECTION BEFORE FINISHING TO SHOW THE BIGGER PICTURE
