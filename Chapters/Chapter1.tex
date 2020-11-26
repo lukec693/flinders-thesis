@@ -43,16 +43,7 @@ The third requirement will be the use of Xilinx's Vivado FPGA programming softwa
 Accessible design practices will play a central role in the design process as the success of the final product depends on its ability to provide accessibility to all (regardless of age or disability). 
 As mentioned, this project does have existing constraints, in that it is adapted around an existing PCB, however, this design will take every opportunity to uphold the aforementioned design philosophy and include a proposed redesign following these design practices.
 Additionally, this project will look into how UD can incorporate Digital Sovereignty, more specifically, the 'Right to Repair' movement, so that users can not only have an accessible interface, but one that can be easily repaired, modified and controlled by them.
-
 %% planned ob works against people with a disability, capability maintenance
-
-%\begin{figure}
-%\begin{centering}
-%\includegraphics[width=10cm,height=10cm,keepaspectratio]{Figures/dont-panic-e1534046233310.jpg}
-%\caption{The Hitch Hiker's Guide To The Galaxy (not to be confused with \cite{Reference1}. Image Credit David Strine (License: CC0)}
-%\label{fig:ThisFig}
-%\end{centering}
-%\end{figure}
 
 %----------------------------------------------------------------------------------------
 %	SECTION 2
@@ -63,6 +54,13 @@ Additionally, this project will look into how UD can incorporate Digital Soverei
 The ‘MEGAphone’ is a digitally sovereign mobile device created by Dr Paul Gardner-Stephen and the MEGA65 team in Germany with the intent to promote Digital Sovereignty \cite{mega65}.
 This project began when a trend was noticed in modern consumer electronics, a trend that still exists today, in that companies design their products with ‘planned obsolescence’ in mind. 
 Gardner-Stephen believes that users should have the ability to repair or modify any aspect of their device without difficulty \cite{mobilehistory}.
+
+\begin{figure} [h]
+    \centering
+    \includegraphics[width=12cm,height=10cm,keepaspectratio]{Figures/megaphone.png}
+    \caption{On the right is the first revision of the MEGAphone device. On the left, a Nintendo Switch \cite{nintendoswitch} can be seen as a size comparison for the MEGAphone.}
+    \label{fig:Jellybean}
+\end{figure}
 
 %% explain the purpose of FPGA, and security features
 The MEGAphone incorporates the use of a field-programmable gate array (FPGA), a hardware programmable CPU designed to mimic the unreleased Commodore 65.
@@ -78,13 +76,14 @@ This coupled with the addition of hardware power switches, gives users the peace
 
 The main objective of this project is to design a prototype case for the MEGAphone that follows the seven principles of Universal Design (UD), established at the Center for Universal Design, North Carolina State University \cite{sevenprinciples}. 
 Other deliverables will be in support of this case and will include, PCBs to assist with add-on features and hardware-implemented accessibility features in the FPGA.
+
 This thesis will document the design process including any modifications to the designs, along with a justification as to why specific changes were made as opposed to alternative options.
 In terms of the research component, this thesis aims to address the relevance of UD in the design process as well as identifying the importance of device sovereignty and how it can be supported during this process.
 
-Specifically, this thesis will look into the history of UD, some examples of how certain features have been implemented in existing products, both hardware and software, and how the effects of the COVID-19 have negatively affected the ability for users to source their parts for repairs under the umbrella of DS.
+Specifically, this thesis will look into the history of UD, provide some examples of how certain features have been implemented in existing products, both hardware and software, and how the effects of the COVID-19 have negatively affected the ability for users to source their parts for repairs under the umbrella of DS.
 The desired output of this project as documented will be a physical prototype of the MEGAphone case and supporting components as well as software-side accessibility features for the MEGA65 operating system.
 Multiple physical prototypes of this project will allow for not only a demonstration of the UD features but also a demonstration of the engineering design iteration process.
- 
+
 %----------------------------------------------------------------------------------------
 %	SECTION 4
 %----------------------------------------------------------------------------------------
@@ -160,10 +159,11 @@ Specifically, the author's key contributions to the field are:
 %----------------------------------------------------------------------------------------
 \section{Structure of Thesis}
 
-Chapter 1 addresses the aims of the project, provides some context on the MEGAphone and lists the questions that this thesis aims to answer.
+Chapter 1 addresses the aims of the project, provides some context on the MEGAphone, lists the research questions and contributions of the.
 Chapter 2 investigates how Universal Design can help to overcome many issues in product design that people with disabilities face without the need for specialized equipment. 
-Additionally, the lack of Digital Sovereignty in electronics devices is addressed as well as why it must be preserved.
+Additionally, the lack of Digital Sovereignty in electronics devices is addressed as well as how it affects the user and control over their data.
 Chapter 3 focuses on the methods and tools used to plan, design and manufacture this project.
-Chapter 4 discusses the design process and the incremental changes made to the design toward a definitive prototype, supplemented by a discussion regarding the outcome.
-Chapter 5 provides concluding remarks as well as a final evaluation of the case prototype, PCBs, hardware-implemented 'software' features and future work to be undertaken.
+Chapter 4 discusses the iterative design process and the incremental changes made to the design, toward a definitive prototype, with justifications as to why each feature was implemented.
+Chapter 5 reviews the final 3D-printed prototype and presents some changes in response to the outcome.
+Chapter 6 provides concluding remarks as well as a final evaluation of the case prototype, PCBs, hardware-implemented 'software' features thereby suggesting future work to be undertaken.
 %%% ADDRESS THIS SECTION AGAIN AT THE END OF WRITING!!

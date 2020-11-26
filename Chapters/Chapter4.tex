@@ -86,8 +86,11 @@ For these reasons, this was the design in which the project is based.
 
 This section provides a broad view of the design process with a 'timeline' based approach, making note of the problems and solutions regarding 3D-printed prototypes.
 Detailed evaluations of the specific design features of the MEGAphone housing are provided in section 4.
+
 It is very important to reiterate that due to the COVID-19 pandemic, the original plan to organise community focus groups at Novita \cite{novita} in order to receive feedback was not possible, due to health concerns from the organisation, well within reason.
 This was instead replaced by feedback from industry experts, ideally to the same effect, however, some sacrifices were made, specifically regarding the ability to compile data on the useability of the device based on feedback from the aforementioned focus group.
+
+Also note that when this chapter refers to the orientation of the device as 'top' or 'bottom', for example, it is assuming that orientation based on the initial concepts presented in section 2.
 
 %-----------------------------------
 %	SUBSECTION 1
@@ -105,8 +108,8 @@ This is discussed in section 4.4.9 in further detail.
 
 \begin{figure} [h]
     \centering
-    \includegraphics[width=10cm,height=10cm,keepaspectratio]{Figures/firstprint.jpg}
-    \caption{...}
+    \includegraphics[width=10cm,height=10cm,keepaspectratio]{Figures/firstprint.png}
+    \caption{The first print of the 'bottom' case component was sliced due to limited printing space. Markings can be seen where better centering of the PCB was desired and a proposed extention of space around the key-chain feature.}
     \label{fig:First}
 \end{figure}
 
@@ -128,15 +131,15 @@ At this stage, another important consideration, the power key, is included and i
 
 \begin{figure} [h]
     \centering
-    \includegraphics[width=10cm,height=10cm,keepaspectratio]{Figures/secondprint.jpg}
-    \caption{...}
+    \includegraphics[width=10cm,height=10cm,keepaspectratio]{Figures/secondprint.png}
+    \caption{This print was glued together using an acrylic glue. Clearance around buttons was not ideal, prompting changes in the next print.}
     \label{fig:Second}
 \end{figure}
 
 \begin{figure} [h]
     \centering
-    \includegraphics[width=10cm,height=10cm,keepaspectratio]{Figures/secondtothirdprint.jpg}
-    \caption{...}
+    \includegraphics[width=10cm,height=10cm,keepaspectratio]{Figures/secondtothirdprint.png}
+    \caption{This print was similar in spec to the previous however, the majority was printed 'upside down' to better highlight the interior. A clearance of 4.25mm for these mounting points allows for M3 threaded inserts.}
     \label{fig:Secondtothird}
 \end{figure}
 
@@ -146,7 +149,7 @@ This was solved in the final print by increasing those openings by 0.3mm in orde
 These prototypes were printed using the Ultimaker 2+, which set size constraints, meaning that the print had to be sliced into multiple parts.
 
 %-----------------------------------
-%	SUBSECTION 2
+%	SUBSECTION 3
 %-----------------------------------
 \subsection{Final 3D-print}
 
@@ -155,8 +158,8 @@ There are still aspects of the MEGAphone housing that are not perfect as is the 
 
 \begin{figure} [h]
     \centering
-    \includegraphics[width=10cm,height=10cm,keepaspectratio]{Figures/topwatersupport.jpg}
-    \caption{...}
+    \includegraphics[width=10cm,height=10cm,keepaspectratio]{Figures/topwatersupport.png}
+    \caption{This is the final 'top' component print, where water dissolvable supports are visible from the Ultimaker S5 printer.}
     \label{fig:thirdtop}
 \end{figure}
 
@@ -167,13 +170,13 @@ Giving the battery an opening to easily pick up and set down the device was real
 
 \begin{figure} [h]
     \centering
-    \includegraphics[width=10cm,height=10cm,keepaspectratio]{Figures/bottomwatersupport.jpg}
-    \caption{...}
+    \includegraphics[width=10cm,height=10cm,keepaspectratio]{Figures/bottomwatersupport.png}
+    \caption{This is final 'bottom' component where water dissolvable supports can be seen more clearly.}
     \label{fig:thirdbottom}
 \end{figure}
 
 This final print used the Ultimaker S5, which allowed a large enough surface area that the entire print was possible without slicing any parts of the case.
-Additionally, these prints used water dissolvable supports which made getting to the final product much easier.
+Additionally, these prints used water dissolvable supports that dissolve in about one day submerged underwater which made getting to the final product much easier.
 
 %----------------------------------------------------------------------------------------
 %	SECTION 4
@@ -201,14 +204,14 @@ This once again would allow a tangible object in which to add relevant sketches,
 %-----------------------------------
 \subsection{Hand-grips}
 
-The first stage of design after the initial concept sketches was designed to use the 'ridged' rubber grips on both sides of the device.
-However, this concept was removed in favour of 'ridges' that resemble the size and shape of human adult fingers to more intuitively direct the user to hold the device correctly as this supports the third design principle.
+The first stage of design after the initial concept sketches was designed to use the 'ridged' rubber grips on both sides of the device (view \ref{fig:old_grips}).
+However, this concept was removed in favour of 'ridges' that resemble the size and shape of human adult fingers to more intuitively direct the user to hold the device correctly as this supports the third design principle (view \ref{fig:new_grips}).
 
 \begin{figure} [h]
     \centering
     \includegraphics[width=10cm,height=10cm,keepaspectratio]{Figures/handgrip_original.png}
     \caption{This is a model of the original CAD handgrip based on the final design concept.}
-    \label{fig:Design_3}
+    \label{fig:old_grips}
 \end{figure}
 
 Another aspect that was considered since the early stages, while less obvious in the final product due to the curved nature, was the introduction of rounded corners as this would minimise hazards to the user.
@@ -220,8 +223,10 @@ Doing adds to the softness from the device and makes it arguably safer for users
     \centering
     \includegraphics[width=10cm,height=10cm,keepaspectratio]{Figures/handgrip_final.png}
     \caption{The handgrip design was refined by approaching it as something that conforms to the hand rather than just providing a textured surface to hold on to.}
-    \label{fig:Design_3}
+    \label{fig:new_grips}
 \end{figure}
+
+A feature that can be noticed in figure \ref{fig:new_grips}, is that the 
 
 %-----------------------------------
 %	SUBSECTION 3
@@ -252,7 +257,7 @@ Another benefit of implementing Jellybean switch accessibility is that it suppor
 
 \begin{figure} [h]
     \centering
-    \includegraphics[width=10cm,height=10cm,keepaspectratio]{Figures/jellybean.jpg}
+    \includegraphics[width=10cm,height=10cm,keepaspectratio]{Figures/jellybean.png}
     \caption{This is a physical example of how the Jellybean switch interfaces with the device during development.}
     \label{fig:Jellybean}
 \end{figure}
@@ -315,7 +320,7 @@ The aforementioned sliding mechanism slots into two notches which holds the stan
 An alternative that was considered that would have proven to be effective, was to have the cylindrical 'mounting' point in which to revolve the stand, be a part of the stand.
 This would almost be a reverse of the actual prototype.
 
-%%add trigonometric function to determine angle of stand 'foot'
+%%add trigonometric function to determine the angle of stand 'foot'
 
 %-----------------------------------
 %	SUBSECTION 8
@@ -325,7 +330,8 @@ This would almost be a reverse of the actual prototype.
 % choice of solar panels, discuss potential options and why a specific one was chosen, do a table comparison of available panels and again explain the power output and cost etc.
 Giving users more ways to charge their device plays heavily into the Digital Sovereignty aspect of this project as this provides a platform in which to harvest energy to power the device without the need for energy infrastructure.
 This is something that Gardner-Stephen, in one of his CCC talks, lists as one of the six freedoms to protect against the 'Digital Winter' which Gardner-Stephen refers to as the "situation where the freedoms to create and [innovate] digital systems will become impossible or highly limited" due to reasons listed such as totalitarian governments or failure of critical infrustructure\cite{freedoms}.
-Seven solar cells from two electronic suppliers, Digikey and Mouser were analysed based on cost, size and energy output for a designated area set out on the MEGAphone case at 125mm by 150mm, collated in figure X. %fix reference
+
+Seven solar cells from two electronic suppliers, Digikey and Mouser were analysed based on cost, size and energy output for a designated area set out on the MEGAphone case at 125mm by 150mm, collated in table \ref{tab:Solar}.
 These panels are all monocrystalline, meaning 'single crystal silicone' as opposed to less efficient, yet more affordable polycrystalline 'multi' options.
 The panels will be wired in series in order to generate a compounding power output.
 %When a total potential wattage is calculated, it will be divided by the overall cost to determine the best 'power per dollar' option. %%double check maths on this
@@ -336,27 +342,45 @@ The panels will be wired in series in order to generate a compounding power outp
         \hline
         Product No. & Power Output (mW) & Dimensions (mm) & Cost Per Panel (AU\$) \\
         \hline
-        SM301K09L & 595 & 58x58x2 & 14.33 \\ % cite these
+        SM301K09L \cite{SM301K09L} & 595 & 58x58x2 & 14.33 \\
         \hline
-        SM111K09L & 220 & 62x21x2 & 7.17 \\ 
+        SM111K09L \cite{SM111K09L} & 220 & 62x21x2 & 7.17 \\ 
         \hline
-        SM101K12L & 263 & 45x32x2.1 & 7.08 \\
+        SM101K12L \cite{SM101K12L} & 263 & 45x32x2.1 & 7.08 \\
         \hline
-        MIKROE-651 & 400 & 70x65x3.2 & 15.81 \\
+        AM-8801CAR \cite{am8801} & 189 & 58x55x1.1 & 17.65 \\
         \hline
-        cell1 & cell2 & cell3 & cell4 \\
+        AM-5412CAR \cite{am5412} & 88 & 50x33x1.8 & 11.61 \\
         \hline
-        cell1 & cell2 & cell3 & cell4 \\
+        MP3-25 \cite{mp3} & 90 & 114x24x0.22 & 6.70 \\
         \hline
-        cell1 & cell2 & cell3 & cell4 \\
+        MPT4.8-150 \cite{mpt} & 480 & 94x73x0.22 & 20.58 \\
         \hline
         \end{tabular}
     \end{center}
-    \caption{An analysis of various solar arrays and their suitability to a designated space on the MEGAphone chassis.}
-    \label{fig:SolarTable}
+    \caption{Seven solar cells are presented to be analysed for their suitability to a designated space on the MEGAphone chassis.}
+    \label{tab:Solar}
 \end{table}
 
-%%FINISH ANALYSIS HERE
+Power (in watts) to area (in millimetres), given the contents of table \ref{tab:Solar} are presented:
+\begin{itemize}
+    \item Product 'SM301K09L' \cite{SM301K09L} from ANYSOLAR can fit 4 panels into the available (150mm by 125mm) space, netting a total of 2.3W for AU\$28.66
+    \item Product 'SM111K09L' \cite{SM111K09L} from ANYSOLAR fits 14 panels into the available space, netting 3W for AU\$100
+    \item Product 'SM101K12L' \cite{SM101K12L} from ANYSOLAR fits 9 panels into the available space, netting 2.3W for AU\$63.72
+    \item Product 'AM-8801CAR' \cite{am8801} from Panasonic fits 4 panels into the available space, netting 0.8W for AU\$70.60
+    \item Product 'AM-5412CAR' \cite{am5412} from Panasonic fits 9 panels into the available space, netting 1.7W for AU\$104.49
+    \item Product 'MP3-25' \cite{mp3} from PowerFilm fits 6 panels into the available space, netting 0.5W for AU\$40.20
+    \item Product 'MPT4.8-150' \cite{mpt} from PowerFilm fits 2 panels into the available space, netting 1W for AU\$41.16
+\end{itemize}
+
+Based on this information, 'SM301K09L' from ANYSOLAR provides the best overall power to cost ratio while 'SM111K09L' from the same manufacturer offers the most power.
+The price is, however, exponentially higher for that option, which supports the conclusion that the first choice is far better than all other options considering the specific constraints of the project.
+The issue with these options is that none fully satisfy the available area on the MEGAphone chassis as they are not custom made for the device.
+
+Email correspondence with 'Nova Energy' \cite{nova}, the same company that provided batteries for the MEGAphone in the past, quoted a solar cell sample size at 140x125 for US\$10 at 2.4W (AU\$13.60 at time of writing), which is extremely competitive with the other analysed examples.
+As supplying directly from the manufacturer cuts out the 'middle man', so to speak, this approach made the most sense, as this would provide the best value for money, at just under half the price of the next best option.
+However, generally, these companies act as wholesalers, meaning that they offer these samples with the expectation that their customers will order an extremely large quantity if they are pleased with the quality of their product.
+While this sample size would be sufficient for the MEGAphone project, a long term solution to this would be to either buy a much larger quantity or look elsewhere for future samples.
 
 %-----------------------------------
 %	SUBSECTION 9
@@ -472,7 +496,7 @@ Not to mention their horizontal placement would mean that they only make sense t
 %----------------------------------------------------------------------------------------
 
 \section{PCB Design}
-This section discusses the process in designing the supporting PCBs for this project.
+This section discusses the process of designing the supporting PCBs for this project.
 These are the PCBs intended to work around the alternative of a costly and time-consuming redesign of the MEGAphone PCB as it was not designed under UD.
 As previously discussed, the UD concept is a new introduction to the MEGAphone project.
 % explain workaround for previous button layout, using slave boards with tactile switches as well as choice behind contact pads instead of connectors to save space
