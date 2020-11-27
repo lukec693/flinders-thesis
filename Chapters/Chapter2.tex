@@ -40,8 +40,11 @@ It is important to highlight that Story's design principles should apply not onl
 While not all principles will necessarily apply to every application, there is certainly more than one principle that will be relevant regardless of the field.
 In the following figure, each of the seven design principles developed by Story is listed followed by a summary of each principle.
 
-\begin{table}
+\begin{table} [h]
     \begin{center}
+        \vspace{5mm}
+        \caption{A brief description of the seven design principles by Follette Story \cite{sevenprinciples}}
+        \label{fig:DesignPrinciples}
         \begin{tabular}{ |c|c| } % cite principles again in here
         \hline
         Principle One & Equitable Use \cite{sevenprinciples} \\
@@ -60,8 +63,6 @@ In the following figure, each of the seven design principles developed by Story 
         \hline
         \end{tabular}
     \end{center}
-    \caption{A brief description of the seven design principles by Follette Story \cite{sevenprinciples}}
-    \label{fig:DesignPrinciples}
 \end{table}
 
 The first principle states that the design should be appealing to all users, meaning that it should be accessible to everyone regardless of their situation.
@@ -115,7 +116,7 @@ Universal Design is a concept that is only successful when accessibility is a pa
 In a paper by Newell and others \cite{incldesign}, they found that designers who adopted the Universal Design concept would often follow traditional methods of design and then go back and investigate how they might adapt the design to support a larger audience.
 The problem with this was that they would end up with products that would appear to be accessible, however, in reality, were quite difficult for people with disabilities and the elderly.
 In an earlier paper by Newell and others, they highlight the rapidly increasing demographic of people with disabilities and elderly people interacting with computers shows that accessible interfaces are actually of very great importance \cite{computerinterface}.
-This is certainly much more true today, with computers in the form of smartphones which have become a modern-day tool, present in everyday life, for very a very large demographic of people.
+This is certainly much more true today, with computers in the form of smartphones which have become a modern-day tool, present in everyday life, for a very large demographic of people.
 
 %-----------------------------------
 %	SUBSECTION 1
@@ -125,12 +126,17 @@ This is certainly much more true today, with computers in the form of smartphone
 %% TALK ABOUT ACCESSIBLE DEVICES IN THESE SECTIONS
 Apple's VoiceOver accessibility software running on iOS provides users with a gesture-based, screen reader in which to make interaction with the interface easier \cite{iphone}.
 VoiceOver provides read-aloud features for all screen elements on screen as well as those typed by the user.
+
 Other standard features include giving users control over the colour and contrast of the display as well as the ability to change the scale of elements such as the font, or the screen in its entirety.
-One fascinating feature of the VoiceOver software is that it provides users with a 6 and 8 dot braille keyboard, which has seen to be a very effective alternative to a QWERTY keyboard [source]. %%cite that youtube video of a blind person typing
+One fascinating feature of the VoiceOver software is that it provides users with a 6 and 8 dot braille keyboard. 
+The braille keyboard has seen to be an effective alternative to a QWERTY keyboard, with one interesting example of a blind girl using VoiceOver to navigate the device with relative ease \cite{blind}. %%cite that youtube video of a blind person typing
+
+One quote from the same paper by Law that stands out is when he asks the question, "can you unlock your phone and call a friend without using the display?" \cite{cellphone}.
+This shows that in practice, VoiceOver is impressively useable, which shows that notable advancements have been made in this field since reviewed in Law's paper.
 
 One aspect that perhaps sets the device back is that while it has full support for built-in apps, not all third-party apps are supported.
 However, this is something that would fall on third-party app developers to implement and Apple does do their diligence to provide developers with resources for this purpose \cite{iphonedev}.
-Overall, VoiceOver does well to make the most with a platform that was not designed with UD in focus from the start.
+Overall, VoiceOver does well to make the most of a platform that was not designed with UD in focus from the start.
 
 %-----------------------------------
 %	SUBSECTION 2
@@ -141,6 +147,13 @@ Overall, VoiceOver does well to make the most with a platform that was not desig
 Android's TalkBack works very similarly to their Apple counterpart in that they allow the user to explore by touch by dragging their finger around the screen to receive text-to-speech announcements \cite{android}.
 Talkback allows users to read all elements on the screen continuously and use gestures in order to navigate the device. %%need to cite these pages separately most likely
 TalkBack also provides the aforementioned on-screen braille keyboard support with the 6 and 8 dot options, alternatively referred to as 'grade 1' and 'grade 2' braille depending on the experience of the user.
+
+\begin{figure} [h]
+    \centering
+    \includegraphics[width=10cm,height=10cm,keepaspectratio]{Figures/braille_keyboard.png}
+    \caption{The 6 dot braille keyboard layout on an Android device is virtually identical to the iPhone equivalent, with dot 5 and 2 intentionally offset to make it as comfortable for users as possible \cite{braille}.}
+    \label{fig:Jellybean}
+\end{figure}
 
 %----------------------------------------------------------------------------------------
 %	SECTION 4
@@ -176,7 +189,7 @@ While Microsoft's biggest video game console competitor, Sony has added software
 %	SECTION 5
 %----------------------------------------------------------------------------------------
 
-\section{Right to Repair}
+\section{Digital Sovereignty and Right to Repair}
 
 The 'Right to Repair' mantra falls under the Digital Sovereignty movement, where the focus is on how products can be designed to be transparent to the user and fully repairable by them [SOURCE?].
 This is a concept that has recently seen more attention with electronics in the light of a trend where manufacturers are making it increasingly difficult for individuals to repair their own devices.
@@ -206,6 +219,7 @@ The appeal of the MEGAphone device is that it is intended as a platform in which
 
 In a CCC (Chaos Communication Camp) talk, Gardner-Stephen explains that their approach is to "start obsolete" so that they can't "get obsolete" and reduce the complexity of features to make it as accessible to individuals as possible \cite{mobilehistory}.
 While this can be considered a niche approach, as true Digital Sovereignty is often sacrificed for many reasons such as the high complexity of modern operating systems (OS), Gardner-Stephen goes on to state that the Commodore 64 OS among others proved that simple architecture can still achieve a great deal.
+This is all achieved with a relatively unique approach of implementing an FPGA as the heart of the device, thereby 
 
 %-----------------------------------
 %	SUBSECTION 2
@@ -222,18 +236,25 @@ Unlike typical mobile devices, this project is intended as a development kit and
     \label{fig:Precursor}
 \end{figure}
 
+Much like the MEGAphone device, Precursor is powered by a low power FPGA which compared to conventional CPUs, is remarkably efficient and allows for a far greater degree of freedom as they can quite literally redesign the architecture of the processor to suit their needs.
+While FPGAs are currently far less powerful than CPUs in the same space, an article by Asano and others \cite{fpga} found that the Xilinx XC4VLX160 FPGA performed particularly well in image processing compared to an Intel CPU with four threads, four cores and a Geforce GTX280 GPU.
+They noted that the limiting factor of an FPGA is its size and memory bandwidth, however, the 'fine-grained' parallelism of the FPGA showed that when dealing with a large number of parallel tasks (calculating two-dimensional filters in this instance), it became closer in performance to the GPU and more efficient than the CPU.
+Given that CPUs are not particularly designed for large quantities of parallel tasks, this is somewhat expected, however, while GPUs are more effective at this use case, Asano and others observed that very small local memory within the GPU resulted in less efficient computations when dealing with more parallel instructions.
+FPGAs have already shown that they can be effective and that will only improve with time.
+The MEGAphone, much like the Precursor, has already proved that an FPGA can be a suitable choice for those not strictly looking for speed, but rather more freedom in how they develop their projects.
+
 %----------------------------------------------------------------------------------------
 %	SECTION 6
 %----------------------------------------------------------------------------------------
 
-\section{Effects of COVID-19}
+\section{Effects of COVID-19} %% FIX THIS!!
 %% discuss issues with supply in Australia due to COVID, need independence from imports
 The recent global outbreak of the COVID-19 virus has threatened the DS movement and otherwise the 'Right to Repair' due to Australia's international trade dependence, particularly with China [SOURCE?].
 
 %-----------------------------------
 %	SUBSECTION 1
 %-----------------------------------
-\subsection{Capability Maintenance} % COME BACK TO THIS!
+\subsection{Capability Maintenance}
 
 Capability Maintenance is a concept that looks at how the capabilities of products can be maintained, which is especially important in events that may trigger disruption of said capabilities.
 A recent paper by Gardner-Stephen and Nabben \cite{capability} examines how key infrastructure can be maintained during global disruptions such as the COVID-19 pandemic.
@@ -248,6 +269,7 @@ Often people with a disability are the first to lose out on the accessibility of
 %----------------------------------------------------------------------------------------
 
 \section{Summary}
-//
-
+This chapter provides context for the proceeding chapters, as it establishes the criteria of the seven design principles, provides a distinction between 
+Examples of UD and DS in practice are reviewed to further support the literature, in the form of accessible hardware, software and devices that look to promote keeping sensitive user data in the hands of the owner.
+Capability Maintenance...
 %% back up sources with more sources, always good to support
