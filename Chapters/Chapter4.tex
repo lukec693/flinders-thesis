@@ -644,6 +644,13 @@ The audio jack adapter was designed to be a substitute for the original audio ja
 This PCB hijacks the firing pin of the 9-pin DSUB connector in order to 'imitate' a joystick fire button. 
 Coupled with the hardware-implemented features in the FPGA, the MEGA65 OS should treat this input as a regular peripheral such as a Joycon.
 
+\begin{figure} [h]
+    \centering
+    \includegraphics[width=10cm,height=10cm,keepaspectratio]{Figures/adapter_physical.png}
+    \caption{The adapter on the left is as it was initially. The adapter on the right fixes the issue of too much bulk, by using a nibbler, to reduce the size.}
+    \label{fig:Adapter}
+\end{figure}
+
 An issue that was faced during the development regarded the overall size and shape of the PCB.
 This was not thought about correctly at the time of manufacturing as the PCB was too bulky on either side.
 
