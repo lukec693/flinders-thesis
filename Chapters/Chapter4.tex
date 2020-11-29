@@ -22,7 +22,7 @@ At the initial stage of planning, multiple approaches to the MEGAphone chassis w
 Two of these designs incorporated ‘stands’ to prop the device up in order to minimise physical effort from the user, as well as all designs featuring a curved or ridged design to accommodate comfortable device holding for a large range of hand-grip sizes. 
 It is important to note that these initial designs do not account for the notable features of the final prototype, such as the EZ access keys or the large rocker switch array.
 Those features are discussed in detail in section 3 and section 4, as they appear later in the development process.
-All of the initial designs are outlined in the following sub-sections.
+All of the initial designs are outlined in the following sub-sections (larger images are included in appendix \ref{AppendixA}).
 
 %-----------------------------------
 %	SUBSECTION 1
@@ -158,7 +158,7 @@ These prototypes were printed using the Ultimaker 2+, which set size constraints
 %-----------------------------------
 %	SUBSECTION 3
 %-----------------------------------
-\subsection{Final 3D-print}
+\subsection{Final 3D-print} \label{FinalPrint}
 
 This is the final 3D-printed deliverable of the project and is naturally the most refined revision of the project. 
 There are still aspects of the MEGAphone housing that are not perfect as is the case in any iterative design project and the result of this print encouraged changes that are talked about in detail in chapter 5.
@@ -172,7 +172,6 @@ There are still aspects of the MEGAphone housing that are not perfect as is the 
 
 Other considerations made to rectify issues in the design, included giving more clearance to the device stand (discussed more in section 4.4.7) so that it could also actuate smoothly and more clearance to the mating fit on the device strap feature.
 The latter should have worked and was more likely made an issue due to the inaccuracy of the 3D-printer, nonetheless, considerations were made to increase the opening for this fit.
-
 Giving the battery an opening to easily pick up and set down the device was realised after this print in addition to a housing for a velcro strap to hold the battery in place as sticking it down is considered a riskier approach.
 
 \begin{figure} [h]
@@ -184,6 +183,7 @@ Giving the battery an opening to easily pick up and set down the device was real
 
 This final print used the Ultimaker S5, which allowed a large enough surface area that the entire print was possible without slicing any parts of the case.
 Additionally, these prints used water dissolvable supports that dissolve in about one day submerged underwater which made getting to the final product much easier.
+The total print time for the final top and bottom case housing was 2 days and 13 hours combined, with the complete housing weighting in at 478g.
 
 %----------------------------------------------------------------------------------------
 %	SECTION 4
@@ -271,7 +271,7 @@ On top of this, the rocker switches are placed in from the outside of the device
 %-----------------------------------
 %	SUBSECTION 4
 %-----------------------------------
-\subsection{Jellybean Switch}
+\subsection{Jellybean Switch} \label{Jellybean Switch}
 
 The motivation to include an external digital input switch was to enhance the flexibility of the device (design principle two), as it gives users a new method of interacting with the on-screen keyboard.
 The details of the on-screen accessible keyboard are discussed in section 6.
@@ -310,10 +310,11 @@ This feature is designed around another existing constraint in that the PCB uses
 \subsection{Battery}
 
 Due to the addition of a new proposed 7.4V 5000mAH Lithium-Ion battery[SOURCE], considerations had to be made regarding placement within the MEGAphone device chassis.
-There were two potential approaches to this issue in that the battery could either be placed internally within case along with the electronics, or 'externally' on the 'bottom' of the device with a separate cover that could be screwed on to hide the battery like what might be found on an RC Car controller for example.
+There were two potential approaches to this issue in that the battery could either be placed internally within case along with the electronics, or 'externally' on the 'bottom' of the device with a separate cover that could be screwed on to hide the battery like what might be found on an RC Car controller or TV remote for example.
 
 The approach that was chosen was to have the battery be housed within the case along with the PCBs with the second approach ultimately not being chosen because of three factors.
 While the intention of the device is certainly not to be waterproof, there was some desire for the device to protect against light rain, which meant 'sealing' up electronic components at least to some extent.
+
 There is also the concern that the 'bottom' of the device already makes the most of the available space by housing the device stand (view section 3.8) and the solar panel array and therefore the only plausible solution would be to remove the solar panels every time the user requires access to the battery.
 As the solar panels would be held in place with an overhang and possibly be stuck down, this would make removing the battery a more painful process.
 
@@ -341,7 +342,7 @@ This implementation highlights an instance of the relationship that DS and UD ca
 % thoughts behind the device stand, how they were conceptualised and why it was approached in such and such way; having two stands on either side adds to the stability of the device as opposed to the original idea of having one stand in the middle, which also leaves space for solar panel in the middle
 Originally the approach was to have a single 'stand' oriented in the middle of the device where users could extend it out as they need.
 However, having two stands on either end of the device has multiple advantages in that doing so increases the stability of the device, as well as giving ample space in the centre to place one or multiple solar panels depending on the available space (discussed in section 3.8).
-The mechanism in which to extend and 'lock' the stand in place had the potential to be approached from  multiple different angles.
+The mechanism in which to extend and 'lock' the stand in place had the potential to be approached from multiple different angles.
 
 \begin{figure} [h]
     \centering
@@ -362,7 +363,7 @@ This would almost be a reverse of the actual prototype.
 %-----------------------------------
 %	SUBSECTION 8
 %-----------------------------------
-\subsection{Solar Cells}
+\subsection{Solar Cells} \label{Solar Cells}
 
 % choice of solar panels, discuss potential options and why a specific one was chosen, do a table comparison of available panels and again explain the power output and cost etc.
 Giving users more ways to charge their device plays heavily into the DS aspect of this project as this provides a platform in which to harvest energy to power the device without the need for energy infrastructure.

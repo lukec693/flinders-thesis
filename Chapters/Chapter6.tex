@@ -9,16 +9,16 @@
 %----------------------------------------------------------------------------------------
 
 \section{Overview}
-This chapter provides concluding remarks on the deliverables of the project and provides a discussion on aspects where the project might benefit moving forward.
+The MEGAphone accessible interface project was fully realised on the 8th of November, 2020.
+This chapter provides concluding remarks on the deliverables of the project including the research questions and contributions of the author.
+A discussion on aspects where the project might benefit from future research is also addressed in this final chapter.
 
 %----------------------------------------------------------------------------------------
 %	SECTION 2
 %----------------------------------------------------------------------------------------
 
 \section{MEGAphone Chassis/Case First Revision}
-The MEGAphone accessible interface project was fully realised on the 8th of November, 2020.
-In this chapter, the development of the project and how various aspects benefit the usability and sovereignty of the MEGAphone project, will be summarised. % maybe add to overview
-Additionally, a discussion on the potential future work of the project will establish how to best approach a succeeding revision of the chassis and the MEGAphone PCB followed by some concluding remarks.
+This section reviews how the research questions were answered and recounts the contributions made by the author.
 
 % %-----------------------------------
 % %	SUBSECTION 1
@@ -29,20 +29,20 @@ This thesis has answered the following research questions in the preceding chapt
 \begin{enumerate}
     \item What is the relationship between Digital Sovereignty and Universal Design?
         \begin{enumerate}
-        \item[-] Chapter one introduced these concepts and their characteristics.
-        \item[-] Chapter two set out to establish what each of these concepts meant along with their importance in this project.
-        \item[-] Chapter four took those concepts and applied them to a real tangible design, drawing commonality between these concepts along the way.
+        \item[-] Chapter \ref{Chapter1} introduced these concepts and their characteristics.
+        \item[-] Chapter \ref{Chapter2} set out to establish what each of these concepts meant along with their importance in this project.
+        \item[-] Chapter \ref{Chapter4} took those concepts and applied them to a real tangible design, drawing commonality between these concepts along the way.
         \end{enumerate} 
     \item Why is Universal Design important in the design of products today?
         \begin{enumerate}
-        \item[-] Chapter two established why UD is important, as the concept attempts to normalise accessible design practices so that people with a disability or of old age can be better included in the products of today.
-        \item[-] Chapter four applied that concept, highlighting the importance of such features and how not only those with a disability, but also abled bodied people can benefit. 
+        \item[-] Chapter \ref{History} established why UD is important, as the concept attempts to normalise accessible design practices so that people with a disability or of old age can be better included in the products of today.
+        \item[-] Chapter \ref{Chapter4} applied that concept, highlighting the importance of such features and how not only those with a disability, but also abled bodied people can benefit. 
         \end{enumerate}
     \item Why is Digital Sovereignty important in the design of electronic products today?
         \begin{enumerate}
-        \item[-] Chapter two covers the MEGAphone mobile device and how users can benefit from an open and secure platform.
-        \item[-] Chapter three explained how considering open-source software in the development of the project can make it easier for users to modify aspects of the product after the fact.
-        \item[-] Chapter four presented examples of DS in practice, such as the solar cell feature, which provides users with an alternative way to charge their device, making them no longer solely dependent on a working energy infrastructure.
+        \item[-] Chapter \ref{MEGAphone} covers the MEGAphone mobile device and how users can benefit from an open and secure platform.
+        \item[-] Chapter \ref{KiCAD} explained how considering open-source software in the development of the project can make it easier for users to modify aspects of the product after the fact.
+        \item[-] Chapter \ref{Chapter4} presented examples of DS in practice, such as the solar cell feature in section \ref{Solar Cells}, which provides users with an alternative way to charge their device, making them no longer solely dependent on working energy infrastructure.
         \end{enumerate} 
     \item How can the seven design principles be used in the design of the MEGAphone case to support those with disabilities?
         \begin{enumerate}
@@ -57,8 +57,8 @@ This thesis has answered the following research questions in the preceding chapt
         \end{enumerate} 
     \item What are the effects of COVID-19 on Digital Sovereignty, Universal Design and the MEGAphone project?
         \begin{enumerate}
+        \item[-] Chapter one and four explains that this pandemic disrupted the iterative design process as focus groups consisting of people with disabilities for design feedback was abandoned due to the health risks of the virus.
         \item[-] Chapter two looks at the effects of COVID-19 related to capability maintenance and what this potentially means for people with a disability.
-        \item[-] Chapter four explains that this pandemic disrupted the iterative design process as focus groups consisting of people with disabilities for design feedback was abandoned due to the health risks of the virus.
         \end{enumerate} 
 \end{enumerate}
 
@@ -108,7 +108,7 @@ The author's key contributions to the field, recounted in detail, are:
 %	SECTION 3
 %----------------------------------------------------------------------------------------
 \section{Future Work}
-The following section addresses both the MEGAphone PCBs and the accessible chassis with a discussion on the recommendations of the project moving forward.
+The following section addresses both the accessible MEGAphone housing and all supporting PCBs, with a discussion regarding the recommendations of the project moving forward.
 
 %-----------------------------------
 %	SUBSECTION 1
@@ -158,7 +158,7 @@ Placement of these inputs should be at the 'top' of the device with all other po
 %-----------------------------------
 %	SUBSECTION 3
 %-----------------------------------
-\subsection{MEGAphone Housing}
+\subsection{MEGAphone Housing} \label{FutureHousing}
 
 There are a few recommendations regarding the design of the housing for the MEGAphone project.
 The space around the power and audio ports of the device could benefit from being better filled in around further working toward a better-sealed device.
@@ -183,12 +183,25 @@ Therefore, more focus on support for the user's thumbs would benefit this projec
 
 An effective solution to the water-resistant ventilation problem brought up in chapter 4, section 4.11 might be to explore a tightly integrated mesh, similar to what might be found on modern in-ear headphones.
 This should repel water droplets to some degree or at least limit the ease in which water can enter the device.
-It is worth noting that, as mentioned previously, thermal management is very low priority given the low-power operation of the device.
+It is worth noting that, as mentioned previously, thermal management is a very low priority given the low-power operation of the device.
 
 As previously mentioned, a better interlocking mechanism for the updated solar panel feature would benefit the usability of the device when inserting or removing solar cells.
+
 Additionally, a more refined method of extending out the two device stands would be useful, accompanied by a locking feature for quality of life.
 While the current implementation does lock the stand in place to some degree, however, if the device is tilted upside down, this locking mechanism will likely fail.
+As well as this, it is suggested that a future iteration attempts the alternative method (view chapter 4, section 4.7) of mounting the stand to the cylindrical housing as the current design presented some structural weakness when testing the physical prototype.
+
 Ultimately, emphasis should be placed on redesigning the MEGAphone PCB first and foremost.
+
+%-----------------------------------
+%	SUBSECTION 4
+%-----------------------------------
+\subsection{MEGA65 Accessibility}
+
+This project introduced a new method of interacting with the on-screen keyboard via a Jellybean switch (view chapter \ref{Jellybean Switch}).
+Future studies into this space could look into more accessibility features within the MEGA65 OS, such as contrast and colour features for the visually impaired, including colour blindness.
+As well as this, an array of multiple Jellybean switches (or other digital input switches) could look at emulating the actions of a joystick controller.
+Much in the spirit of Microsoft's accessible controller, the MEGAphone could provide an accessible controller for fans of retro Commodore64 games.
 
 %----------------------------------------------------------------------------------------
 %	SECTION 4
@@ -196,7 +209,7 @@ Ultimately, emphasis should be placed on redesigning the MEGAphone PCB first and
 
 \section{Final Product}
 The final product as a result of the development discussed in chapter 4 and changes made in chapter 5 is presented.
-It can be observed from figure \ref{fig:FinalTOP} and figure \ref{fig:FinalBOTTOM}) that the final colour scheme is shown, as it is intended.
+It can be observed from figure \ref{fig:FinalTOP} and figure \ref{fig:FinalBOTTOM} that the final colour scheme is shown, as it is intended.
 This differs from the 3D-printed prototypes which were unglamorous in comparison as they were printed with white PLA plastic.
 However, for testing, this was unproblematic.
 
@@ -208,4 +221,8 @@ However, for testing, this was unproblematic.
 This final concluding chapter recalls the research questions and contributions of the author originally discussed in the first chapter.
 Those research questions and contributions were listed in this chapter and provided with short summaries as to how each item was addressed in this thesis.
 Future development towards this project was discussed, where the author's opinions on what should be addressed next were provided, with explanations as to why each aspect should be approached in a particular way.
-%% FINISH THIS
+
+This housing deliverable has provided the MEGAphone project with a substantial platform in which to conduct future studies into UD.
+The importance of UD and DS and how they can work together to provide a platform that gives so many otherwise marginalised groups was presented.
+As can be seen, by the outcome of the main deliverable, this project is a testament to how designing for all can allow everyone to enjoy the benefits that the MEGAphone has to offer.
+As well as supporting people with a disability or old age, designing for accessibility can also enhance the useability for those who are perfectly able-bodied, leading to a more well-refined device overall.

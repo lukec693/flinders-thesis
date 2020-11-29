@@ -9,18 +9,21 @@
 %----------------------------------------------------------------------------------------
 \section{Overview}
 
-This chapter lists out the methods followed and the materials used in order to set up the context in which the next chapter is achieved.
-All software and hardware used in the development of this project are listed here along with details on outsourcing.
-The contributions of other stakeholders in this project are listed in the final section, to add further clarity and contrast to the distribution of work carried out by the author, listed in chapter 1.6.
+This chapter lists out the methods followed and the materials used in order to provide more context as to how the next chapter is achieved.
+All software and hardware used in the development of this project are listed here along with details on what was outsourced.
+The contributions of other stakeholders in this project are listed in the final section, to add further clarity and contrast to the distribution of work carried out by the author, listed in chapter 1, section 6.
+%% reference this
 
 %----------------------------------------------------------------------------------------
 %	SECTION 2
 %----------------------------------------------------------------------------------------
 \section{Hardware}
 
-The Digilent Nexys DDR4 development board was available as an alternative to the Trenz Electronics TE0725 board housed within the MEGAphone PCB when said device is not available, given that the MEGAphone is based on the same architecture, with much of the same functionality.
-Physical prototypes of the MEGAphone chassis are printed using the Ultimaker 2+ and Ultimaker S5 3D printers using PLA plastic at 0.15mm print resolution, with support.
-Soldering kits and a soldering oven was provided by Flinders University for a new build of the MEGAphone device, used to present the case prototype.
+The 'Digilent Nexys DDR4' development board was available as an alternative to the 'Trenz Electronics TE0725' board housed within the MEGAphone PCB when that device is not available.
+Given that the MEGAphone is based on the same architecture, this alternative provides much of the same functionality.
+
+Physical prototypes of the MEGAphone chassis are printed using the Ultimaker 2+ and Ultimaker S5 3D printers with PLA plastic at 0.15mm print resolution and printing supports.
+Soldering gear and a soldering oven was provided by Flinders University for a new build of the MEGAphone device, used to present the case prototype.
 
 %----------------------------------------------------------------------------------------
 %	SECTION 3
@@ -43,19 +46,22 @@ This software, based on a fork from the free QCAD community version, was chosen 
 \subsection{Fusion 360}
 
 The computer-aided design software chosen for the MEGAphone chassis project was Autodesk Fusion 360 as it is very capable as well as efficient in resource consumption. 
-Autodesk Inventor was originally considered as the definitive CAD program, however, due to the concern of Digital Sovereignty, Autodesk Fusion 360 was chosen as it is more accessible to individuals as it does not require potentially expensive licensing for recreational use. 
-This is useful for users who might want to modify the device to fit a unique purpose and follows the intention of the MEGAphone project as accessible to users.
-FreeCAD, a potential alternative would have arguably suited the Digital Sovereignty aspect far better, however, due to not having a design history timeline at the time of selection, this option was disregarded.
-Fusion 360 also benefitted from the ability to create and present an animation of the device during the final project seminar which all ran natively in the software, hence no requirement to import resources.
+Autodesk Inventor was originally considered as the definitive CAD program, however, due to the concern of DS, Autodesk Fusion 360 was chosen as it is more accessible to individuals as it does not require potentially expensive licensing for recreational use.
+
+This is useful for users who might want to modify the device to fit a unique purpose and this also follows the intention of the MEGAphone project as an open platform.
+FreeCAD was an alternative that would have arguably better suited the DS aspect, however, due to not having a design history timeline that could integrate changes at different points in the process (at least at the time of selection) this option was disregarded.
+Fusion 360 also benefitted from the ability to create and present an animation of the device during a project seminar.
+As this all runs natively in the software there is no requirement to import resources, therefore making the process neater.
 
 %-----------------------------------
 %	SUBSECTION 3
 %-----------------------------------
-\subsection{KiCAD}
+\subsection{KiCAD} \label{KiCAD}
 
-KiCAD is an open-source eCAD software used in the printed circuit board (PCB) planning and designing process.
+KiCAD is a completely free open-source ECAD software used in the PCB planning and designing process.
 This software was chosen over alternatives with potentially expensive licensing costs for the end-user such as Altium Designer or Autodesk Eagle.
-KiCAD is a powerful software in its own right, and with extensive support from its community, it is competitive with Altium Designer, which is widely considered the industry standard.
+The intent behind this is to give users hassle-free access to the chosen ECAD software if they wish to modify existing designs to better suit their needs.
+KiCAD is a powerful software in its own right and with extensive support from its community, it is competitive with Altium Designer, which is widely considered the industry standard.
 
 %-----------------------------------
 %	SUBSECTION 4
@@ -63,8 +69,8 @@ KiCAD is a powerful software in its own right, and with extensive support from i
 
 \subsection{Xilinx Vivado}
 
-To avoid the performance inefficiencies that come with processor emulation, the MEGAphone is entirely FPGA based, written in VHDL (Virtual Hardware Description Language), including the virtual accessible keyboard system for Jellybean switch input.
-The accessible software features will be completely transparent to the MEGA65 operating system (OS), meaning that it will treat the input as if it were any peripheral without needing to know that the switch exists.
+To avoid the performance inefficiencies that come with processor emulation, the MEGAphone is entirely FPGA based, written in VHDL, including the virtual accessible keyboard system for Jellybean switch input.
+The accessible software features developed in this project will be completely transparent to the MEGA65 OS, meaning that it will treat the input as if it were any peripheral without needing to know that the switch exists.
 Given that Xilinx develops the Artix-7 100T FPGA used in on the device, they are the sole proprietor and hence there are no alternatives to the Vivado software.
 This is not a problem as the software is free for anyone to use, as Xilinx recoup their costs with the sale of their FPGAs.
 
@@ -73,16 +79,14 @@ This is not a problem as the software is free for anyone to use, as Xilinx recou
 %----------------------------------------------------------------------------------------
 \section{Manufacturing and Sourcing}
 
-The following are a list of sourced parts for this project (excluding locally sourced parts):
+The following are a list of sourced parts for this project, all from reputable retailers operating in Australia (excluding locally sourced parts):
 
 \begin{itemize} 
-    \item Printed circuit boards are sourced from PCBway. %% PROVIDE SOURCES FOR THESE
+    \item PCBs are sourced from PCBway.
     \item Electronic components are sourced from Digi-Key.
-    \item Electronic components alternatively sourced from Mouser.
+    \item Electronic components are sourced alternatively from Mouser.
     \item Jellybean switches are sourced from Ablenet.
     \end{itemize}
-
-These options were individually chosen as they are accessible and have a solid reputation in Australia, where this project is based.
 
 %----------------------------------------------------------------------------------------
 %	SECTION 5
@@ -92,12 +96,11 @@ These options were individually chosen as they are accessible and have a solid r
 This section lists contributors to this project as well as a brief outline of their contributions:
 
 \begin{itemize} 
-    \item Dr David Hobbs; Academic supervisor for the project, provides feedback and UD expertise on iterations of the MEGAphone chassis project.
+    \item Dr David Hobbs; Academic supervisor for the project, provides feedback and UD expertise on iterations of the MEGAphone housing project.
     \item Dr Paul Gardner-Stephen; Academic co-supervisor for the project, provides general feedback, also primarily responsible for the MEGAphone platform and a research assistant for coding of the accessible keyboard sub-system (view chapter 4.6).
-    \item Lucas Moss; designed a revised PCB for the MEGAphone device that addresses the problems with the first revision by Damien Kleiss and Lachlan McDonald, which provides the constraints for the author's project.
-    \item The author is responsible for designing the MEGAphone device chassis, accompanying PCBs to adapt the MEGAphone PCB without costly redesign, including the EZ access keys, Jellybean switch adapter and rocker switch array.
+    \item Lucas Moss; designed a revised PCB for the MEGAphone device that addresses the problems with the first revision developed by Mr Lachlan McDonald and Mr Karthik Srinivasa Puranik and refined by Mr Damien Kleiss, which provides the constraints for the author's project.
+    \item The author is responsible for designing the MEGAphone device housing and accompanying PCBs to adapt the MEGAphone PCB without costly redesign, including the EZ access keys, Jellybean switch adapter and rocker switch array.
 \end{itemize}
-
 %% link all chapters and sections where it makes sense
 
 %----------------------------------------------------------------------------------------
@@ -105,6 +108,6 @@ This section lists contributors to this project as well as a brief outline of th
 %----------------------------------------------------------------------------------------
 \section{Summary}
 
-This chapter provides the necessary context to understand how the next chapter was achieved.
-All of the software and hardware and outsourced material used in this project is discussed and reasons for this selection is justified.
-Contributors to the MEGAphone project are discussed, to better re-enforce the understanding of what the author has and hasn't contributed.
+This chapter provided the necessary context to understand how the next chapter was achieved.
+All of the software, hardware and outsourced material used in this project was discussed and reasons for this selection was justified.
+Contributors to the MEGAphone project were discussed, to better re-enforce the understanding of what the author has and hasn't contributed.
