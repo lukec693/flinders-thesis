@@ -46,19 +46,19 @@ This thesis has answered the following research questions in the preceding chapt
         \end{enumerate} 
     \item How can the seven design principles be used in the design of the MEGAphone case to support those with disabilities?
         \begin{enumerate}
-        \item[-] Chapter one introduces the seven design principles as a tool to measure the accessibility of a product.
-        \item[-] Chapter two goes into detail on these principles and briefly explains the characteristics of each design principle.
-        \item[-] Chapter four provides evidence of the seven design principles in practice, highlighting how they apply to each design feature.
+        \item[-] Chapter \ref{Motivation} introduces the seven design principles as a tool to measure the accessibility of a product.
+        \item[-] Chapter \ref{Seven Principles} goes into detail on these principles and briefly explains the characteristics of each design principle.
+        \item[-] Chapter \ref{Chapter4} provides evidence of the seven design principles in practice, highlighting how they apply to each design feature.
         \end{enumerate} 
     \item How can the 'Right to Repair' philosophy be used in support of the universally designed MEGAphone case?
         \begin{enumerate}
-        \item[-] Chapter two discussed how planned obsolescence works in favour of the manufacturer and against the user and the freedoms that the user gives up as a result.
-        \item[-] Chapter four provides evidence as to how this philosophy can support the project, such as making the internal components easy to access to those who desire access, while not sacrificing safety for those who don't, as per the UD concept.
+        \item[-] Chapter \ref{Planned Obsolescence} discussed how planned obsolescence works in favour of the manufacturer and against the user and the freedoms that the user gives up as a result.
+        \item[-] Chapter \ref{Chapter4} provides evidence as to how this philosophy can support the project, such as making the internal components easy to access to those who desire access (view section \ref{Threaded}), while not sacrificing safety for those who don't, as per the UD concept.
         \end{enumerate} 
     \item What are the effects of COVID-19 on Digital Sovereignty, Universal Design and the MEGAphone project?
         \begin{enumerate}
-        \item[-] Chapter one and four explains that this pandemic disrupted the iterative design process as focus groups consisting of people with disabilities for design feedback was abandoned due to the health risks of the virus.
-        \item[-] Chapter two looks at the effects of COVID-19 related to capability maintenance and what this potentially means for people with a disability.
+        \item[-] Chapter \ref{Objectives} and chapter \ref{First Revision} explains that this pandemic disrupted the iterative design process as focus groups consisting of people with disabilities for design feedback was abandoned due to the health risks of the virus.
+        \item[-] Chapter \ref{Capability} looks at the effects of COVID-19 related to capability maintenance, what a device means to be 'sovereign' and what this potentially means for people with a disability.
         \end{enumerate} 
 \end{enumerate}
 
@@ -79,15 +79,15 @@ The author's key contributions to the field, recounted in detail, are:
         \end{enumerate} 
     \item The creation through iteration of a UD housing for the MEGAphone PCB.
         \begin{enumerate}
-        \item[-] Chapter four provides a comprehensive review of the UD housing for the MEGAphone project, including evidence of an iterative design process.
-        \item[-] Chapter five further supports this by providing the CAD work for a future 3D-print of the project.
+        \item[-] Chapter \ref{Chapter4} provides a comprehensive review of the UD housing for the MEGAphone project, including evidence of an iterative design process (view section \ref{First Print} and section \ref{CAD Models}).
+        \item[-] Chapter \ref{Chapter5} further supports this by providing the CAD work for a future 3D-print of the project.
         \end{enumerate} 
     \item The improvement of the MEGAphone device layout to improve its UD properties.
         \begin{enumerate}
-        \item[-] Evidence of this during the project is presented in the form of smaller external PCBs that serve to interface with the main PCB for the sake of delivering an accessible prototype, thereby avoiding a costly and time-consuming redesign of the MEGAphone.
-        \item[-] The implementation of the 'EZ access keys' provides the MEGAphone device with a useful alternative method of use which supports UD principles.
-        \item[-] Accompanying the 'EZ access keys' is the adaptation of large rocker switches which make controlling power to various modules of the MEGAphone far easier than previously possible.
-        \item[-] Hardware-implemented 'software' features transparent to the MEGA65 OS provide users with an alternative method of interacting with the keyboard, through the use of a Jellybean switch.
+        \item[-] Evidence of this during the project is presented in the form of smaller external PCBs that serve to interface with the main PCB for the sake of delivering an accessible prototype (view chapter \ref{PCBs}), thereby avoiding a costly and time-consuming redesign of the MEGAphone.
+        \item[-] The implementation of the 'EZ access keys' provides the MEGAphone device with a useful alternative method of use which supports UD principles {view chapter \ref{EZkeys}}.
+        \item[-] Accompanying the 'EZ access keys' is the adaptation of large rocker switches which make controlling power to various modules of the MEGAphone far easier than previously possible (view chapter \ref{Rocker Switches}).
+        \item[-] Hardware-implemented 'software' features transparent to the MEGA65 OS provide users with an alternative method of interacting with the keyboard (view chapter \ref{Software Access}), through the use of a Jellybean switch.
         \end{enumerate} 
     \item The design of practical modifications to the MEGAphone PCB design that allows the majority of the UD improvements to be realised, without requiring a complete and costly redesign of the MEGAphone PCB.
         \begin{enumerate}
@@ -95,13 +95,13 @@ The author's key contributions to the field, recounted in detail, are:
         \end{enumerate} 
     \item The proposal of further improvements to the MEGAphone PCB and case designs to further improve their UD properties.
         \begin{enumerate}
-        \item[-] Recommendations on how to approach a MEGAphone PCB redesign and case in the future, that better satisfies the UD concept is discussed in section 3.2.
-        \item[-] Chapter five provides a critical appraisal of the final 3D-printed housing, where improvements to the design in response to the outcome are proposed and presented.
+        \item[-] Recommendations on how to approach a MEGAphone PCB redesign and case in the future, that better satisfies the UD concept is discussed in section \ref{Proposed}.
+        \item[-] Chapter \ref{Chapter5} provides a critical appraisal of the final 3D-printed housing, where improvements to the design in response to the outcome are proposed and presented.
         \end{enumerate} 
     \item The creation of a MEGAphone device prototype, including UD features and housing, that can be used in future UD studies of the MEGAphone.
         \begin{enumerate}
-        \item[-] As first presented in chapter four, the main deliverable of this project is the full realisation of an accessible MEGAphone prototype that can be used in future endeavours.
-        \end{enumerate} 
+        \item[-] As first presented in chapter \ref{Chapter4}, the main deliverable of this project is the full realisation of an accessible MEGAphone housing prototype that can be used in future UD endeavours.
+        \end{enumerate}
 \end{enumerate}
 
 %----------------------------------------------------------------------------------------
@@ -117,12 +117,12 @@ The following section addresses both the accessible MEGAphone housing and all su
 % analyse the changes in the final design, what limitations the existing PCB layout has and propose a better layout that satisfies the UD principles, talk about what is ideal and what is the best that can be done with the current layout. 
 % Ideal layout includes ports at top of device along with rocker switches replacing current rev2 switches on the main PCB
 The layout of the second revision MEGAphone PCB served as the major constraint of this project, as the case design had to be designed around it without any significant redesign due to the complexity of the device. 
-Certain reworks to better adapt the design to an accessible interface included removing the existing switches in favour of larger rocker switches hosted on an external PCB (view figure).
+Certain reworks to better adapt the design to an accessible interface included removing the existing switches in favour of larger rocker switches hosted on an external PCB.
 
 \begin{figure} [h]
 \begin{centering}
 \includegraphics[width=10cm,height=10cm,keepaspectratio]{Figures/pcb_original.png}
-\caption{This is the PCB layout as it was during the development of this project.}
+\caption{This was the PCB layout during the development of this project.}
 \label{fig:ThisFig}
 \end{centering}
 \end{figure}
@@ -130,17 +130,17 @@ Certain reworks to better adapt the design to an accessible interface included r
 %-----------------------------------
 %	SUBSECTION 2
 %-----------------------------------
-\subsection{Proposed PCB Layout}
+\subsection{Proposed PCB Layout} \label{Proposed}
 
-A possible solution to the existing PCB which does inhabit the Universal Design principles is proposed in figure X. 
-The underlying idea with this redesign was to integrate the design all onto one PCB as doing so would reduce the quantity of wires required and given that those in the current solution are soldered to make space, it makes the design overall ‘simpler’.
+A possible solution to the existing PCB which does inhabit the UD principles is proposed in figure \ref{fig:FuturePCB}. 
+The underlying idea with this redesign was to integrate the design all onto one PCB as doing so would remove the need for wires, therefore making the design overall ‘simpler’.
 The reason for the redesign not being undertaken in this project has been discussed previously as impractical due to an issue of cost and time.
 
 \begin{figure} [h]
 \begin{centering}
 \includegraphics[width=10cm,height=10cm,keepaspectratio]{Figures/pcb_final.png}
 \caption{This is the PCB as it is proposed in a future revision of the MEGAphone project.}
-\label{fig:ThisFig}
+\label{fig:FuturePCB}
 \end{centering}
 \end{figure}
 
@@ -148,12 +148,12 @@ In order to make the device more intuitive, placement of the 9-pin DSUB port sho
 The accessible button interface also utilises an external PCB which hosts the tactile switches that were opted to form the base of the accessible button function.
 
 Other options were considered, such as silicone rubber pads, as used for the directional button and ‘A’, ‘B’ buttons. 
-However, primarily due to the size, larger buttons would be recommended as this would make button presses easier for all users, disregarding the EZ keys in this scenario.
+However, primarily due to the size, larger buttons would be recommended as this would make button presses easier for all users, ignoring the EZ keys in this scenario.
 It is acknowledged that larger buttons on the PCB would invalidate the current Gameboy buttons, which is why a complete redesign of those buttons would be recommended to further progress the accessibility of the device as a whole.
 
-It is also recommended that the PCB incorporates multiple 3.5mm jack inputs, separate from the audio function, in its design as this can give users the ability to plug in multiple switches much like the Jellybean presented in this project.
+It is also recommended that the PCB incorporates multiple 3.5mm jack inputs, separate from the audio function, in its design as this can give users the ability to plug in multiple switches much like the Jellybean presented in this project (view chapter \ref{Jellybean Switch}).
 Microsoft's accessible controller \cite{adaptive} is a prime example of the usefulness of this feature and for those who might not be able to interact with the EZ keys or Gameboy buttons but desire their means of interaction with the device, multiple inputs allow for multiple unique functions.
-Placement of these inputs should be at the 'top' of the device with all other ports as can be seen in figure X, as this minimises complexity by ensuring that everything is in one place for the user.
+Placement of these inputs should theoretically be at the 'top' of the device with all other ports, as this minimises complexity by ensuring that everything is in one place for the user.
 
 %-----------------------------------
 %	SUBSECTION 3
@@ -163,9 +163,10 @@ Placement of these inputs should be at the 'top' of the device with all other po
 There are a few recommendations regarding the design of the housing for the MEGAphone project.
 The space around the power and audio ports of the device could benefit from being better filled in around further working toward a better-sealed device.
 
-The handgrip aspect of the device could also benefit from some refinement as physical use with the device was comfortable, however, it was observed that the grip did not do enough to support the user's thumbs.
+The handgrip aspect of the device could also benefit from some refinement.
+Although physical use with the device was comfortable, it was observed that the hand-grip did not do enough to support the user's thumbs (view chapter \ref{Handgrip}).
 While the ridges on the 'top' housing fit their purpose in guiding the user's hands to the correct place, they are less important than the ridges at the 'bottom' of the device.
-Therefore, more focus on support for the user's thumbs would benefit this project far more.
+Therefore, more focus on support for how the user's thumbs rest on top of the device would benefit this project far more.
 
 \begin{figure} [h]
     \centering
@@ -181,24 +182,24 @@ Therefore, more focus on support for the user's thumbs would benefit this projec
     \label{fig:FinalBOTTOM}
 \end{figure}
 
-An effective solution to the water-resistant ventilation problem brought up in chapter 4, section 4.11 might be to explore a tightly integrated mesh, similar to what might be found on modern in-ear headphones.
+An effective solution to the water-resistant ventilation problem brought up in chapter \ref{Vents} might be to explore a tightly integrated mesh, similar to what might be found on modern in-ear headphones.
 This should repel water droplets to some degree or at least limit the ease in which water can enter the device.
 It is worth noting that, as mentioned previously, thermal management is a very low priority given the low-power operation of the device.
 
 As previously mentioned, a better interlocking mechanism for the updated solar panel feature would benefit the usability of the device when inserting or removing solar cells.
 
 Additionally, a more refined method of extending out the two device stands would be useful, accompanied by a locking feature for quality of life.
-While the current implementation does lock the stand in place to some degree, however, if the device is tilted upside down, this locking mechanism will likely fail.
-As well as this, it is suggested that a future iteration attempts the alternative method (view chapter 4, section 4.7) of mounting the stand to the cylindrical housing as the current design presented some structural weakness when testing the physical prototype.
+While the current implementation does 'lock' the stand in place to some degree, however, if the device is tilted upside down, this 'locking' mechanism will likely fail.
+As well as this, it is suggested that a future iteration attempts the alternative method (view chapter \ref{Stand}) of mounting the stand to the cylindrical housing as the current design presented some structural weakness when testing the physical prototype.
 
-Ultimately, emphasis should be placed on redesigning the MEGAphone PCB first and foremost.
+Ultimately, emphasis should be placed on redesigning the MEGAphone PCB first and foremost (in section \ref{Proposed}).
 
 %-----------------------------------
 %	SUBSECTION 4
 %-----------------------------------
 \subsection{MEGA65 Accessibility}
 
-This project introduced a new method of interacting with the on-screen keyboard via a Jellybean switch (view chapter \ref{Jellybean Switch}).
+This project introduced a new method of interacting with the on-screen keyboard via a Jellybean switch (view chapter \ref{Jellybean Switch} and chapter \ref{Software Access}).
 Future studies into this space could look into more accessibility features within the MEGA65 OS, such as contrast and colour features for the visually impaired, including colour blindness.
 As well as this, an array of multiple Jellybean switches (or other digital input switches) could look at emulating the actions of a joystick controller.
 Much in the spirit of Microsoft's accessible controller, the MEGAphone could provide an accessible controller for fans of retro Commodore64 games.

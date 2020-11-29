@@ -82,7 +82,7 @@ For these reasons, this was the design in which the project is based.
 %----------------------------------------------------------------------------------------
 %	SECTION 3
 %----------------------------------------------------------------------------------------
-\section{First Revision}
+\section{First Revision} \label{First Revision}
 
 This section provides a broad view of the design process with a 'timeline' based approach, making note of the problems and solutions regarding 3D-printed prototypes.
 Detailed evaluations of the specific design features of the MEGAphone housing are provided in section 4.
@@ -95,7 +95,7 @@ Also note that when this chapter refers to the orientation of the device as 'top
 %-----------------------------------
 %	SUBSECTION 1
 %-----------------------------------
-\subsection{First 3D-print}
+\subsection{First 3D-print} \label{First Print}
 
 There was a significant issue that was overlooked with the first 3D-printed prototype in that the thought behind orientation of components was flipped.
 Electronic components (including connectors) needed more space underneath in order to fit comfortably and the design up until that point had not properly accounted for it.
@@ -216,7 +216,7 @@ This once again would allow a tangible object in which to add relevant sketches,
 %-----------------------------------
 %	SUBSECTION 2
 %-----------------------------------
-\subsection{Hand-grips}
+\subsection{Hand-grips} \label{Handgrip}
 
 The first stage of design after the initial concept sketches was designed to use the 'ridged' rubber grips on both sides of the device (view \ref{fig:old_grips}).
 However, this concept was removed in favour of 'ridges' that resemble the size and shape of human adult fingers to more intuitively direct the user to hold the device correctly as this supports the third design principle (view \ref{fig:new_grips}).
@@ -246,7 +246,7 @@ This design choice was intended as a more defined thumb rest, hinting to the use
 %-----------------------------------
 %	SUBSECTION 3
 %-----------------------------------
-\subsection{Rocker Switches}
+\subsection{Rocker Switches} \label{Rocker Switches}
 
 A major issue that was identified from the start with the second revision PCB was that placement and size of switches made it difficult to access.
 Larger rocker switches were chosen to be placed on the front surface above the screen as this is in full visibility of the user during use.
@@ -337,7 +337,7 @@ This implementation highlights an instance of the relationship that DS and UD ca
 %-----------------------------------
 %	SUBSECTION 7
 %-----------------------------------
-\subsection{Device Stand}
+\subsection{Device Stand} \label{Stand}
 
 % thoughts behind the device stand, how they were conceptualised and why it was approached in such and such way; having two stands on either side adds to the stability of the device as opposed to the original idea of having one stand in the middle, which also leaves space for solar panel in the middle
 Originally the approach was to have a single 'stand' oriented in the middle of the device where users could extend it out as they need.
@@ -450,7 +450,7 @@ The device weighs a little under one kilogram, even at that weight it makes sens
 %-----------------------------------
 %	SUBSECTION 10
 %-----------------------------------
-\subsection{Easy Access Keys}
+\subsection{Easy Access Keys} \label{EZkeys}
 
 The easy access keys or 'EZ Keys' were inspired by the 'Nav Keys' developed by Storm Interface [source] which feature an array of easily distinguishable keys which were inspired for this adaptation.
 These keys benefit from being easily perceptible which envelops design principle four, due to each button not only having a unique colour and shape but also a distinct tactile feel when a button is pressed.
@@ -481,7 +481,7 @@ This is evidence that UD and DS share a mutually beneficial relationship.
 %-----------------------------------
 %	SUBSECTION 11
 %-----------------------------------
-\subsection{Ventilation}
+\subsection{Ventilation} \label{Vents}
 
 % device only uses about 1-2W of power, FPGA using 0.2W
 % Not necessary in the final design but add images of version with vents
@@ -528,11 +528,11 @@ This was rectified by extending out the bottom chassis component with the port c
 %-----------------------------------
 %	SUBSECTION 14
 %-----------------------------------
-\subsection{Threaded Inserts}
+\subsection{Threaded Inserts} \label{Threaded}
 
 An important aspect of this deliverable is to have a method of securing all parts in place as well as being easily accessible to users who wish to repair or modify certain aspects.
-This meant that using a 'pentagon star' screw[REF] for example, would not have been a reasonable choice as it would make repair or modification more difficult, due to users not typically having the suitable screwdriver for that job on-hand.
-Naturally, this would all be fastened using 'Phillips head' screws as these are widely considered the most common screw head type aside from 'flat head' screws.
+This meant that using a 'pentagon star' screw for example, would not have been a reasonable choice as it would make repair or modification more difficult, due to users not typically having the suitable screwdriver for that job on-hand.
+Naturally, this would all be fastened using 'phillips head' screws as these are widely considered the most common screw head type aside from 'flat head' screws.
 
 These constraints were already set out for the MEGAphone PCB in that there are holes in certain parts of the case for this exact purpose.
 However, an issue that had to be addressed was the placement of certain components on the PCB and their vicinity to these 'mounting' points.
@@ -578,7 +578,7 @@ Not to mention their horizontal placement would mean that they only make sense t
 %	SECTION 5
 %----------------------------------------------------------------------------------------
 
-\section{PCB Design}
+\section{PCB Design} \label{PCBs}
 This section discusses the process of designing the supporting PCBs for this project.
 These are the PCBs intended to work around the alternative of a costly and time-consuming redesign of the MEGAphone PCB as it was not designed under UD.
 As previously discussed, the UD concept is a new introduction to the MEGAphone project.
@@ -619,7 +619,7 @@ The reason why this was not chosen is that this deliverable is a proof of concep
 
 The purpose behind the Easy Keys or 'EZ Keys' as otherwise referred to, was to give users a platform in which to interact with the MEGAphone device while being as clear and easy to use as possible.
 Multi-coloured, multi-shaped keys are employed make things as unambiguous as possible which include, left and right (forward and backward), up and down, and a 'fire' or enter key.
-This, as discussed in section 3.10, is inspired by the Storm Nav-pad[source], where a version has been achieved to a budget, for prototype development. %check typing of nav pad
+This, as discussed in section \ref{EZkeys}, is inspired by the Storm Nav-pad \cite{navpad}, where a version has been achieved to a budget, for prototype development. %check typing of nav pad
 
 \begin{figure} [h]
     \centering
@@ -655,7 +655,7 @@ Given that fibreglass particles are not good for health when inhaled, this was u
 %	SECTION 6
 %----------------------------------------------------------------------------------------
 
-\section{Software Accessibility}
+\section{Software Accessibility} \label{Software Access}
 % talk about keyboard accessibility, term ‘android accessibility encapsulation’ discuss this.
 % Also mention the program is working in parallel to the software ‘mimicking’ the c64 system so this is not a C program running on MEGA65 but rather on VDHL, a hardware description language
 DS covers a broad context, where the overarching concept is about giving users control over their data, which this case, providing the MEGAphone device with accessible software features can be argued as achieving an extent of this project in that it places more control in the hands of the users.
@@ -682,7 +682,7 @@ Additionally, any modifier keys should toggle ON/OFF until an action is complete
 %	SECTION 7
 %----------------------------------------------------------------------------------------
 
-\section{CAD Models}
+\section{CAD Models} \label{CAD Models}
 This section will provide a visual design progression to better illustrate a broader view of the iterative process of this project.
 As COVID-19 affected the way that this project was approached, in that designs were not reviewed by a focus group, these versions are not so much seen as 'iterations' but rather significant points in the design process.
 This was the case as correspondence with industry professionals normally occurred on a weekly or fortnightly basis, meaning that changes often ended up being very incremental between these meetings.
